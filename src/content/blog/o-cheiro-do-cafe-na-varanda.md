@@ -5,6 +5,7 @@ pubDate: 2026-02-07
 tags: ["memórias"]
 place: "curitiba"
 placeLabel: "Curitiba"
+heroImage: ./images/cafe-na-varanda-cover.png
 ---
 
 Tem lembrança que não pede explicação. Ela chega sozinha, como quem abre a porta devagar.
