@@ -14,7 +14,6 @@ const pageTitle = `${title} — ${SITE_TITLE}`;
 const imageUrl = slug ? `/og/${slug}.png` : undefined;
 ---
 
-<!doctype html>
 <html lang="pt-BR">
 	<head>
 		<BaseHead title={pageTitle} description={description} imageUrl={imageUrl} />
@@ -49,9 +48,54 @@ const imageUrl = slug ? `/og/${slug}.png` : undefined;
 				<article class="prose">
 					<slot />
 				</article>
+
+				<hr style="margin: var(--space-2xl) 0;" />
+
+				<section class="comments">
+					<script
+						src="https://giscus.app/client.js"
+						data-repo="adibaldo/adibaldo.github.io"
+						data-repo-id="R_kgDORK6bRw"
+						data-category="Announcements"
+						data-category-id="DIC_kwDORK6bR84C2B5w"
+						data-mapping="pathname"
+						data-strict="0"
+						data-reactions-enabled="1"
+						data-emit-metadata="0"
+						data-input-position="bottom"
+						data-theme="preferred_color_scheme"
+						data-lang="pt"
+						crossorigin="anonymous"
+						async>
+					</script>
+				</section>
 			</div>
 		</main>
 
 		<Footer />
+
+		<script>
+			// Listen for theme changes to update Giscus
+			function updateGiscusTheme() {
+				const theme = document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light';
+				const iframe = document.querySelector<HTMLIFrameElement>('iframe.giscus-frame');
+				if (!iframe) return;
+				iframe.contentWindow?.postMessage(
+					{ giscus: { setConfig: { theme } } },
+					'https://giscus.app'
+				);
+			}
+
+			// Observe data-theme changes on html tag
+			const observer = new MutationObserver((mutations) => {
+				mutations.forEach((mutation) => {
+					if (mutation.attributeName === 'data-theme') {
+						updateGiscusTheme();
+					}
+				});
+			});
+
+			observer.observe(document.documentElement, { attributes: true });
+		</script>
 	</body>
 </html>
