@@ -63,3 +63,7 @@ const ogImageUrl = imageUrl ? new URL(imageUrl, canonicalURL) : (Astro.url.pathn
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={ogImageUrl} />
+
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e87b8bc51afc4e969e35b577e6c25089"}'></script>
+<!-- End Cloudflare Web Analytics -->
