@@ -80,13 +80,13 @@ const tgUrl = `https://t.me/share/url?url=${encodeURIComponent(shareUrl)}&text=$
 				<nav class="pagination-nav" style="margin-top: var(--space-3xl); border-top: 1px solid var(--border-light); padding-top: var(--space-xl);">
 					<div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-lg);">
 						{prev ? (
-							<a href={`/textos/${prev.id}/`} class="card" style="text-align: left;">
+							<a href={`/blog/${prev.id}/`} class="card" style="text-align: left;">
 								<span class="meta">Anterior</span>
 								<h4 class="card-title" style="font-size: 16px;">{prev.data.title}</h4>
 							</a>
 						) : <div />}
 						{next ? (
-							<a href={`/textos/${next.id}/`} class="card" style="text-align: right;">
+							<a href={`/blog/${next.id}/`} class="card" style="text-align: right;">
 								<span class="meta">Próxima</span>
 								<h4 class="card-title" style="font-size: 16px;">{next.data.title}</h4>
 							</a>

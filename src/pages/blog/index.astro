@@ -32,7 +32,7 @@ const posts = (await getCollection('blog'))
 			<div class="container">
 				<div class="grid">
 					{posts.map((post) => (
-						<a class="card" href={`/textos/${post.id}/`}>
+						<a class="card" href={`/blog/${post.id}/`}>
 							<div class="tag-row">
 								{post.data.tags?.slice(0, 1).map((t) => (
 									<span class="tag">{t}</span>

@@ -30,7 +30,7 @@ const places = (await getCollection('places'))
 				<p class="hero-kicker" style="max-width: 62ch;">
 					Um canto pra juntar lembranças e reflexões, sem barulho. Texto bom é texto que respira.
 				</p>
-				<a class="cta" href="/textos">Ler os textos</a>
+				<a class="cta" href="/blog">Ler os textos</a>
 			</div>
 		</section>
 
@@ -39,12 +39,12 @@ const places = (await getCollection('places'))
 				<div class="container">
 					<div class="section-title">
 						<h2 style="margin:0;">Últimas prosas</h2>
-						<a href="/textos">Ver todas</a>
+						<a href="/blog">Ver todas</a>
 					</div>
 
 					<div class="grid">
 						{posts.map((post) => (
-							<a class="card" href={`/textos/${post.id}/`}>
+							<a class="card" href={`/blog/${post.id}/`}>
 								<div class="tag-row">
 									{post.data.tags?.slice(0, 1).map((t) => (
 										<span class="tag">{t}</span>

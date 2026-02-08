@@ -12,7 +12,7 @@ export async function GET(context) {
 			.filter((p) => !p.data.draft)
 			.map((post) => ({
 				...post.data,
-				link: `/textos/${post.id}/`,
+				link: `/blog/${post.id}/`,
 			})),
 	});
 }
