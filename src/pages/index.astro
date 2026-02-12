@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
@@ -42,20 +43,29 @@ const places = (await getCollection('places'))
 						<a href="/blog">Ver todas</a>
 					</div>
 
-					<div class="grid">
+					<div class="grid post-grid-home">
 						{posts.map((post) => (
-							<a class="card" href={`/blog/${post.id}/`}>
-								<div class="tag-row">
-									{post.data.tags?.slice(0, 1).map((t) => (
-										<span class="tag">{t}</span>
-									))}
-									{post.data.placeLabel && <span class="tag">{post.data.placeLabel}</span>}
+							<a class="card post-card-home" href={`/blog/${post.id}/`}>
+								<div class="post-thumb-home">
+									{post.data.heroImage ? (
+										<Image src={post.data.heroImage} alt={`Capa do post ${post.data.title}`} width={1200} height={675} />
+									) : (
+										<div class="post-thumb-fallback-home" aria-hidden="true" />
+									)}
 								</div>
-								<h3 class="card-title">{post.data.title}</h3>
-								<p class="card-desc">{post.data.description}</p>
-								<p class="meta" style="margin:0;">
-									<FormattedDate date={post.data.pubDate} />
-								</p>
+								<div class="post-card-body-home">
+									<div class="tag-row">
+										{post.data.tags?.slice(0, 1).map((t) => (
+											<span class="tag">{t}</span>
+										))}
+										{post.data.placeLabel && <span class="tag">{post.data.placeLabel}</span>}
+									</div>
+									<h3 class="card-title">{post.data.title}</h3>
+									<p class="card-desc">{post.data.description}</p>
+									<p class="meta" style="margin:0;">
+										<FormattedDate date={post.data.pubDate} />
+									</p>
+								</div>
 							</a>
 						))}
 					</div>
@@ -82,5 +92,66 @@ const places = (await getCollection('places'))
 		</main>
 
 		<Footer />
+
+		<style>
+			.post-grid-home {
+				grid-template-columns: repeat(4, 1fr);
+			}
+
+			.post-card-home {
+				padding: 0;
+				overflow: hidden;
+				min-height: 0;
+				transition: transform 180ms ease, box-shadow 180ms ease;
+			}
+
+			.post-card-home:hover {
+				transform: translateY(-2px);
+			}
+
+			.post-thumb-home {
+				aspect-ratio: 16 / 9;
+				overflow: hidden;
+				background: var(--tag-bg);
+				border-bottom: 1px solid var(--border-light);
+			}
+
+			.post-thumb-home :global(img) {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: 0;
+				transition: transform 260ms ease;
+			}
+
+			.post-card-home:hover .post-thumb-home :global(img) {
+				transform: scale(1.03);
+			}
+
+			.post-thumb-fallback-home {
+				width: 100%;
+				height: 100%;
+				background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+			}
+
+			.post-card-body-home {
+				padding: var(--space-md);
+				display: flex;
+				flex-direction: column;
+				gap: var(--space-sm);
+			}
+
+			@media (max-width: 980px) {
+				.post-grid-home {
+					grid-template-columns: repeat(2, 1fr);
+				}
+			}
+
+			@media (max-width: 620px) {
+				.post-grid-home {
+					grid-template-columns: 1fr;
+				}
+			}
+		</style>
 	</body>
 </html>
