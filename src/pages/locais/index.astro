@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
 import Header from '../../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+import { SITE_TITLE } from '../../consts';
 
 const places = (await getCollection('places'))
 	.sort((a, b) => (a.data.order ?? 999) - (b.data.order ?? 999));
@@ -30,7 +30,7 @@ const breadcrumbLD = {
 <!doctype html>
 <html lang="pt-BR">
 	<head>
-		<BaseHead title={`Locais — ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+		<BaseHead title={`Locais — ${SITE_TITLE}`} description="Os lugares que marcaram a vida do Adi — cada um com suas prosas e histórias." />
 		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbLD)} />
 	</head>
 	<body>
