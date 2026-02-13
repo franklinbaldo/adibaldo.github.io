@@ -5,12 +5,31 @@ import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import ProfileImage from '../assets/adi-profile.png';
+
+const breadcrumbLD = {
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Início",
+			"item": Astro.site?.toString()
+		},
+		{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "Sobre"
+		}
+	]
+};
 ---
 
 <!doctype html>
 <html lang="pt-BR">
 	<head>
 		<BaseHead title={`Sobre — ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbLD)} />
 	</head>
 	<body>
 		<Header />
@@ -28,7 +47,7 @@ import ProfileImage from '../assets/adi-profile.png';
 			<div class="reading-width">
 				<div style="display:flex; gap: var(--space-lg); align-items:center; flex-wrap:wrap; margin-bottom: var(--space-xl);">
 					<div style="width: 140px; flex: 0 0 auto;">
-						<Image src={ProfileImage} width={280} height={280} alt="" style="border-radius: 999px;" />
+						<Image src={ProfileImage} width={280} height={280} alt="Foto de perfil do Adi Baldo" style="border-radius: 999px;" />
 					</div>
 					<div style="flex: 1 1 320px;">
 						<h2 style="margin: 0 0 var(--space-sm) 0;">Quem é o Adi</h2>

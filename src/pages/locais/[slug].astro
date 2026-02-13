@@ -22,6 +22,30 @@ const posts = (await getCollection('blog'))
 	.filter((p) => !p.data.draft)
 	.filter((p) => p.data.place === place.id)
 	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const breadcrumbLD = {
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Início",
+			"item": Astro.site?.toString()
+		},
+		{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "Locais",
+			"item": new URL('/locais', Astro.site).toString()
+		},
+		{
+			"@type": "ListItem",
+			"position": 3,
+			"name": place.data.title
+		}
+	]
+};
 ---
 
 <!doctype html>
@@ -31,6 +55,7 @@ const posts = (await getCollection('blog'))
 			title={`${place.data.title} — Locais — ${SITE_TITLE}`}
 			description={place.data.summary}
 		/>
+		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbLD)} />
 	</head>
 	<body>
 		<Header />

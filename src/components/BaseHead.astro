@@ -49,6 +49,7 @@ const ogImageUrl = imageUrl ? new URL(imageUrl, canonicalURL) : new URL('/og-hom
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
+<meta property="og:locale" content="pt_BR" />
 <meta property="og:site_name" content={SITE_TITLE} />
 <meta property="og:url" content={canonicalURL} />
 <meta property="og:title" content={title} />
@@ -61,6 +62,16 @@ const ogImageUrl = imageUrl ? new URL(imageUrl, canonicalURL) : new URL('/og-hom
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={ogImageUrl} />
+
+<!-- JSON-LD Structured Data: WebSite -->
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "WebSite",
+	"name": SITE_TITLE,
+	"url": Astro.site?.toString(),
+	"description": description,
+	"inLanguage": "pt-BR"
+})} />
 
 <!-- Cloudflare Web Analytics -->
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e87b8bc51afc4e969e35b577e6c25089"}'></script>

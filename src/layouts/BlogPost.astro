@@ -24,11 +24,66 @@ const shareUrl = Astro.url.toString();
 const shareText = `Olha que prosa boa do seu Adi: "${title}"`;
 const waUrl = `https://wa.me/?text=${encodeURIComponent(shareText + ' ' + shareUrl)}`;
 const tgUrl = `https://t.me/share/url?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(shareText)}`;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImageAbsolute = imageUrl ? new URL(imageUrl, canonicalURL).toString() : new URL('/og-home.png', canonicalURL).toString();
+
+const blogPostingLD = {
+	"@context": "https://schema.org",
+	"@type": "BlogPosting",
+	"headline": title,
+	"description": description,
+	"image": ogImageAbsolute,
+	"datePublished": pubDate?.toISOString(),
+	...(updatedDate && { "dateModified": updatedDate.toISOString() }),
+	"author": {
+		"@type": "Person",
+		"name": "Adi Baldo",
+		"url": new URL('/sobre', Astro.site).toString()
+	},
+	"publisher": {
+		"@type": "Person",
+		"name": "Adi Baldo"
+	},
+	"mainEntityOfPage": {
+		"@type": "WebPage",
+		"@id": canonicalURL.toString()
+	},
+	"inLanguage": "pt-BR",
+	...(tags && tags.length > 0 && { "keywords": tags.join(", ") }),
+	...(wordCount && { "wordCount": wordCount })
+};
+
+const breadcrumbLD = {
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Início",
+			"item": Astro.site?.toString()
+		},
+		{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "Textos",
+			"item": new URL('/blog', Astro.site).toString()
+		},
+		{
+			"@type": "ListItem",
+			"position": 3,
+			"name": title
+		}
+	]
+};
 ---
 
 <html lang="pt-BR">
 	<head>
 		<BaseHead title={pageTitle} description={description} imageUrl={imageUrl} />
+		<script type="application/ld+json" set:html={JSON.stringify(blogPostingLD)} />
+		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbLD)} />
 	</head>
 	<body>
 		<Header />
@@ -55,7 +110,7 @@ const tgUrl = `https://t.me/share/url?url=${encodeURIComponent(shareUrl)}&text=$
 
 				{heroImage && (
 					<div style={`margin-bottom: var(--space-xl);`}>
-						<Image width={1020} height={510} src={heroImage} alt="" />
+						<Image width={1020} height={510} src={heroImage} alt={`Imagem de capa: ${title}`} />
 					</div>
 				)}
 
