@@ -1,8 +1,8 @@
 ---
 title: "Cadê o Toucinho? (ou Por Onde o Brasil Passou)"
-description: "Uma reflexão ácida e bem-humorada sobre a política brasileira, usando a antiga brincadeira de roda como metáfora da nossa história."
+description: "De Jânio a Lula, a política brasileira explicada pela brincadeira de roda: o gato comeu, o padre levou e o toucinho sumiu. Onde foi parar o Brasil?"
 pubDate: 2026-02-12
-tags: ["ensaios", "política"]
+tags: ["ensaios", "política", "história", "brasil", "memórias"]
 place: "mundo"
 placeLabel: "Brasil"
 heroImage: ./images/cade-o-toucinho-cover.png
