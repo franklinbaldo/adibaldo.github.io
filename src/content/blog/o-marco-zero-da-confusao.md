@@ -8,7 +8,7 @@ placeLabel: "Marco Zero"
 heroImage: ./images/o-marco-zero-da-confusao-cover.png
 ---
 
-Aprendemos que a história nasce com a escrita, decifrada por Champollion em 1830. Os arqueólogos afirmam que os hieróglifos têm cinco mil anos — coisa que eu, particularmente, duvido. Nossa história ocidental é contada pelos livros bíblicos, repletos de narrativas e lendas. Veja o caso do Dilúvio: a ciência comprova a grande inundação, mas Noé e Gilgamesh? É inimaginável alguém construir um Titanic de madeira capaz de abrigar todas as espécies. Se a engenharia náutica brasileira não conseguiu reproduzir uma simples caravela para os festejos dos 500 anos do Descobrimento, como Noé teria realizado tamanha proeza?
+Aprendemos que a história nasce com a escrita, decifrada por Champollion em 1822. Os arqueólogos afirmam que os hieróglifos têm cinco mil anos — coisa que eu, particularmente, duvido. Nossa história ocidental é contada pelos livros bíblicos, repletos de narrativas e lendas. Veja o caso do Dilúvio: a ciência comprova a grande inundação, mas Noé e Gilgamesh? É inimaginável alguém construir um Titanic de madeira capaz de abrigar todas as espécies. Se a engenharia náutica brasileira não conseguiu reproduzir uma simples caravela para os festejos dos 500 anos do Descobrimento, como Noé teria realizado tamanha proeza?
 
 ## Noé e a Fria do Ararat
 
@@ -50,9 +50,9 @@ A história como conhecemos hoje foi "ajustada" no ano 325, no Concílio de Nice
 
 ## O Erro do Monge e a Dança dos Calendários
 
-E o ano zero? Trata-se de uma convenção. O cálculo foi responsabilidade de um monge chamado Dionísio, o Pequeno (ou Exíguo). O sujeito era nanico e invocado. Ele se baseou na morte do Rei Herodes, mas errou a conta por uns três a cinco anos. Já o dia 25 de dezembro foi escolhido para coincidir com as Saturnálias romanas e o nascimento do deus Mitra. Tudo no embalo dos festejos pagãos.
+E o ano zero? Trata-se de uma convenção. O cálculo foi responsabilidade de um monge chamado Dionísio, o Pequeno (ou Exíguo). O sujeito era nanico e invocado. Ele se baseou na morte do Rei Herodes, mas errou a conta por uns quatro a seis anos. Já o dia 25 de dezembro foi escolhido para coincidir com as Saturnálias romanas e o nascimento do Sol Invicto. Tudo no embalo dos festejos pagãos.
 
-Poderíamos seguir o calendário Judaico (estaríamos no ano 5.782) ou o Islâmico, o Chinês ou o dos Incas (que tinham semanas de 10 dias e segurança alimentar garantida). Cada povo tem seu Marco Zero para situar o homem no tempo.
+Poderíamos seguir o calendário Judaico (estaríamos no ano 5.786) ou o Islâmico, o Chinês ou o dos Incas (que tinham semanas de 10 dias e segurança alimentar garantida). Cada povo tem seu Marco Zero para situar o homem no tempo.
 
 ## O Marco Zero Digital e o Chacrinha
 
