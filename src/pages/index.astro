@@ -31,7 +31,10 @@ const places = (await getCollection('places'))
 				<p class="hero-kicker" style="max-width: 62ch;">
 					Um canto pra juntar lembranças e reflexões, sem barulho. Texto bom é texto que respira.
 				</p>
+				<div class="hero-actions">
 				<a class="cta" href="/blog">Ler os textos</a>
+				<a class="cta cta-outline" href="/pdfs/livro-completo.pdf" download>Baixar livro (PDF)</a>
+			</div>
 			</div>
 		</section>
 
@@ -94,6 +97,23 @@ const places = (await getCollection('places'))
 		<Footer />
 
 		<style>
+			.hero-actions {
+				display: flex;
+				gap: var(--space-md);
+				flex-wrap: wrap;
+			}
+
+			.cta-outline {
+				background: transparent;
+				color: var(--accent-primary);
+				border: 1px solid var(--accent-primary);
+			}
+
+			.cta-outline:hover {
+				background: var(--accent-primary);
+				color: white;
+			}
+
 			.post-grid-home {
 				grid-template-columns: repeat(4, 1fr);
 			}

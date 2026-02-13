@@ -1,5 +1,8 @@
 # build output
 dist/
+
+# generated PDFs (built in CI)
+public/pdfs/
 # generated types
 .astro/
 
