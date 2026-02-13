@@ -1,0 +1,37 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<BaseHead title={`Página não encontrada — ${SITE_TITLE}`} description="A página que procuras não existe ou foi movida." />
+	</head>
+	<body>
+		<Header />
+
+		<section class="hero">
+			<div class="container hero-inner" style="text-align: center;">
+				<h1 style="font-size: clamp(34px, 4.5vw, 56px);">404</h1>
+				<p class="hero-kicker" style="max-width: 100%;">
+					Essa prosa não mora mais aqui — ou nunca morou.
+				</p>
+			</div>
+		</section>
+
+		<main class="section">
+			<div class="reading-width" style="text-align: center;">
+				<p>Pode ser que o endereço mudou ou que a página foi removida.</p>
+				<div style="display: flex; gap: var(--space-md); justify-content: center; margin-top: var(--space-lg);">
+					<a class="cta" href="/">Voltar ao início</a>
+					<a class="cta" href="/buscar" style="background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border-card);">Buscar</a>
+				</div>
+			</div>
+		</main>
+
+		<Footer />
+	</body>
+</html>

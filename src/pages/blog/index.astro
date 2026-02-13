@@ -5,7 +5,7 @@ import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
 import Header from '../../components/Header.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+import { SITE_TITLE } from '../../consts';
 
 const posts = (await getCollection('blog'))
 	.filter((p) => !p.data.draft)
@@ -33,7 +33,7 @@ const breadcrumbLD = {
 <!doctype html>
 <html lang="pt-BR">
 	<head>
-		<BaseHead title={`Textos — ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+		<BaseHead title={`Textos — ${SITE_TITLE}`} description="Todos os textos do Adi: memórias, causos, ensaios e prosas de diferentes lugares e tempos." />
 		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbLD)} />
 	</head>
 	<body>

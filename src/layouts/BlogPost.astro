@@ -81,7 +81,7 @@ const breadcrumbLD = {
 
 <html lang="pt-BR">
 	<head>
-		<BaseHead title={pageTitle} description={description} imageUrl={imageUrl} />
+		<BaseHead title={pageTitle} description={description} imageUrl={imageUrl} ogType="article" pubDate={pubDate} updatedDate={updatedDate} />
 		<script type="application/ld+json" set:html={JSON.stringify(blogPostingLD)} />
 		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbLD)} />
 	</head>
