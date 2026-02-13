@@ -8,7 +8,7 @@ placeLabel: "Marco Zero"
 heroImage: ./images/o-marco-zero-da-confusao-cover.png
 ---
 
-Aprendemos que a história nasce com a escrita, decifrada por Champollion em 1830. Os arqueólogos afirmam que os hieróglifos têm cinco mil anos — coisa que eu, particularmente, duvido. Nossa história ocidental é contada pelos livros bíblicos, repletos de narrativas e lendas. Veja o caso do Dilúvio: a ciência comprova a grande inundação, mas Noé e Gilgamesh? É inimaginável alguém construir um Titanic de madeira capaz de abrigar todas as espécies. Se a engenharia náutica brasileira não conseguiu reproduzir uma simples caravela para os festejos dos 500 anos do Descobrimento, como Noé teria realizado tamanha proeza?
+Aprendemos que a história nasce com a escrita, decifrada por Champollion em 1822. Os arqueólogos afirmam que os hieróglifos têm cinco mil anos — coisa que eu, particularmente, duvido. Nossa história ocidental é contada pelos livros bíblicos, repletos de narrativas e lendas. Veja o caso do Dilúvio: a ciência comprova a grande inundação, mas Noé e Gilgamesh? É inimaginável alguém construir um Titanic de madeira capaz de abrigar todas as espécies. Se a engenharia náutica brasileira não conseguiu reproduzir uma simples caravela para os festejos dos 500 anos do Descobrimento, como Noé teria realizado tamanha proeza?
 
 ## Noé e a Fria do Ararat
 
@@ -16,7 +16,7 @@ Dizem que a Arca encalhou no Monte Ararat, a cinco mil metros de altitude. Se fo
 
 ## Do Paraíso à Favela: O Marco Zero da Sobrevivência
 
-No Brasil, D. João VI e sua comitiva, fugindo de Napoleão, acamparam na praia — e o povo que já estava ali teve que subir o morro. Foi, digamos, o marco zero das favelas. Mas bem antes disso, Adão já havia sido expulso às pressas do Paraíso por causa de uma serpente encrenqueira. Foi o fim da moleza.
+No Brasil, D. João VI e sua comitiva, fugindo de Napoleão, acamparam na praia — e o povo que já estava ali teve que subir o morro. Foi, digamos, o prenúncio das favelas. Mas bem antes disso, Adão já havia sido expulso às pressas do Paraíso por causa de uma serpente encrenqueira. Foi o fim da moleza.
 
 Eu acredito que o Paraíso era à beira-mar, com lagosta à vontade e pomar na encosta. Só quando foram expulsos é que Adão e Eva se deram conta de que estavam com a bunda ao relento. Tiveram que ir pra roça. E lá, o pau comeu entre os filhos porque as vaquinhas de um invadiram a lavoura do outro — e naquele tempo não existia arame farpado. Caim, o primeiro assassino da história, saiu pelo mundo afora, campeirando feito cusco sem dono.
 
@@ -32,9 +32,9 @@ Depois surgiu Abraão. Um "alcaide" que ouviu uma voz nas montanhas e resolveu s
 
 A saga continua com Moisés, uma espécie de "ministro da infraestrutura" do Egito que resolveu libertar seu povo da escravidão. Atravessou o mar sem molhar a sola do pé e ficou quarenta anos vagando pelo deserto. Pense num povo que só sabia reclamar! Exigiam a volta ao Egito porque lá, pelo menos, tinha "pão com mortadela". Moisés perdeu a paciência, mandou a ordem subir o morro e estabeleceu as Dez Regras na pedra bruta: ai de quem ousasse afrontá-las.
 
-## Davi e Alexandre: Estilingues e Conquistas
+## Davi e Alexandre: Fundas e Conquistas
 
-A vitória definitiva veio com Davi, um guri bom de estilingue que acertou o "zóio" do grandalhão Golias. O menino virou rei, reconquistou Jerusalém e fincou a capital naquele mesmo montinho de pedras onde Abraão quase sacrificou o filho. Davi tinha estrela — uma de seis pontas, símbolo de proteção e resistência que até hoje brilha na bandeira de Israel.
+A vitória definitiva veio com Davi, um guri bom de funda que acertou o "zóio" do grandalhão Golias. O menino virou rei, reconquistou Jerusalém e fincou a capital naquele mesmo montinho de pedras onde Abraão quase sacrificou o filho. Davi tinha estrela — uma de seis pontas, símbolo de proteção e resistência que até hoje brilha na bandeira de Israel.
 
 Depois apareceu Alexandre, o Grande. Queria conquistar o mundo e conquistou. Seu período foi curto — morreu com trinta e poucos anos. E para não confundir os leitores: ele não era o "Xandão" e, pelo que dizem os relatos, nem careca ele era. Mas o mundo mudou com ele, até que surgiu o Império Romano. E os caras eram, como dizemos hoje, "fodões".
 
@@ -52,7 +52,7 @@ A história como conhecemos hoje foi "ajustada" no ano 325, no Concílio de Nice
 
 E o ano zero? Trata-se de uma convenção. O cálculo foi responsabilidade de um monge chamado Dionísio, o Pequeno (ou Exíguo). O sujeito era nanico e invocado. Ele se baseou na morte do Rei Herodes, mas errou a conta por uns três a cinco anos. Já o dia 25 de dezembro foi escolhido para coincidir com as Saturnálias romanas e o nascimento do deus Mitra. Tudo no embalo dos festejos pagãos.
 
-Poderíamos seguir o calendário Judaico (estaríamos no ano 5.782) ou o Islâmico, o Chinês ou o dos Incas (que tinham semanas de 10 dias e segurança alimentar garantida). Cada povo tem seu Marco Zero para situar o homem no tempo.
+Poderíamos seguir o calendário Judaico (estaríamos no ano 5.786) ou o Islâmico, o Chinês ou o dos Incas (que tinham semanas de 10 dias e segurança alimentar garantida). Cada povo tem seu Marco Zero para situar o homem no tempo.
 
 ## O Marco Zero Digital e o Chacrinha
 
