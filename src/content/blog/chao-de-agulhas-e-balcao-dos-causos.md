@@ -1,8 +1,8 @@
 ---
 title: "O Chão de Agulhas e o Balcão dos Causos"
-description: "Lembranças da infância no Paraná de 1957, entre o armazém do pai, a autoridade de dona Ingrácia e as brigas de bodega."
+description: "1957. O frio das araucárias e o balcão de secos e molhados do meu pai. Entre a honra de dona Ingrácia e as brigas de bodega, aprendi sobre a justiça do Paraná antigo."
 pubDate: 2026-02-10
-tags: ["memórias", "história"]
+tags: ["memórias", "história", "paraná", "infância", "causos", "família", "secos-e-molhados"]
 place: "parana"
 placeLabel: "Paraná"
 heroImage: ./images/chao-de-agulhas-e-balcao-dos-causos-cover.png
