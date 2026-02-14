@@ -14,6 +14,7 @@ const blog = defineCollection({
 			place: z.string().optional(), // slug do local (ex.: "curitiba")
 			placeLabel: z.string().optional(), // nome exibido (ex.: "Curitiba")
 			heroImage: image().optional(),
+			heroImageAlt: z.string().optional(),
 		}),
 });
 

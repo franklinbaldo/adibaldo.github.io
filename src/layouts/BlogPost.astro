@@ -14,7 +14,7 @@ type Props = CollectionEntry<'blog'>['data'] & {
 	wordCount?: number;
 };
 
-const { title, description, pubDate, updatedDate, heroImage, tags, place, placeLabel, slug, prev, next, wordCount } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, heroImageAlt, tags, place, placeLabel, slug, prev, next, wordCount } = Astro.props;
 const pageTitle = `${title} — ${SITE_TITLE}`;
 const imageUrl = slug ? `/og/${slug}.png` : undefined;
 
@@ -110,7 +110,7 @@ const breadcrumbLD = {
 
 				{heroImage && (
 					<div class="post-hero">
-						<Image class="post-hero-image" width={1020} height={510} src={heroImage} alt={`Imagem de capa: ${title}`} />
+						<Image class="post-hero-image" width={1020} height={510} src={heroImage} alt={heroImageAlt || `Imagem de capa: ${title}`} />
 					</div>
 				)}
 
