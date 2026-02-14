@@ -8,7 +8,7 @@ placeLabel: "Marco Zero"
 heroImage: ./images/o-marco-zero-da-confusao-cover.png
 ---
 
-Aprendemos que a história nasce com a escrita, decifrada por Champollion em 1822. Os arqueólogos afirmam que os hieróglifos têm cinco mil anos — coisa que eu, particularmente, duvido. Nossa história ocidental é contada pelos livros bíblicos, repletos de narrativas e lendas. Veja o caso do Dilúvio: a ciência comprova a grande inundação, mas Noé e Gilgamesh? É inimaginável alguém construir um Titanic de madeira capaz de abrigar todas as espécies. Se a engenharia náutica brasileira não conseguiu reproduzir uma simples caravela para os festejos dos 500 anos do Descobrimento, como Noé teria realizado tamanha proeza?
+Aprendemos que a história nasce com a escrita (cujos hieróglifos egípcios foram decifrados por Champollion em 1822). Os arqueólogos afirmam que os hieróglifos têm cinco mil anos — coisa que eu, particularmente, duvido. Nossa história ocidental é contada pelos livros bíblicos, repletos de narrativas e lendas. Veja o caso do Dilúvio: a ciência comprova a grande inundação, mas Noé e Gilgamesh? É inimaginável alguém construir um Titanic de madeira capaz de abrigar todas as espécies. Se a engenharia náutica brasileira não conseguiu reproduzir uma simples caravela para os festejos dos 500 anos do Descobrimento, como Noé teria realizado tamanha proeza?
 
 ## Noé e a Fria do Ararat
 
@@ -16,7 +16,7 @@ Dizem que a Arca encalhou no Monte Ararat, a cinco mil metros de altitude. Se fo
 
 ## Do Paraíso à Favela: O Marco Zero da Sobrevivência
 
-No Brasil, D. João VI e sua comitiva, fugindo de Napoleão, acamparam na praia — e o povo que já estava ali teve que subir o morro. Foi, digamos, o marco zero das favelas. Mas bem antes disso, Adão já havia sido expulso às pressas do Paraíso por causa de uma serpente encrenqueira. Foi o fim da moleza.
+No Brasil, costuma-se dizer que D. João VI e sua comitiva, fugindo de Napoleão, acamparam na praia — e o povo que já estava ali teve que subir o morro. Mas o verdadeiro marco zero das favelas surgiu em 1897, com os soldados que voltaram de Canudos e povoaram o Morro da Providência. Mas bem antes disso, Adão já havia sido expulso às pressas do Paraíso por causa de uma serpente encrenqueira. Foi o fim da moleza.
 
 Eu acredito que o Paraíso era à beira-mar, com lagosta à vontade e pomar na encosta. Só quando foram expulsos é que Adão e Eva se deram conta de que estavam com a bunda ao relento. Tiveram que ir pra roça. E lá, o pau comeu entre os filhos porque as vaquinhas de um invadiram a lavoura do outro — e naquele tempo não existia arame farpado. Caim, o primeiro assassino da história, saiu pelo mundo afora, campeirando feito cusco sem dono.
 
@@ -28,7 +28,7 @@ Mas a revolução veio mesmo com a **Roda**. Chamavam-na de "Mó". Mais tarde, o
 
 ## Abraão e Moisés: Invasões e Mortadela
 
-Depois surgiu Abraão. Um "alcaide" que ouviu uma voz nas montanhas e resolveu se mudar para uma terra onde "em se plantando, tudo dá". Foi o marco zero dos Sem Terra, pois o homem foi invadindo regiões onde já tinha gente às pencas. Quase sacrificou o filho Isaac, mas acabou trocando o piá por um bode desgarrado — daí nasceu o "bode expiatório", e o coitado do bicho não tinha nada a ver com a história!
+Depois surgiu Abraão. Um "alcaide" que ouviu uma voz nas montanhas e resolveu se mudar para uma terra onde "em se plantando, tudo dá". Foi o marco zero dos Sem Terra, pois o homem foi invadindo regiões onde já tinha gente às pencas. Quase sacrificou o filho Isaac, mas acabou trocando o piá por um carneiro (o "bode expiatório" de verdade vem de outro ritual hebreu, do Dia do Perdão) — e o coitado do bicho não tinha nada a ver com a história!
 
 A saga continua com Moisés, uma espécie de "ministro da infraestrutura" do Egito que resolveu libertar seu povo da escravidão. Atravessou o mar sem molhar a sola do pé e ficou quarenta anos vagando pelo deserto. Pense num povo que só sabia reclamar! Exigiam a volta ao Egito porque lá, pelo menos, tinha "pão com mortadela". Moisés perdeu a paciência, mandou a ordem subir o morro e estabeleceu as Dez Regras na pedra bruta: ai de quem ousasse afrontá-las.
 
@@ -46,7 +46,7 @@ Jesus transformou água em vinho, ressuscitou mortos e criticava quem vivia na m
 
 ## Niceia e o Acerto de Contas
 
-A história como conhecemos hoje foi "ajustada" no ano 325, no Concílio de Niceia. O Imperador Constantino resolveu apaziguar a balbúrdia do império e botar ordem no pensamento. Ali, Jesus foi oficializado e outros sábios, como Apolônio de Tiana — que dizem também controlava os mares e ressuscitava mortos — foram jogados no ostracismo. É como diz o ditado: *“Com o andar da carruagem, as abóboras se acomodam”*.
+A história como conhecemos hoje foi "ajustada" no ano 325, no Concílio de Niceia. O Imperador Constantino resolveu apaziguar a balbúrdia do império e botar ordem no pensamento. Ali, a divindade de Jesus foi oficializada e outros sábios, como Apolônio de Tiana — que dizem também controlava os mares e ressuscitava mortos — foram jogados no ostracismo. É como diz o ditado: *“Com o andar da carruagem, as abóboras se acomodam”*.
 
 ## O Erro do Monge e a Dança dos Calendários
 
