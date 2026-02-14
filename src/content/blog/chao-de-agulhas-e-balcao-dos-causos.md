@@ -10,7 +10,7 @@ heroImage: ./images/chao-de-agulhas-e-balcao-dos-causos-cover.png
 
 Em 1957, o tempo no Paraná parecia ser medido pela altura dos pinheiros. Para um menino, aquelas araucárias não eram apenas árvores; eram as colunas que seguravam o céu cinzento das manhãs de geada. Eu caminhava para a escola sentindo o estalar das agulhas secas sob o sapato, um som que se misturava ao bater dos meus dentes no frio de arrepiar.
 
-Mas o meu mundo real, a universidade onde aprendi a ler a alma dos homens, ficava no armazém de Secos e Molhados do meu pai. Ali, o movimento era constante e de um colorido que nenhum livro escolar tinha. Vinham de todo lado: uns a pé, com o pó da estrada grudado na pele; outros a cavalo, amarrando os bichos no palanque. Todos de chapéu de palha e facão pendurado na cintura, brilhando como um aviso.
+Mas o meu mundo real, a universidade onde aprendi a ler a alma dos homens, ficava no armazém de [Secos e Molhados](/blog/secos-e-molhados/) do meu pai. Ali, o movimento era constante e de um colorido que nenhum livro escolar tinha. Vinham de todo lado: uns a pé, com o pó da estrada grudado na pele; outros a cavalo, amarrando os bichos no palanque. Todos de chapéu de palha e facão pendurado na cintura, brilhando como um aviso.
 
 Eu, guri, observava tipos como o **Theodoro**, viciado no baralho, e o **Pedrinho Facão**. Mas ninguém causou tanto bafafá quanto o **João Madalena**. Uma feita, ele cismou com uma faca que meu pai teria guardado. A prosa azedou e o Madalena enrolou o reio no chicote pra bater no papai. Meu pai desviou e, num reflexo, arremessou um peso de balança — um quilo de ferro — que pegou de raspão na testa do sujeito.
 
