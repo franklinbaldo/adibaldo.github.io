@@ -47,7 +47,7 @@ O mundo de antanho era igual ao de agora; diferente era o modo de vê-lo. Hoje, 
 
 ## O CAMINHÃOZINHO DE MUDANÇA
 
-Minhas recordações levam-me ao tempo da infância em Barão de Cotegipe, Rio Grande do Sul. Dos sete irmãos, eu era o quarto. Brincávamos entre arvoredos e pedregulhos de pega-pega e esconde-esconde, recitando rimas que mal entendíamos: *"Guiri, guiri gaio... escampa sotto il gaio... alora fatte furbo!"*. Era o som das nossas raízes italianas ditando o ritmo da brincadeira.
+Minhas recordações levam-me ao tempo da infância em [Barão de Cotegipe](/locais/barao-de-cotegipe/), Rio Grande do Sul. Dos sete irmãos, eu era o quarto. Brincávamos entre arvoredos e pedregulhos de pega-pega e esconde-esconde, recitando rimas que mal entendíamos: *"Guiri, guiri gaio... escampa sotto il gaio... alora fatte furbo!"*. Era o som das nossas raízes italianas ditando o ritmo da brincadeira.
 
 Do topo da nossa colina, víamos ao longe, além do vale, uma vila que era o nosso mundo dos sonhos. Imaginávamos uma igreja grande, carroças e uma bodega cheia de caramelos. Um dia, na esperança de que nossos passos fossem mais longos, calçamos as botas grandes de papai. Queríamos atravessar o vale num instante, como se tivéssemos as botas de sete léguas do Pequeno Polegar — personagem que nem conhecíamos. Nossa única história era a do Negrinho do Pastoreio.
 
@@ -87,7 +87,7 @@ Para limpar a capoeira e plantar, papai organizou um **mutirão**. Ver vinte pe�
 
 ### A Bodega do Gigante
 
-Papai, o gigante que nos trouxe, logo virou **bodegueiro**. Nossa casa era o porto seguro de caboclos, italianos e polacos. Tinha de tudo: cachaça, fumo em corda, pólvora e bolacha Maria. Chegavam a cavalo ou a pé, sempre de chapéu de palha e facão na cintura. Tinha o **Theodoro**, viciado no baralho; o **Pedrinho Facão**; o **João Madalena**, que uma vez aprontou um bafafá por causa de uma faca e levou um peso de balança na testa; e tantos outros.
+Papai, o gigante que nos trouxe, logo virou **bodegueiro**. Nossa casa era o porto seguro de caboclos, italianos e polacos. Tinha de tudo: cachaça, fumo em corda, pólvora e bolacha Maria. Chegavam a cavalo ou a pé, sempre de chapéu de palha e facão na cintura. Tinha o **Theodoro**, viciado no baralho; o **Pedrinho Facão**; o [**João Madalena**](/blog/chao-de-agulhas-e-balcao-dos-causos/), que uma vez aprontou um bafafá por causa de uma faca e levou um peso de balança na testa; e tantos outros.
 
 Papai era o conciliador, apartando as confusões da freguesia. E mamãe, **dona Ingrácia**, quando preciso, montava no burro manso e ia até a delegacia "largar os cachorros" nos baderneiros.
 
