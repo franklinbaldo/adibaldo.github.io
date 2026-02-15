@@ -1,8 +1,8 @@
 ---
 title: "Secos e Molhados"
-description: "A saga de uma família gaúcha que cruzou o Rio Uruguai num Chevrolet 51 rumo ao Paraná, em 1957."
+description: "De Barão de Cotegipe a Pato Branco: a saga de uma família gaúcha que cruzou o Rio Uruguai num Chevrolet 51 rumo ao Paraná, em 1957."
 pubDate: 2026-02-12
-tags: ["memórias", "história"]
+tags: ["memórias", "história", "migração", "família", "rio-grande-do-sul", "paraná", "infância", "anos-50"]
 place: "parana"
 placeLabel: "Paraná"
 heroImage: ./images/chao-de-agulhas-e-balcao-dos-causos-cover.png
