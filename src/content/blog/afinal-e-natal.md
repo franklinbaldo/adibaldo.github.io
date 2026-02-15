@@ -1,8 +1,8 @@
 ---
 title: "Afinal, é Natal (ou o uso do cachimbo que entortou a boca)"
-description: "Do cachorrinho de porcelana de quatro centímetros à melancolia de Assis Valente: uma reflexão sobre a saudade e as convenções do Natal."
+description: "Uma memória de infância com um cachorrinho de porcelana e a melancolia de Assis Valente: reflexões sobre a saudade e a verdadeira origem do Natal."
 pubDate: 2026-12-12
-tags: ["memórias", "ensaios"]
+tags: ["memórias", "ensaios", "natal", "assis valente", "infância", "nostalgia"]
 place: "mundo"
 placeLabel: "Memórias"
 heroImage: ./images/afinal-e-natal-cover.png
@@ -14,7 +14,7 @@ Mas Natal é Natal. Descobri depois que Jesus não nasceu em 25 de dezembro; nin
 
 Os cristãos mantiveram o costume de distribuir presentes, e um senhor piedoso chamado Nicolau deu início à tradição dos brinquedos. O comércio, claro, se apropriou de tudo. Hoje, Papai Noel me parece um velho bizarro, guiado por um “drone” que distribui presentes conforme a classe social do presenteado. Que saudade do meu cachorrinho de porcelana...
 
-### Felicidade é brinquedo que não tem?
+## Felicidade é brinquedo que não tem?
 
 Lembro-me da marchinha de Assis Valente, composta em 1932 num quarto de pensão em Icaraí:
 
