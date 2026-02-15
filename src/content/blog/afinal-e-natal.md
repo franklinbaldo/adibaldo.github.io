@@ -10,7 +10,7 @@ heroImage: ./images/afinal-e-natal-cover.png
 
 Lembro-me bem, deveria ter uns oito anos. Ganhei do Papai Noel um bibelô de porcelana: um cachorrinho de não mais de quatro centímetros. Guardei-o por muito tempo, com aquela felicidade pura de quem acredita que o bom velhinho lembrou de nós. Ver o presépio na igreja era maravilhoso... até que a gente cresce e descobre que o presépio foi uma invenção de São Francisco de Assis e que o boi e o jumento entraram na cena só para atazanar os judeus da época.
 
-Mas Natal é Natal. Descobri depois que Jesus não nasceu em 25 de dezembro; ninguém sabe ao certo quando foi. Em 354 d.C., o Papa Libério apenas oficializou a data para "tomar" o espaço das Saturnálias romanas e do Sol Vitorioso dos persas. Como diz o ditado: *“É o uso do cachimbo que entorta a boca”*.
+Mas Natal é Natal. Descobri depois que Jesus não nasceu em 25 de dezembro; ninguém sabe ao certo quando foi. Em 354 d.C., o Papa Libério apenas oficializou a data para "tomar" o espaço das Saturnálias romanas e do culto ao Sol Invicto (*Sol Invictus*). Como diz o ditado: *“É o uso do cachimbo que entorta a boca”*.
 
 Os cristãos mantiveram o costume de distribuir presentes, e um senhor piedoso chamado Nicolau deu início à tradição dos brinquedos. O comércio, claro, se apropriou de tudo. Hoje, Papai Noel me parece um velho bizarro, guiado por um “drone” que distribui presentes conforme a classe social do presenteado. Que saudade do meu cachorrinho de porcelana...
 
