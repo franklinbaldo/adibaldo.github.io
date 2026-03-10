@@ -1,7 +1,9 @@
 ---
 title: "E Assim Fizemos"
 description: "Um manifesto sobre a ocupação e a construção de Rondônia."
-pubDate: 2026-02-13
+pubDate: 2026-02-13
+heroImage: ./images/e-assim-fizemos-cover.png
+heroImageAlt: "Pioneiros abrindo caminho na floresta amazônica, construindo Rondônia nos anos 1970"
 tags: ["memórias", "rondônia", "ensaios"]
 place: "rondonia"
 placeLabel: "Rondônia"
