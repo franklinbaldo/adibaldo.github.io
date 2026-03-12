@@ -10,11 +10,15 @@ Minhas recordações levam-me ao tempo de infância. Dos então sete, eu era o q
 
 Não sabíamos o significado, mas brincávamos de esconde. *(Você no céu será o mais bonito. Segundo o marinheiro para ir na pescaria, três laranjas e três limões, pimfe, pafe te mando embora.)*
 
+![Crianças brincando no campo aberto, pinheiros ao fundo — o tempo de infância](./images/caminhao-criancas2.png)
+
 Do topo da campina, via-se ao longe, além do vale, uma vila. Imaginávamos como seria. Uma igreja grande, muitas carroças, uma bodega com caramelos e brinquedos. O sonho era atravessar o vale e com alguns passos chegar lá. De uma feita, calçamos as botas de papai, imaginando que com elas nossos passos seriam longos e lá chegaríamos num instante. Sequer conhecíamos a história do Pequeno Polegar e do Gigante com botas de sete-léguas. Quem nos poderia contar? Tudo o que ouvíamos era a história do Negrinho do Pastoreio. Pobre Negrinho do Pastoreio. Nossa sina era melhor que a dele. Não tínhamos que procurar cavalos na escuridão. Porém, tínhamos o desejo de transpor o vale num passo de mágica.
 
 Um dia, no começo do inverno, papai nos disse: — vamos mudar, vamos embora. — O que seria isso? Ir embora, mudar?... Lembro apenas que certa manhã apareceu um caminhão e tudo foi carregado. Camas, panelas, galinhas, porcos, uma vaca, o burro e até os dois cachorros. Ficou o gato, que foi pro mato, que o fogo queimou, que a água apagou, que o boi bebeu, que foi puxar milho, que o padre levou e foi por ali foi e por ali sumiu.
 
 Partimos por volta do meio dia. Todos os seis, mais papai e tio Ângelo acomodados sobre a carga. Na cabine, além do chofer, foi mamãe com o maninho menor de apenas dois anos e mais um na barriga. Logo chegamos na sonhada vila. Tudo que lembro: uma bodega, algumas pessoas, abraços de despedida e de alguém que nos deu um punhado de caramelos.
+
+![O caminhãozinho de mudança — família, animais e tudo carregado numa só viagem](./images/caminhao-caminhao.png)
 
 Seguimos viagem. Logo mais transpomos o rio Uruguai. Subimos a encosta e já noitinha chegamos em uma cidade. Um assombro. Casas com luzes que não se pareciam com velas ou lamparinas. Papai nos disse ser luz elétrica. Pousamos em um hotel. No quarto, além de camas, uma bacia, um jarro com água e ao pé da cama o conhecido pinico.
 
@@ -40,9 +44,9 @@ Preparamos os chapéus com capim para o burrinho do Papai Noel. No amanhecer o c
 
 Mais alguns dias mudamos mais acolá, e de repente estávamos dentro de uma bodega. Não aquela da vila, mas uma instalada dentro da nossa casa. Papai agora era bodegueiro. Havia de tudo um pouco. Cachaça, fumo em corda, rapadura, chumbo, pólvora, ferramentas, tecidos e armarinhos, caramelos e bolacha maria. Tudo fluía na base de troca. Cereais, galinhas e até serviços. Era uma freguesia bem eclética. Os caboclos, a italianada, e alguns polacos. De quando em vez uma confusão, sempre apartada por papai que era o conciliador. Não podia espantar a freguesia.
 
-## A escola e o mundo lá fora
-
 ![A bodega do papai — cachaça, fumo em corda, rapadura, a freguesia eclética](./images/caminhao-bodega.png)
+
+## A escola e o mundo lá fora
 
 A menos de dois quilômetros, uma escola que também servia de capela. Lá íamos para a reza aos domingos e durante a semana para prender o ABC. Sol, chuva, barro, geada e apenas chinelinhos nos pés e *"guarda-passo"* à tiracolo — e dentro um lápis, uma borracha, um caderno, a cartilha e uma batata cozida para o lanche. Era assim. Aprender a ler, escrever, fazer continhas, as cores da bandeira e catecismo. Pedro Álvares Cabral descobriu o Brasil e Jesus nasceu em Belém numa manjedoura. O que seria uma manjedoura? Uma palavra esquisita. Tão esquisita quanto os reis magos e Herodes. José e Maria, tudo bem — mas Herodes?... Não dava nem pra imaginar alguém com esse nome.
 
@@ -66,8 +70,6 @@ No início dos anos oitenta, como tantos outros, fui em busca do alardeado novo 
 
 Migrantes do sul, nordeste e sudeste em busca da terra prometida, da sobrevivência e da riqueza. Exploração e madeira. Ganância, bravuras, aventureiros e gente humilde. Todos juntos e misturados. Agricultores, comerciantes, profissionais liberais, médicos, engenheiros. Coragem, suor e resiliência. Nada muito diferente da canção que veio do tempo de antanho — e no caminhão de mudança, reescrita por Vinícius de Moraes:
 
-
-
 > *Tem certos dias em que eu penso em minha gente e sinto assim todo o meu peito se apertar.*\
 > *Porque parece que acontece de repente, feito um desejo de eu viver sem me notar.*\
 > *Igual a como quando eu passo no subúrbio, eu muito bem vindo de trem de algum lugar.*\
@@ -90,17 +92,17 @@ Naquela campina vi muita gente em busca de um novo eldorado. No corredor, parece
 
 Foi só uma agulhada e, como se fosse um esturro na floresta, tudo silenciou. Acordei no clarear do outro dia. Pela janela do hospital vi a copada de um pinheiro e ouvi o cantar de um pássaro. Não era o pio do biscateiro. Reconheci o harmonioso canto do sabiá.
 
+Ainda sob os efeitos da anestesia, entendi que meu coração pulsava. Depois, mirando o teto, senti o frio. O frio do mês de agosto. Tive a sensação de estar no topo do caminhãozinho, vendo os campos cobertos de geada. A geada fria que queima o assa-peixe, que rebrota na primavera, para florir e produzir o melhor dos pólens e o mais gostoso mel.
+
 ![UTI — aparelhos em primeiro plano, janela ao fundo com o pinheiro e o sabiá](./images/caminhao-uti.png)
 
-Ainda sob os efeitos da anestesia, entendi que meu coração pulsava. Depois, mirando o teto, senti o frio. O frio do mês de agosto. Tive a sensação de estar no topo do caminhãozinho, vendo os campos cobertos de geada. A geada fria que queima o assa-peixe, que rebrota na primavera, para florir e produzir o melhor dos pólens e o mais gostoso mel.
+![O sabiá no galho da araucária — o canto que anunciou a vida continuando](./images/caminhao-sabia2.png)
 
 ## Continuidade
 
 No caminho natural das pedras, dei entrada no INSS e logo veio a aposentadoria. Natal. Oh, oh, oh. Coração batendo e a vida continuou. Não é um começo, nem recomeço, simplesmente continuidade.
 
 Ver os filhos transpondo os vales e netos brincando de *"Sonic"* dá uma alegria esquisita. Alegria por saber que além do vale existem campinas e outras coisas que a vida ensina. Alegria esquisita de saber que o que se começa, de alguma forma termina.
-
-![Crianças brincando no campo aberto, pinheiros ao fundo — o ciclo que continua](./images/caminhao-criancas2.png)
 
 Por vezes, vem a saudade. Saudade do caminhãozinho de mudança e até daquilo que gostaríamos ter vivido. Sentir saudade é a certeza de estar vivo. É o prêmio da vida.
 
