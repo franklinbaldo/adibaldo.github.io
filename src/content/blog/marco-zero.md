@@ -256,7 +256,7 @@ Não sabemos a origem do universo, ou a origem do próprio homem. Sabemos de um 
 
 De antanho havia um mundo que era igual ao de agora. Diferente era o modo de vê-lo. Talvez fosse grande.
 
-![Homem na encruzilhada, olhando pro horizonte — o século XX às costas, o futuro à frente](./images/antanho-gravura.png)
+![Antanho e agora — crianças no balanço à esquerda, crianças no celular à direita](./images/antanho-gravura2.png)
 
 Agora é o de agora. Nem grande nem pequeno, o suficiente para viver, sentir as estações e fazer as coisas à duas ou quatro mãos. Conforme a canção, interpretada pelo cantor do século, Frank Sinatra:
 
