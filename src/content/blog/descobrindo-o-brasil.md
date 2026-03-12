@@ -9,6 +9,8 @@ Foi em 09 de março de 1500 que Pedro Álvares Cabral partiu de Lisboa, rumo às
 
 Muito tempo depois, em 09 de março de 1981, parti de Curitiba, rumo a Rondônia, aqui chegando somente no dia 22. Conclusão: de Lisboa ao Brasil de caravela, foram necessários 40 dias, ao passo que de Curitiba a Rondônia, de busão, apenas 12. Cabral teve que se desviar das calmarias na costa africana e eu, para chegar em Rondônia, tive que me desviar dos atoleiros da BR 364.
 
+![O busão atolado na BR 364 — 12 dias de Curitiba a Rondônia](./images/descobrindo-onibus.png)
+
 Os atoleiros da BR 364 e outras estradas que rasgaram a floresta amazônica — notadamente Rondônia e Mato Grosso — são um capítulo à parte da epopeia da conquista do Norte do Brasil, abaixo do Rio Amazonas.
 
 Cabral permaneceu alguns dias em Porto Seguro. Fazendo o quê, não sei. Certo é que descobriu muitas índias — e os portugas queriam ficar por ali para fazer umas selfies na praia.
