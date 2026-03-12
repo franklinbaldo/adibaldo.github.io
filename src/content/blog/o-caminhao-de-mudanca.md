@@ -18,8 +18,6 @@ Um dia, no começo do inverno, papai nos disse: — vamos mudar, vamos embora. �
 
 Partimos por volta do meio dia. Todos os seis, mais papai e tio Ângelo acomodados sobre a carga. Na cabine, além do chofer, foi mamãe com o maninho menor de apenas dois anos e mais um na barriga. Logo chegamos na sonhada vila. Tudo que lembro: uma bodega, algumas pessoas, abraços de despedida e de alguém que nos deu um punhado de caramelos.
 
-![O caminhãozinho de mudança — família, animais e tudo carregado numa só viagem](./images/caminhao-caminhao.png)
-
 Seguimos viagem. Logo mais transpomos o rio Uruguai. Subimos a encosta e já noitinha chegamos em uma cidade. Um assombro. Casas com luzes que não se pareciam com velas ou lamparinas. Papai nos disse ser luz elétrica. Pousamos em um hotel. No quarto, além de camas, uma bacia, um jarro com água e ao pé da cama o conhecido pinico.
 
 A viagem seguiu logo no clarear do dia. Passamos por descampados cobertos de geada. O frio era cortante, todavia, estávamos bem agasalhados, enrolados nos acolchoados de penas de galinha. Tão curiosos quanto nós, estavam os dois cachorros encoleirados, o burro e a vaca confinados na traseira do caminhão. Já não lembro do quanto mais vimos, além de o vento ter arrancado o chapéu da cabeça do tio Ângelo que nos acompanhava. Jamais imaginara ir além do vale, além da vila.
