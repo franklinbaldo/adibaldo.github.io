@@ -66,7 +66,7 @@ No início dos anos oitenta, como tantos outros, fui em busca do alardeado novo 
 
 Migrantes do sul, nordeste e sudeste em busca da terra prometida, da sobrevivência e da riqueza. Exploração e madeira. Ganância, bravuras, aventureiros e gente humilde. Todos juntos e misturados. Agricultores, comerciantes, profissionais liberais, médicos, engenheiros. Coragem, suor e resiliência. Nada muito diferente da canção que veio do tempo de antanho — e no caminhão de mudança, reescrita por Vinícius de Moraes:
 
-![A fronteira de Rondônia — homens com cacaio nas costas, foice na mão, floresta à frente](./images/caminhao-rondonia.png)
+![Homens de costas entrando na mata de Rondônia, serraria ao fundo e o cachorro do lado](./images/caminhao-rondonia2.png)
 
 
 
