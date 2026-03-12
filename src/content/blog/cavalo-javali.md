@@ -7,7 +7,13 @@ tags: ["memórias", "causos", "infância", "paraná"]
 
 Talvez fosse o ano de 1958. Já fazia um tempo que morávamos ali onde papai se estabelecera com a bodega. Fieiras de bois arrastando madeiras. Caminhões com reboque e homens puxando catracas. Apitos de serrarias. Para onde ia tanta madeira? — São Paulo, Brasília, uma cidade que se expandia e outra que nascia.
 
-Verdade é que essa epopeia nada tem a ver com o cavalo "Javali", embora emblemático. O novo cotidiano era quase o mesmo do Rio Grande do Sul. Logo após o anoitecer e do jantar, ficávamos nos aquecendo em torno do fogão, enquanto batatas eram cozidas para o café da manhã. Isso durava mais ou menos quarenta minutos, por vezes uma hora, em conformidade com o tamanho das batatas. Havia batatas enormes, ou pra lá de grandes. A lavareda alimentada com nó-de-pinho avermelhava a chapa. Ficávamos todos ali na vigília tagarelando sobre os frequentadores da bodega. Mais das vezes só para um trago. Outros vinham para comprar do básico: farinha, açúcar, erva, ferramentas; por vezes senhoras e moças em busca de panos brins, chitas, pelúcia e adereços. Não raro apareciam uns piás apressados e estrafegados em busca de cibalenas, xaropes, elixires etc. Lembro de alguns: Emiliano, Gumercindo, Veio Bento, Theodorão, Pedrinho Fação. A lista seria enorme, porém no momento não interessa — porque o causo é outro.
+Verdade é que essa epopeia nada tem a ver com o cavalo "Javali", embora emblemático. O novo cotidiano era quase o mesmo do Rio Grande do Sul.
+
+![O pai observando a molecada ao redor do fogão — pinhões na chapa, batatas na panela](./images/javali-fogao.png)
+
+Logo após o anoitecer e do jantar, ficávamos nos aquecendo em torno do fogão, enquanto batatas eram cozidas para o café da manhã. Isso durava mais ou menos quarenta minutos, por vezes uma hora, em conformidade com o tamanho das batatas. Havia batatas enormes, ou pra lá de grandes. A lavareda alimentada com nó-de-pinho avermelhava a chapa.
+
+Ficávamos todos ali na vigília tagarelando sobre os frequentadores da bodega. Mais das vezes só para um trago. Outros vinham para comprar do básico: farinha, açúcar, erva, ferramentas; por vezes senhoras e moças em busca de panos brins, chitas, pelúcia e adereços. Não raro apareciam uns piás apressados e estrafegados em busca de cibalenas, xaropes, elixires etc. Lembro de alguns: Emiliano, Gumercindo, Veio Bento, Theodorão, Pedrinho Fação. A lista seria enorme, porém no momento não interessa — porque o causo é outro.
 
 Conforme disse e reitero *"hic et nunc"*: estávamos ali ao redor do fogão, e justamente naquele dia assávamos pinhões na chapa enquanto as batatas ferviam expremidinhas na panela, quando alguém comentou do "Cavalo Javali". Um cavalo que papai possuía no Rio Grande do Sul — na verdade um matungo. O cavalo talvez seja a lembrança mais marcante dos meus tempos de guri.
 
@@ -116,4 +122,5 @@ Diante dessa barbaridade, termino o causo, lamentando que aquele respeitável e 
 *Suave brisa da primavera.*\
 *Upa, upa cavalinho;*\
 *Do jeitinho que eu quiz.*\
-*Tem cabelo enroladinho.*
+*Tem cabelo enroladinho.*\
+*Olhos verdes, boca e nariz.*
