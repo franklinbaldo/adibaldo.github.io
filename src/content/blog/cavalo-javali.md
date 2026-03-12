@@ -5,8 +5,6 @@ pubDate: 2026-03-12
 tags: ["memórias", "causos", "infância", "paraná"]
 ---
 
-![O Javali — tordilho, risonho, com aquela cara de quem sabe mais do que conta](./images/javali-risonho.png)
-
 Talvez fosse o ano de 1958. Já fazia um tempo que morávamos ali onde papai se estabelecera com a bodega. Fieiras de bois arrastando madeiras. Caminhões com reboque e homens puxando catracas. Apitos de serrarias. Para onde ia tanta madeira? — São Paulo, Brasília, uma cidade que se expandia e outra que nascia.
 
 Verdade é que essa epopeia nada tem a ver com o cavalo "Javali", embora emblemático. O novo cotidiano era quase o mesmo do Rio Grande do Sul.
@@ -56,6 +54,8 @@ Olhei pra todas as bandas e, meio ressabiado, falei:
 — Na madrugada escutei o "grute-grute", imaginei que o cavalo estivesse comendo um pedaço de abóbora, mas que tenha comido toda, acho que não.
 
 Ficou o mistério. Quem mais poderia ter comido aquela abóbora se ali só estava o "Javali"?...
+
+![O Javali — tordilho, risonho, com aquela cara de quem sabe mais do que conta](./images/javali-risonho.png)
 
 Sucedeu que aquele namoro não deu certo. Passou um tempo e arrumei por namorada a mãe de vocês. Resolvemos casar e tive que vender o revólver e o cavalo para comprar as coisas mais necessárias. Comprei uma vaca, uma porca, dois terneiros, os quais depois fui amansando — e deu uma boa junta. Só anos mais tarde é que comprei uma carroça, essa que está aí. Antes eu pegava emprestado do vizinho que tinha duas.
 
