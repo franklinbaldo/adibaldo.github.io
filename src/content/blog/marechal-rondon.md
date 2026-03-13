@@ -2,8 +2,8 @@
 title: "Marechal Cândido da Silva Rondon: O Herói Pouco Conhecido"
 description: "Um resumo da vida do Marechal Rondon: suas expedições, a expedição com Theodore Roosevelt, o Marechal que ligou o Brasil de ponta a ponta."
 pubDate: "2026-03-13"
-heroImage: "./images/rondon-jovem.jpg"
-heroImageAlt: "Marechal Cândido Rondon jovem, explorador da Amazônia."
+heroImage: "./images/rondon-cover.png"
+heroImageAlt: "Linha telegráfica na floresta amazônica — a obra do Marechal Rondon."
 tags: ["história", "rondônia", "marechal-rondon", "expedições"]
 place: "cuiaba"
 placeLabel: "Cuiabá"
