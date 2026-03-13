@@ -32,3 +32,5 @@ Não demorou e chegamos ao destino sob uma forte chuva. O táxi parou na porta d
 Clareou o dia e fui em busca da única referência que tinha daquele lugar: um paranaense nascido em Santa Catarina que havia migrado para Rondônia há alguns anos e era dono de serraria. Não foi difícil encontrá-lo. Recebeu-me muito bem, conforme os costumes. Forasteiro tem que ser tratado com o pisca de alerta. Em seguida, apresentou-me a um advogado paraibano. Às oito da manhã eu estava acomodado em seu escritório. Estava tudo certo. Ali era o fim da picada. Só faltava dinheiro para comer e lugar para dormir.
 
 *(Continua...)*
+
+![Aviãozinho da TABA](./images/foiporali-taba-vinheta.png)
