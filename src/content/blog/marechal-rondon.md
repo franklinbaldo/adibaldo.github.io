@@ -1,41 +1,41 @@
 ---
-title: "Cândido Rondon: O Herói do Rio da Dúvida"
-description: "A história fascinante do Marechal Rondon, sua expedição com o presidente Roosevelt e a jogada de mestre que protegeu as riquezas de Rondônia."
-pubDate: "2026-02-16"
-heroImage: "./images/2026-02-16-rondon-roosevelt.png"
-heroImageAlt: "Pintura histórica do Marechal Rondon e Theodore Roosevelt na floresta amazônica, às margens do Rio da Dúvida."
-tags: ["rondon", "roosevelt", "história", "rondônia", "exploração", "memórias"]
+title: "Marechal Cândido da Silva Rondon: O Herói Pouco Conhecido"
+description: "Um resumo da vida do Marechal Rondon: suas expedições, a expedição com Theodore Roosevelt, o Marechal que ligou o Brasil de ponta a ponta."
+pubDate: "2026-03-13"
+heroImage: "./images/rondon-jovem.jpg"
+heroImageAlt: "Marechal Cândido Rondon jovem, explorador da Amazônia."
+tags: ["história", "rondônia", "marechal-rondon", "expedições"]
+place: "cuiaba"
+placeLabel: "Cuiabá"
 ---
 
-### O Herói Pouco Conhecido
+Cândido da Silva Rondon — baixinho, "tarracudo", inteligente e destemido. Cruza de índio com francês. Não dominava o inglês, mas foi guia do presidente Theodore Roosevelt pela Floresta Amazônica.
 
-Baixinho, “tarracudo”, inteligente e destemido. Uma cruza de índio com francês. Não dominava o inglês, mas foi o guia do presidente Theodore Roosevelt pela imensidão da Floresta Amazônica. Estamos falando de Cândido Mariano da Silva Rondon, nascido em Santo Antônio de Leverger, Mato Grosso, em 1865. 
+![Marechal Cândido Rondon jovem, explorador da Amazônia.](./images/rondon-jovem.jpg)
+*Cândido Rondon jovem em expedição pela selva.*
 
-Militar de carreira, humanista por vocação e Marechal por mérito, falecido em 1958. Em sua homenagem, o Território Federal do Guaporé passou a se chamar Território Federal de Rondônia — hoje, o nosso próspero Estado de [Rondônia](/blog/rondonia-por-ali-fui-e-por-aqui-estou/).
+Nascido em Santo Antônio de Leverger, ao costado de Cuiabá, em 1865. Apreciador de peixe com piqui. Foi militar, tendo chegado ao posto de Marechal. Faleceu em 1958. Em sua homenagem, o Território Federal do Guaporé passou a se chamar Território Federal de Rondônia, hoje Estado de Rondônia.
 
-### O Rio da Dúvida e o Pulo do Gato
+Construiu a linha telegráfica estabelecendo a comunicação entre a capital da República, Rio de Janeiro, e a cidade de Rio Branco, no Acre, com o marcante trecho entre Cuiabá e Porto Velho.
 
-Cândido Rondon foi o cérebro por trás da linha telegráfica que estabeleceu a comunicação entre a capital da República, o Rio de Janeiro, e a longínqua Rio Branco, no Acre. O trecho entre Cuiabá e Porto Velho foi uma epopeia à parte.
+> "Durante o governo do presidente Washington Luís foi criado o Serviço de Inspeção de Fronteiras para vigiar e nacionalizar as fronteiras. Para chefiá-lo foi nomeado o general Cândido Mariano da Silva Rondon. Foram visitadas as fronteiras do Oiapoque, girando para oeste e para o sul através das fronteiras da Guiana Francesa, Guiana, Suriname, Venezuela, Colômbia, Peru, Bolívia, Paraguai, Argentina e Uruguai." ([Fonte: Brasiliana Fotográfica](https://brasilianafotografica.bn.gov.br/?p=17506))
 
-Em 1913, Rondon recebeu um convite inusitado: guiar o ex-presidente americano Theodore Roosevelt em uma expedição para solucionar um problema hidrogeográfico. Roosevelt, um aventureiro nato, queria descobrir a nascente do "Rio da Confusão". 
+Como dito, Cândido Rondon foi guia de Roosevelt na Expedição de 1913 e 1914, quando seguiram o curso do Rio da Dúvida, antes denominado Rio da Confusão, hoje Rio Roosevelt. Na verdade, é um rio cheio de curvas que nasce em Rondônia, passa por Mato Grosso e termina no Amazonas. Foi denominado Rio Roosevelt em homenagem ao americano Theodore Roosevelt, que se mostrou tão interessado em descobrir sua nascente.
 
-Rondon, que conhecia cada pau daquele caminho, fez um ângulo de 70 graus seguindo rumo ao rio, para depois retomar seu trajeto original. Para justificar, denominou o córrego de **Rio da Dúvida** (hoje Rio Roosevelt). 
+A expedição teve início em Cáceres com 15 pessoas. Certo é que não é um rio navegável a ponto de não ter despertado o interesse da marinha americana. Podemos admitir que Roosevelt era um aventureiro e queria ter uma experiência de selva. Para isso, nada melhor que convidar Cândido Rondon como companheiro de aventura.
 
-![Expedição Rondon-Roosevelt](./images/2026-02-16-rondon-roosevelt.png)
+Buscaram a nascente na Chapada dos Parecis, atual município de Vilhena. Descobriram que ele é afluente do Rio Aripuanã. Tudo bem. Devem ter matado algumas onças e caçado algumas borboletas para serem colocadas em algum museu de Nova York. O curioso é que, anos antes, Rondon ao construir a Linha Telegráfica, fez um ângulo de 70 graus seguindo rumo ao Rio da Confusão, para depois retomar seu trajeto rumo a Porto Velho. Diga-se, no entanto, que Rondon era "macaco velho" e conhecia cada pau daquele caminho. Não teria ele cometido um engano. Foi uma confusão, ou uma fusão de coisas. Para justificar denominou o córrego de Rio da Dúvida. Os trabalhos de Rondon já corriam o mundo, foi então que recebeu o convite de Roosevelt para juntos solucionarem o problema hidrogeográfico.
 
-Aqui é onde a porca torce o rabo. Rondon, estrategista nato, espalhou o que hoje chamaríamos de uma "Fake News" sobre a existência de uma tribo de índios com flechas com pontas de ouro e diamantes. Bravata? Talvez. Mas o fato é que, não longe das nascentes do Rio da Dúvida, existe hoje uma das maiores minas de diamantes do mundo, justamente na reserva Roosevelt. 
+É aqui que a porca torce o rabo. Rondon, quando da construção da linha telegráfica, alardeou, para não dizer que relatou, espalhou uma "FAKE NEWS" sobre a existência de uma tribo de índios com flechas com ponta de ouro e enfeitadas com pedras de diamantes. Afinal de contas, ele também tinha direito de contar bravatas ou lendas.
 
-Não teria Rondon feito essa "confusão" propositalmente para não ensinar o caminho das pedras ao americano? 
+Fawcett, explorador e aventureiro inglês, já tinha enfiado seu nariz pela Bolívia à procura de uma cidade perdida. Depois se enfiou pelo Brasil e acabou se perdendo na Serra do Roncador, MT. Sumiu e nunca mais se teve notícia. Verdade é que estava bem longe do Rio da Dúvida. A confusão deve ter sido outra.
 
-### O Humanista e o Prêmio Nobel
+Verdade é que não longe das nascentes do Rio da Dúvida existe uma das maiores minas de diamantes do mundo, justamente na reserva Roosevelt. A pergunta que não quer calar: não seria isso que Roosevelt estava procurando? Talvez Rondon não quisesse ensinar o caminho das pedras.
 
-Não podemos falar de Rondon sem citar seu respeito sagrado pelos povos nativos. Descendente dos próprios nativos mato-grossenses, ele defendeu o princípio de que os povos indígenas têm o direito de se integrar à civilização mantendo suas culturas e territórios. 
+Não podemos falar de Rondon sem dizer do seu bom relacionamento com os povos nativos. Com certeza houve alguns atritos, porém ele era descendente dos nativos mato-grossenses e bem sabia como tratá-los. Defendeu o direito ou o princípio de que os povos indígenas têm o direito de se integrar aos costumes da nossa civilização e foi o propositor da criação de áreas indígenas onde fossem assegurados os seus direitos e as suas culturas.
 
-Essa postura humanista lhe rendeu uma indicação ao **Prêmio Nobel da Paz** em 1925, feita por ninguém menos que **Albert Einstein**. O físico alemão escreveu a recomendação a bordo de um navio, após visitar o Brasil e ficar impressionado com o trabalho do Marechal. 
+Além de militar, foi um humanista. Teve indicação para o Prêmio Nobel da Paz. A indicação foi feita simplesmente por Albert Einstein.
 
-> **Nota do Veritas:** Embora Albert Einstein tenha de fato expressado grande admiração por Rondon após sua visita ao Brasil em 1925, as indicações oficiais do Marechal ao Prêmio Nobel da Paz ocorreram posteriormente, em 1953 e 1957. A recomendação de Einstein ao Comitê Nobel foi enviada em 1951.
+> "...uma carta do físico Albert Einstein, escrita em 1925, recomendando ao comitê do prêmio o nome do marechal brasileiro Cândido Rondon (1865-1958). Einstein redigiu a carta ao comitê do Nobel, sediado em Oslo (Noruega), a bordo do navio Capitão Polônio, depois de uma viagem de 51 dias pelo Brasil, Argentina e Uruguai, a maior parte dela passada no Rio de Janeiro." ([Fonte: Folha de S.Paulo](https://www1.folha.uol.com.br/fsp/cotidian/ff0707200236.htm))
 
-Rondon foi mais que um militar; foi o bandeirante moderno que integrou o Brasil sem derramar sangue desnecessário. Como ele mesmo dizia: *"Morrer se preciso for, matar nunca."*
-
----
-*Fonte adicional: [Brasileira Fotográfica](https://brasilianafotografica.bn.gov.br/?p=17506)*
+Lembremos que em 1925, Einstein estava na flor da idade, e o Rio de Janeiro, com certeza, já oferecia alguns atrativos turísticos. Dizem até que deu pitaco sobre a construção da Estátua do Cristo Redentor.
