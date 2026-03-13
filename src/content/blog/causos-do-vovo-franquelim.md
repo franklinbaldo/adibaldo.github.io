@@ -40,13 +40,23 @@ Encilhei o cavalo alazão pela manhã e parti da beira do Lajeado a Bonito, onde
 
 Subi a serra passando pela Vila Belé e depois pelo picadão até a estrada do Verê. Até aí eu conhecia. Havia percorrido essa estrada muitas vezes para ir nos moinhos, montado no burro Macaco, levando milho ou trigo — isso quando eu tinha dez anos.
 
-Em Alto Verê, na encruzilhada, segui rumo Maracajá. O cavalo era bom, mas o sol estava de rachar. Por volta do meio-dia cheguei na Boa Esperança. Sesteei na sombra de um cinamomo ao lado da igrejinha. Desencilhei o cavalo que já estava lavado de suor. O Alazão se espojou na grama e começou a pastar. Sentei sobre os pelegos para comer a merenda que mamãe havia colocado no pessuelo. Pão, queijo e salame. Ao lado da igreja tinha um poço, um balde e uma corda — acho que mais de cinco metros. O balde subiu pingando água fresquinha. Bebi uns goles e o resto dei pro cavalo. Bebeu todinha.
+Em Alto Verê, na encruzilhada, segui rumo Maracajá. O cavalo era bom, mas o sol estava de rachar. Por volta do meio-dia cheguei na Boa Esperança.
+
+![O guri no Alazão descansando na sombra do cinamomo.](./images/campereada-campereada-sesteia.png)
+*O sesteio na Boa Esperança — pão, queijo, salame e o balde pingando água fresca.*
+
+Sesteei na sombra de um cinamomo ao lado da igrejinha. Desencilhei o cavalo que já estava lavado de suor. O Alazão se espojou na grama e começou a pastar. Sentei sobre os pelegos para comer a merenda que mamãe havia colocado no pessuelo. Pão, queijo e salame. Ao lado da igreja tinha um poço, um balde e uma corda — acho que mais de cinco metros. O balde subiu pingando água fresquinha. Bebi uns goles e o resto dei pro cavalo. Bebeu todinha.
 
 Prossegui a viagem. Faltava ainda um bom trecho. Muita pedra brotando do chão. A marcha era lenta. Os morros estavam ponteados de roças de feijão e milho. Perto das casas, potreiros e encerra de porcos. Galinhas soltas no terreiro. Por vezes alguns guaipecas latiam, o que forçava o trote.
 
 Em certo trecho da estrada, fiquei na dúvida numa encruzilhada em forquilha. Mesmo na dúvida, fui no palpite. Não demorou, avistei alguém montando num cavalo baio. No encontro, erguendo a aba do chapéu, pedi informação. — Sim, é por aqui. Eu estava certo.
 
-Para quem já tinha troteado mais de vinte quilômetros, já estava chegando. Foi quando uma nuvem de verão se formou e caiu água. Estendi a capa que estava na garupa e a água escorria pela aba do chapéu de feltro. Segui sentindo o zunido do vento e ouvindo o *ploc, ploc* das patas do cavalo pisando no barro. Foi só um aguaceiro. Logo a chuva parou e o sol voltou a brilhar. Já beirava as três horas quando cheguei no Empossado.
+Para quem já tinha troteado mais de vinte quilômetros, já estava chegando. Foi quando uma nuvem de verão se formou e caiu água.
+
+![Jovem gaúcho cavalgando no Alazão na chuva, capa e chapéu de feltro molhados.](./images/campereada-campereada-chuva.png)
+*"...e a água escorria pela aba do chapéu de feltro."*
+
+Estendi a capa que estava na garupa e a água escorria pela aba do chapéu de feltro. Segui sentindo o zunido do vento e ouvindo o *ploc, ploc* das patas do cavalo pisando no barro. Foi só um aguaceiro. Logo a chuva parou e o sol voltou a brilhar. Já beirava as três horas quando cheguei no Empossado.
 
 Ali, Tio Alaíde tinha uma bodega. Mal chegando, me reconheceu: — É um piá do compadre Vitório, falou pra Tia Maria que estava na cozinha.
 
