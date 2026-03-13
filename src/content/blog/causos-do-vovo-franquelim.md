@@ -13,10 +13,12 @@ placeLabel: "Pato Branco"
 
 ## Um gaudério fora de seu tempo
 
-![Vovô Franquelim — o gaudério de Soledade](./images/vovo-franquelim-foto.jpg)
-*Vovô Franquelim — o gaudério das coxilhas.*
-
 Eu o conheci quando menino, em 1956. Gaúcho, nascido e criado nos campos de Soledade. Já passado dos sessenta, migrou para o Paraná. Como veio não sei — acredito que como tantos outros, pelas trilhas abertas pelos ervateiros e outros migrantes. Comboios de carroças, acampando nas beiras de sangas, sesteando na sombra das árvores e repontando alguma tropita. Família grande, moças e rapazes.
+
+<figure style="float: right; margin: 0 0 1rem 1.5rem; max-width: 220px;">
+  <img src="./images/vovo-franquelim-foto.jpg" alt="Vovô Franquelim" style="width: 100%; border-radius: 4px;" />
+  <figcaption style="font-size: 0.8em; color: #666; text-align: center;">Vovô Franquelim — o gaudério das coxilhas.</figcaption>
+</figure>
 
 Instalou-se no interior do município de Pato Branco. Um lugar onde quase nada havia, apenas uma serraria e começo de roças. Lembro do dia. Era dia santo, por volta das três da tarde. Mamãe levava um guri no colo e outro na barriga e, meio me empurrando, disse: — Peça benção do teu vô. Estendi as mãos juntas e ouvi a resposta: — Deus te abençoe. E foi só. Guri educado não se mete em conversa de gente grande.
 
