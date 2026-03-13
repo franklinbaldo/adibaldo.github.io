@@ -24,6 +24,11 @@ type Props = {
 };
 
 const { post, prev, next } = Astro.props;
+
+if (post.data.redirect) {
+	return Astro.redirect(post.data.redirect, 301);
+}
+
 const { Content } = await render(post);
 const wordCount = post.body?.split(/\s+/).length ?? 0;
 ---
