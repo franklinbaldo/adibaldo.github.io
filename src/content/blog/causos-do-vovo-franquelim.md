@@ -82,6 +82,9 @@ Não demorou muitos dias e veio a notícia: Seu Franquelim da Silva Portela havi
 
 ## Negócio da Vaca
 
+![Dois teco-tecos voando um atrás do outro rente às copas das árvores das coxilhas gaúchas.](./images/negocio-teco-tecos.png)
+*"Encordoado nada, foi só dois. Um atrás do outro."*
+
 Nos rincões do Rio Grande, de légua em légua sempre havia um bolicho para a venda de cachaça, fumo e coisas de precisão nos ranchos e estâncias. Por ali se encontravam e se reuniam peões e estancieiros, tratavam de negócios, combinavam carreiradas e fandangos.
 
 De uma feita, mais pela tardinha, seu Franquelim apeou por ali e deu boa tarde para os presentes. Ali estavam alguns gaudérios *abichornados*. Parecia um velório. Só faltava o defunto. Sem rodeios, perguntou se tinha morrido alguém.
