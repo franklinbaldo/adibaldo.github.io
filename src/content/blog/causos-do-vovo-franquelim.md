@@ -177,6 +177,9 @@ Nego Terêncio estendeu a cuia: — Mas *antonces*, quer dizer que o fandango fo
 
 ## Vô Franquelim e a Farofa de Viagem
 
+![A Amantina com o guarda-chuva encontra o Franquelim dormindo sob a figueira.](./images/farofa-figueira.png)
+*"Era o que me faltava! Fazer galinha na farofa para o bem bom vir comer solito na sombra de uma árvore!"*
+
 Se tinha uma coisa que seu Franquelim apreciava, era montar em sua mula baia e andar pelas estâncias — mais pra saber das coisas do que fazer algum brique.
 
 Sempre que empreendia uma andança, vó Amantina fazia uma galinha na farofa e colocava numa matula enfiada no pessuelo.
