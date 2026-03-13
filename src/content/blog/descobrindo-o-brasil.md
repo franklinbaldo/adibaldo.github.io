@@ -3,6 +3,8 @@ title: "Descobrindo o Brasil"
 description: "De Lisboa ao Brasil de caravela foram 40 dias; de Curitiba a Rondônia de busão foram 12. Cabral se desviou das calmarias, eu dos atoleiros da BR 364."
 pubDate: 2026-03-12
 tags: ["história", "reflexão", "humor", "rondônia"]
+heroImage: "./images/descobrindo-o-brasil-cover.png"
+heroImageAlt: "Caravelas no horizonte vistas da praia."
 ---
 
 Foi em 09 de março de 1500 que Pedro Álvares Cabral partiu de Lisboa, rumo às Índias, e no meio do caminho — sem querer querendo — descobriu o Brasil, que na verdade já estava descoberto.
