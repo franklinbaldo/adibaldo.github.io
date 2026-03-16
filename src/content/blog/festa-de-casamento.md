@@ -9,6 +9,8 @@ heroImageAlt: "Mesa longa de banquete sob o arvoredo, após a festa."
 
 Eu não vi. Sei por ouvir dizer.
 
+![A chegada dos noivos — portal de palmeiras, convidados em festa, fogos no céu](./images/casamento-chegada.jpg)
+
 Era 27 de janeiro — creio que 1966. O casório foi marcado para essa data. Noivos e padrinhos vestidos no melhor estilo. Convidados da noiva, do noivo e outros que por força de circunstâncias não poderiam ser olvidados em evento tão importante.
 
 O pai do noivo providenciou um grande banquete. A melhor novilha, bolos e cucas. Na sobra do arvoredo, uma grande mesa de tábuas construída sobre cavaletes, forrada de papel jornal e bem posta com pratos, talheres e copos. Logo ali uma vala com braseiro de nó-de-pinho, espetos de camboatá e a carne na gamela temperada na salmoura. Na outra banda um balcãozinho com um barril de vinho e muitas garrafas de framboesa refrescadas em um caixote com gelo e coberto de serragem.
