@@ -33,6 +33,8 @@ A boca miúda, cochichos:
 
 ![O cachaceiro da cidade — presente ao velório, curioso como sempre](./images/morte-do-gerente.jpg)
 
+![O caixão em frente aos caixas do banco, o povo consternado e o cachaceiro espiando no canto](./images/morte-do-gerente-gravura.jpg)
+
 Naquilo entra o contumaz cachaceiro:
 
 — E morreu mesmo?
