@@ -37,7 +37,7 @@ Foi quando escutei o grito:
 
 Era o Nego Inglês com arma em punho, apontando pro sócio.
 
-![A cena no restaurante Roda Viva](./images/nego-ingles-confronto.jpg)
+![A cena no restaurante Roda Viva](./images/nego-ingles-confronto-v2.jpg)
 
 Havia uma porta dos fundos que dava para um brejo tomado pela quiçaça e por ela vi meu amigo se jogando. Coisa de cinema.
 
