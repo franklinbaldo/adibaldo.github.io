@@ -7,6 +7,7 @@ on:
       - 'src/content/blog/**'
       - 'scripts/generate-book.mjs'
       - 'scripts/book-template.tex'
+      - 'src/pages/book-export.astro'
   workflow_dispatch:
 
 jobs:
