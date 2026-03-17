@@ -7,13 +7,15 @@ import Header from '../components/Header.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
-const posts = (await getCollection('blog'))
-	.filter((p) => !p.data.draft)
-	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-	.slice(0, 4);
+const INITIAL_COUNT = 8;
 
-const places = (await getCollection('places'))
-	.sort((a, b) => (a.data.order ?? 999) - (b.data.order ?? 999));
+const allPosts = (await getCollection('blog'))
+	.filter((p) => !p.data.draft)
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const initialPosts = allPosts.slice(0, INITIAL_COUNT);
+const morePosts = allPosts.slice(INITIAL_COUNT);
+const totalCount = allPosts.length;
 ---
 
 <!doctype html>
@@ -43,11 +45,11 @@ const places = (await getCollection('places'))
 				<div class="container">
 					<div class="section-title">
 						<h2 style="margin:0;">Últimas prosas</h2>
-						<a href="/blog">Ver todas</a>
+						<a href="/blog">Ver todas ({totalCount})</a>
 					</div>
 
-					<div class="grid post-grid-home">
-						{posts.map((post) => (
+					<div class="grid post-grid-home" id="post-grid">
+						{initialPosts.map((post) => (
 							<a class="card post-card-home" href={`/blog/${post.id}/`}>
 								<div class="post-thumb-home">
 									{post.data.heroImage ? (
@@ -76,25 +78,45 @@ const places = (await getCollection('places'))
 								</div>
 							</a>
 						))}
-					</div>
-				</div>
-			</section>
 
-			<section class="section" style="background: var(--bg-gradient-end);">
-				<div class="container">
-					<div class="section-title">
-						<h2 style="margin:0;">Locais da vida</h2>
-						<a href="/locais">Ver todos</a>
-					</div>
-					<div class="grid">
-						{places.map((p) => (
-							<a class="card" href={`/locais/${p.id}/`}>
-								<div class="tag-row"><span class="tag">Local</span></div>
-								<h3 class="card-title">{p.data.title}</h3>
-								<p class="card-desc">{p.data.summary}</p>
+						{morePosts.map((post) => (
+							<a class="card post-card-home hidden-post" href={`/blog/${post.id}/`} aria-hidden="true">
+								<div class="post-thumb-home">
+									{post.data.heroImage ? (
+										<Image
+											src={post.data.heroImage}
+											alt={post.data.heroImageAlt || `Capa do post ${post.data.title}`}
+											widths={[400, 800, 1200]}
+											sizes="(max-width: 620px) 100vw, (max-width: 980px) 50vw, 25vw"
+										/>
+									) : (
+										<div class="post-thumb-fallback-home" aria-hidden="true" />
+									)}
+								</div>
+								<div class="post-card-body-home">
+									<div class="tag-row">
+										{post.data.tags?.slice(0, 1).map((t) => (
+											<span class="tag">{t}</span>
+										))}
+										{post.data.placeLabel && <span class="tag">{post.data.placeLabel}</span>}
+									</div>
+									<h3 class="card-title">{post.data.title}</h3>
+									<p class="card-desc">{post.data.description}</p>
+									<p class="meta" style="margin:0;">
+										<FormattedDate date={post.data.pubDate} />
+									</p>
+								</div>
 							</a>
 						))}
 					</div>
+
+					{morePosts.length > 0 && (
+						<div class="ver-mais-wrap" id="ver-mais-wrap">
+							<button id="ver-mais-btn" class="cta cta-ver-mais">
+								Ver mais prosas ({morePosts.length} restantes)
+							</button>
+						</div>
+					)}
 				</div>
 			</section>
 		</main>
@@ -166,6 +188,33 @@ const places = (await getCollection('places'))
 				gap: var(--space-sm);
 			}
 
+			.hidden-post {
+				display: none;
+			}
+
+			.ver-mais-wrap {
+				display: flex;
+				justify-content: center;
+				margin-top: var(--space-xl);
+			}
+
+			.cta-ver-mais {
+				background: transparent;
+				color: var(--accent-primary);
+				border: 2px solid var(--accent-primary);
+				font-size: 1rem;
+				padding: 0.75rem 2rem;
+				cursor: pointer;
+				border-radius: 4px;
+				font-family: inherit;
+				transition: background 180ms ease, color 180ms ease;
+			}
+
+			.cta-ver-mais:hover {
+				background: var(--accent-primary);
+				color: white;
+			}
+
 			@media (max-width: 980px) {
 				.post-grid-home {
 					grid-template-columns: repeat(2, 1fr);
@@ -178,5 +227,21 @@ const places = (await getCollection('places'))
 				}
 			}
 		</style>
+
+		<script>
+			const btn = document.getElementById('ver-mais-btn');
+			const wrap = document.getElementById('ver-mais-wrap');
+			if (btn && wrap) {
+				btn.addEventListener('click', () => {
+					const hidden = document.querySelectorAll('.hidden-post');
+					hidden.forEach((el) => {
+						(el as HTMLElement).style.display = '';
+						el.removeAttribute('aria-hidden');
+						el.classList.remove('hidden-post');
+					});
+					wrap.style.display = 'none';
+				});
+			}
+		</script>
 	</body>
 </html>
