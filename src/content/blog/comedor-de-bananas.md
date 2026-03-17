@@ -12,9 +12,9 @@ Seus lábios, encimados por volumoso e grisalho bigode, abrigado sob adunco nari
 
 Empunhando os finos talheres — garfo na mão esquerda e faca na direita —, cortou as extremidades, em seguida traçou um corte longitudinal dividindo a fruta em duas partes simetricamente iguais. Singelamente subdividiu em nacos e um a um lentamente passou a degustá-los.
 
-Concluído o lauto banquete, acostou-se na cadeira e disfarçadamente levou a mão à boca para ocultar a eructação.
+![O gentleman à mesa, com garfo e faca, diante do prato de porcelana fina.](./images/comedor-de-bananas-ilustracao.jpg)
 
-![Uma banana comendo banana com garfo e faca — o retrato fiel do nosso protagonista.](./images/comedor-de-bananas-ilustracao.jpg)
+Concluído o lauto banquete, acostou-se na cadeira e disfarçadamente levou a mão à boca para ocultar a eructação.
 
 Satisfeito, contemplou o teto e as sanças ornadas de arabescos dourados, para logo em seguida baixar o olhar sobre as cascas daquela fruta pertencente à família das musáceas.
 
@@ -27,6 +27,8 @@ Pisando o patamar revestido de mármore, ganhou a calçada de paralelepípedos d
 Por oportuno, vale salientar que a banana não é uma espécie nativa. E quando alguém diz que uma mulher é uma musa, poderá estar fazendo alusão à *Musa ornata* — ou seja, uma bananeira, espécie asiática e invasora da mata atlântica.
 
 Para quem não sabe ou nunca ouviu falar, Carmem Miranda gravou e fez sucesso nos *States*. Em inglês. Yes.
+
+![Alegoria à Chiquita Banana — estilo Hollywood anos 40, chapéu de frutas tropicais, rumbeira no palco.](./images/comedor-de-bananas-chiquita.jpg)
 
 > *Eu sou Chiquita Banana e vim para dizer*
 > *Bananas têm que amadurecer de uma determinada maneira*
