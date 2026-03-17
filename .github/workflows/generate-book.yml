@@ -1,0 +1,54 @@
+name: Generate Book PDF
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/content/blog/**'
+      - 'scripts/generate-book.mjs'
+      - 'scripts/book-template.tex'
+  workflow_dispatch:
+
+jobs:
+  generate-book:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install Pandoc + XeLaTeX
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y \
+            pandoc \
+            texlive-xetex \
+            texlive-lang-portuguese \
+            texlive-fonts-recommended \
+            texlive-fonts-extra \
+            texlive-latex-extra
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Astro (generates book-export HTML)
+        run: npm run build
+
+      - name: Generate PDF
+        run: node scripts/generate-book.mjs
+
+      - name: Commit generated PDF
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/pdfs/livro-completo.pdf
+          git diff --staged --quiet || git commit -m "chore: regenerate livro-completo.pdf [skip ci]"
+          git push
