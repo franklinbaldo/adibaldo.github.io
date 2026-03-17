@@ -3,7 +3,8 @@ title: "Pinceladas de História"
 description: "O carteiro trouxe um livro de Montezuma Cruz — e com ele, uma reflexão sobre os que escreveram Rondônia antes que a floresta engolisse a memória."
 pubDate: 2026-03-17
 tags: ["crônicas", "Rondônia", "história"]
-heroImage: ./images/pinceladas-de-historia-cover.jpg
+heroImage: ./images/pinceladas-de-historia-adi-livro.jpg
+heroImageAlt: "Adi Baldo com o livro Território Dourado de Montezuma Cruz"
 ---
 
 Estava eu na soneca da tarde quando alguém bateu no portão. Era o carteiro. Estranho nos tempos de internet e zap — o carteiro tem muita folga.
