@@ -30,7 +30,7 @@ const cmd = [
   '--pdf-engine=xelatex',
   `--template="${templateFile}"`,
   '-V lang=pt-BR',
-  `--resource-path="${join(ROOT, 'dist')}"`,
+  `--resource-path="${join(ROOT, 'dist')}:${join(ROOT, 'dist/_astro')}"`,
   `-o "${outputFile}"`
 ].join(' ');
 
