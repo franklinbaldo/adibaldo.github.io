@@ -5,7 +5,6 @@ pubDate: 2026-03-16
 tags: ["causos", "rondonia", "humor", "banco", "rolim-de-moura"]
 place: "rolim-de-moura"
 placeLabel: "Rondônia"
-heroImageAlt: "Homem dando joinha ao lado de um caixão num velório improvisado."
 ---
 
 Era a única agência bancária da cidade. Gente chegando e abrindo negócios de todo o tipo. Por vezes apareciam depósitos em sacos de estopa. Pobres dos funcionários — trabalhavam até a meia-noite datilografando, preenchendo fichas e controles. O gerente de cabelos grisalhos tudo supervisionava, além de à noite ter que comparecer nas rodas sociais, normalmente regadas de "disques e uísque falsificado". O stress e o cansaço eram visíveis.
