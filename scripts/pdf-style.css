@@ -119,28 +119,32 @@ code {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 75vh;
+  align-items: center;
+  min-height: 85vh;
   text-align: center;
+  background: white;
+  page-break-after: always;
 }
 
 .cover h1 {
   font-family: 'UncialAntiqua', Georgia, serif;
-  font-size: 42pt;
-  margin-bottom: 12pt;
+  font-size: 48pt;
+  line-height: 1.2;
+  margin-bottom: 0;
+  color: #1a1a1a;
 }
 
-.cover .subtitle {
-  font-family: 'Source Sans 3', system-ui, sans-serif;
-  font-size: 14pt;
-  color: #6b5b4f;
-  font-style: italic;
+.cover .author {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 18pt;
+  color: #1a1a1a;
+  margin-top: auto;
+  padding-top: 60pt;
 }
 
+.cover .subtitle,
 .cover .date {
-  font-family: 'Source Sans 3', system-ui, sans-serif;
-  font-size: 10pt;
-  color: #9b8b7f;
-  margin-top: 24pt;
+  display: none;
 }
 
 /* ── Separação entre capítulos ── */
