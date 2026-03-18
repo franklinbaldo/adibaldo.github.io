@@ -82,7 +82,12 @@ function readPosts() {
       return { slug, data, content };
     })
     .filter((p) => !p.data.draft)
-    .sort((a, b) => new Date(a.data.pubDate) - new Date(b.data.pubDate));
+    .sort((a, b) => {
+    // marco-zero sempre primeiro (introdução do livro)
+    if (a.slug === 'marco-zero') return -1;
+    if (b.slug === 'marco-zero') return 1;
+    return new Date(a.data.pubDate) - new Date(b.data.pubDate);
+  });
 }
 
 function postHeader(post) {
