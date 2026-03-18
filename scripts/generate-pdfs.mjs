@@ -208,7 +208,16 @@ O progresso tecnológico faz parte do plano de Deus.
 
 Foi Deus quem fez vocês.
 
+<div class="medicos-fotos">
+  <figure>
+    <img src="/blog/images/dr-moutinho.jpg" alt="Dr. José Augusto Moutinho" />
+    <figcaption>Dr. José Augusto Moutinho — cirurgião, Hospital Angelina Caron, Curitiba</figcaption>
+  </figure>
+  <figure>
+    <img src="/blog/images/dr-marcos-rosa.jpg" alt="Dr. Marcos Rosa" />
+    <figcaption>Dr. Marcos Rosa — cardiologista, Porto Velho</figcaption>
+  </figure>
+</div>
+
 </div>`,
   ];
-
-
