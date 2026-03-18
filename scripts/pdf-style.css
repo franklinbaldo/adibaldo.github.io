@@ -2,3 +2,7 @@
 /* front-matter */
 .front-matter { page-break-before: always; page-break-after: always; }
 .front-matter h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 28pt; text-align: center; margin-bottom: 24pt; border-bottom: 1pt solid #d4874e; padding-bottom: 8pt; }
+.medicos-fotos { display: flex; gap: 20pt; justify-content: center; margin: 20pt 0; }
+.medicos-fotos figure { text-align: center; flex: 1; }
+.medicos-fotos img { max-width: 180pt; border-radius: 4pt; }
+.medicos-fotos figcaption { font-size: 8pt; color: #6b5b4f; margin-top: 4pt; font-style: italic; }
