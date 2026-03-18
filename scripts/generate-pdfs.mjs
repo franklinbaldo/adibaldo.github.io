@@ -155,7 +155,14 @@ async function generateBookPdf(posts, css) {
 
 </div>`,
   
-`<div class="rights-page">
+${introPost ? `<div class="chapter intro">
+
+# ${introPost.data.title}
+
+${introPost.content}
+
+</div>` : ''},
+    `<div class="rights-page">
 
 <p>© 2026 Adi Baldo</p>
 
@@ -170,7 +177,7 @@ async function generateBookPdf(posts, css) {
 </div>`,
   ];
 
-  for (const post of posts) {
+  for (const post of bodyPosts) {
     const date = formatDate(post.data.pubDate);
     const place = post.data.placeLabel ? ` — ${post.data.placeLabel}` : '';
 
@@ -217,7 +224,7 @@ async function main() {
 
   // PDFs individuais
   console.log('PDFs individuais:');
-  for (const post of posts) {
+  for (const post of bodyPosts) {
     await generatePostPdf(post, css);
   }
 
