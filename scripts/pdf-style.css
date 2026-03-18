@@ -108,6 +108,11 @@ code {
   margin-bottom: 14pt;
 }
 
+@font-face {
+  font-family: 'UncialAntiqua';
+  src: url('https://fonts.gstatic.com/s/uncialantiqua/v20/N0bM2S5WOex4OUbESzoESK-i-PfRS5VBBSSF.ttf') format('truetype');
+}
+
 /* ── Capa do livro ── */
 
 .cover {
@@ -119,7 +124,8 @@ code {
 }
 
 .cover h1 {
-  font-size: 36pt;
+  font-family: 'UncialAntiqua', Georgia, serif;
+  font-size: 42pt;
   margin-bottom: 12pt;
 }
 
