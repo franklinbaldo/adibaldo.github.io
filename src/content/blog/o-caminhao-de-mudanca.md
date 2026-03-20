@@ -3,6 +3,8 @@ title: "O Caminhãozinho de Mudança"
 description: "Das brincadeiras em italiano no vale gaúcho à fronteira de Rondônia, passando pelo fandango, pela bodega do papai e pelo coração que parou para ouvir o sabiá — a história de uma vida inteira carregada num caminhão."
 pubDate: 2026-03-12
 tags: ["memórias", "infância", "família", "Rondônia", "causos"]
+heroImage: "./images/o-caminhao-de-mudanca-cover.png"
+heroImageAlt: "Caminhão antigo carregado de móveis e utensílios, estrada de terra."
 ---
 
 Minhas recordações levam-me ao tempo de infância. Dos então sete, eu era o quarto. Brincávamos entre arvoredos e pedregulhos. De pega-pega e esconde-esconde: *"Guiri, guiri gaio... escampa sotto il gaio."* Há capito? — *"Alora fatte furbo."* — *"Sete tu in cielo, ora piu belo, secondo marino, para andare in pescaria, tre narance e tre limone, pinfete, pinfete, mandolo via."*

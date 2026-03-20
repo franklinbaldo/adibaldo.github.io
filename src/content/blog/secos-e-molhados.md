@@ -1,10 +1,12 @@
 ---
-title: "O Prêmio da Vida"
+title: "Secos e Molhados"
 description: "De Barão de Cotegipe a Pato Branco: a saga de uma família gaúcha que cruzou o Rio Uruguai num Chevrolet 51 rumo ao Paraná, em 1957."
 pubDate: 2026-02-12
 tags: ["memórias", "história", "migração", "família", "rio-grande-do-sul", "paraná", "infância", "anos-50"]
 place: "parana"
 placeLabel: "Paraná"
+heroImage: ./images/grimpas-secas-e-o-balcao-dos-causos-cover.png
+heroImageAlt: "Interior de um antigo armazém de secos e molhados, com balcão de madeira, prateleiras cheias de produtos e luz natural entrando por uma janela."
 ---
 ### O PRÊMIO DA VIDA
 
@@ -22,9 +24,7 @@ O tempo cobra do vivente.
 Mesmo forte, enérgico e bravo  
 O tempo bate em seu costado;  
 Cobra pelos serviços prestados  
-E certifica com comprido cajado.
-
-![Cajado retorcido numa paisagem aberta — o tempo que mede, pesa e põe preço](./images/cajado-paisagem.png)  
+E certifica com comprido cajado.  
 
 Não indaga como foi o começo;  
 Das circunstâncias ou endereço.  
@@ -45,4 +45,65 @@ O mundo de antanho era igual ao de agora; diferente era o modo de vê-lo. Hoje, 
 
 ---
 
+## O CAMINHÃOZINHO DE MUDANÇA
 
+Minhas recordações levam-me ao tempo da infância em [Barão de Cotegipe](/locais/barao-de-cotegipe/), Rio Grande do Sul. Dos sete irmãos, eu era o quarto. Brincávamos entre arvoredos e pedregulhos de pega-pega e esconde-esconde, recitando rimas que mal entendíamos: *"Guiri, guiri gaio... escampa sotto il gaio... alora fatte furbo!"*. Era o som das nossas raízes italianas ditando o ritmo da brincadeira.
+
+Do topo da nossa colina, víamos ao longe, além do vale, uma vila que era o nosso mundo dos sonhos. Imaginávamos uma igreja grande, carroças e uma bodega cheia de caramelos. Um dia, na esperança de que nossos passos fossem mais longos, calçamos as botas grandes de papai. Queríamos atravessar o vale num instante, como se tivéssemos as botas de sete léguas do Pequeno Polegar — personagem que nem conhecíamos. Nossa única história era a do Negrinho do Pastoreio.
+
+### O Navio de Noé sobre Rodas
+
+Um dia, no começo do inverno, o anúncio: — *"Vamos mudar, vamos embora!"*. 
+
+O que seria "ir embora"? No dia seguinte, a resposta apareceu na forma de um **Chevrolet 51**, o famoso "Boca de Sapo". Tudo foi carregado: camas, panelas, e os bichos organizados em andares. Por baixo de tudo, os porcos leitões; na traseira, num cercadinho, a vaca e o burro; e a carga subia mais alto que a própria vaca. 
+
+Nós, os seis irmãos, fomos acomodados **todos embolados** em cima da carga, junto com papai e o tio Ângelo — ambos de chapéu de feltro de aba curta, firmes contra o vento. A piazada ia se descabelando, de olhos arregalados pra paisagem que não acabava mais. Ninguém cantava; estávamos impressionados demais com o mundo que se abria diante de nós.
+
+Na cabine, o chofer levava mamãe com o maninho de dois anos no colo — e mais um na barriga. O gato ficou pra trás na lenda: foi pro mato, que o fogo queimou, que a água apagou... e por ali sumiu.
+
+### A Travessia do Rio Uruguai
+
+O primeiro grande desafio foi cruzar o **Rio Uruguai** numa balsa de madeira. O rio era largo, e todos ficamos em cima do caminhão durante a travessia, vendo as águas passarem devagar sob o peso da nossa vida inteira. A balsa era segura, mas pra um guri de sete anos, ver aquela imensidão de água era de tirar o fôlego.
+
+No rio, avistamos **balsas de toras de madeira** descendo a correnteza. Disseram que aquela madeira ia para a Argentina e de lá cruzava o oceano de navio até a Europa. O mundo estava ali, passando diante dos nossos olhos, em forma de árvores gigantes flutuando rumo ao desconhecido.
+
+### A Pousada em Xanxerê e o Assombro da Luz
+
+Quando a noite caiu, chegamos em **Xanxerê**. Foi um assombro: casas com luzes que não eram velas nem lamparinas. Papai explicou que era a tal da **luz elétrica**. 
+
+No hotel, o luxo era modesto mas impressionante pra quem vinha da roça: uma jarra com água, uma bacia para o asseio, e o conhecido **pinico esmaltado** debaixo da cama. Dormimos igual pedra. O cansaço de um dia inteiro levando sacolejo em cima da carga venceu qualquer novidade.
+
+### Pato Branco e a Procissão dos Fogos
+
+Partimos com o clarear do dia, atravessando descampados cobertos de geada. O frio era cortante, mas íamos enrolados nos acolchoados de penas de galinha. Em algum momento, o vento arrancou o chapéu da cabeça do tio Ângelo — e lá se foi, rodopiando pela estrada.
+
+Era **29 de junho de 1957**, dia de São Pedro. Chegamos a **Pato Branco** em meio a uma procissão, com fogos de artifício que faziam os cachorros ganirem e o burro agitar as orelhas. Eu tinha sete anos e sentia o coração bater forte diante daquela multidão. Mas logo a cidade ficou para trás e o Chevrolet 51 se embrenhou na mata sombreada pelos pinheiros.
+
+### O Rancho de Tábuas e o Mutirão
+
+Por volta da meia tarde, chegamos ao destino final: um rancho de tábuas lascadas do tio Eurico, que mal coube a pouca mobília. Era o começo de tudo no Paraná.
+
+Para limpar a capoeira e plantar, papai organizou um **mutirão**. Ver vinte peões com foices gritando *"Auia!"* e ouvindo o *"vapete-vapete"* do mato caindo era uma música rústica. O pagamento? Um **fandango** na semana seguinte: moças perfumadas, homens com brilhantina no cabelo, e o som da gaita e do pandeiro correndo a madrugada.
+
+![Papai, o gigante que nos trouxe, no Chevrolet 51](./images/caminhao-caminhao.png)
+
+![A família toda embolada na carga do caminhão](./images/caminhao-caminhao2.png)
+
+![Grupo de migrantes representando a caravana](./images/secos-e-molhados-caravana-1970s.jpg)
+
+Nas arestas do tempo,  
+Nas dobras do vento,  
+Na memória distante,  
+No agora, no instante;  
+Vejo lutando ao relento  
+Sem trégua e lamentos,  
+Míticos sábios arcontes;  
+Na busca do gene e da fonte.  
+
+Nas longas jornadas ardentes,  
+O mundo nunca foi diferente.  
+Trilhas e caminhos estreitos,  
+Mar, terra, rios e montes;  
+Desertos, floras e fontes.  
+Antes nada havia.  
+Do nada, a luz.

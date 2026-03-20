@@ -5,6 +5,8 @@ pubDate: 2026-03-16
 tags: ["causos", "rondonia", "humor", "banco", "rolim-de-moura"]
 place: "rolim-de-moura"
 placeLabel: "Rondônia"
+heroImage: ./images/morte-do-gerente.jpg
+heroImageAlt: "Homem dando joinha ao lado de um caixão num velório improvisado."
 ---
 
 Era a única agência bancária da cidade. Gente chegando e abrindo negócios de todo o tipo. Por vezes apareciam depósitos em sacos de estopa. Pobres dos funcionários — trabalhavam até a meia-noite datilografando, preenchendo fichas e controles. O gerente de cabelos grisalhos tudo supervisionava, além de à noite ter que comparecer nas rodas sociais, normalmente regadas de "disques e uísque falsificado". O stress e o cansaço eram visíveis.
@@ -28,6 +30,8 @@ Consternados, os clientes que já faziam fila na porta foram aos poucos se dispe
 A boca miúda, cochichos:
 
 — Logo hoje que eu iria receber uma ordem de pagamento. E eu que ia falar com ele para segurar meu cheque pré-datado. Veja como são as coisas. Ele era gente boa. Que Deus o tenha.
+
+![O cachaceiro da cidade — presente ao velório, curioso como sempre](./images/morte-do-gerente.jpg)
 
 ![O caixão em frente aos caixas do banco, o povo consternado e o cachaceiro espiando no canto](./images/morte-do-gerente-gravura.jpg)
 

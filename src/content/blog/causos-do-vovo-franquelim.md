@@ -62,7 +62,7 @@ Ali, Tio Alaíde tinha uma bodega. Mal chegando, me reconheceu: — É um piá d
 
 Informando das coisas, mostrou não estar contente. Tio Vitório Faré insistia que Vovô ficasse na casa dele, mas Tio Alaíde queria que ficasse na bodega, sede do povoado. Não houve acordo. Vovô ficou na casa de Tio Vitório Faré.
 
-Nessas alturas, Vovô já era viúvo. Vovó Amantina havia falecido não muito tempo antes. Com ele morava Tia Aurora, a Lola, e Tio Geremias, o caçula — mais folgado que garrão em chileno de couro.
+Nessas alturas, Vovô já era viúvo. Vovó Amantina havia falecido não muito tempo antes. Com ele morava Tia Aurora, a Lola, e Tio Geremias, o caçula — mais folgado que garrão em chinelo de couro.
 
 *'Buenas'*, todo o causo tem que ter um fim. Encerro dizendo que ali conversei com Vovô e ouvi lembranças e saudades dos filhos espalhados. Pareceu-me que o que ele mais gostaria era vê-los todos reunidos, mesmo que fosse só para tomar umas cuias de chimarrão e comer uma galinha ao revirado.
 

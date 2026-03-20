@@ -1,6 +1,6 @@
 ---
-title: "Vovô Franquelim e o Teco-Teco"
-description: "Um causo onde a modernidade atropela a lida campeira: vacas repontadas por avião? Só o Vovô Franquelim para contar essa com a cara mais séria do mundo."
+title: "O Brique da Vaca"
+description: "Um causo onde a modernidade atropela a lida campeira: a vaca Mimosa repontada por avião a mando do Getúlio Vargas? Só o Vovô Franquelim para contar essa com a cara mais séria do mundo."
 pubDate: 2026-02-18
 tags: ["causos", "vovô-franquelim", "humor", "paraná", "lida-campeira"]
 place: "parana"

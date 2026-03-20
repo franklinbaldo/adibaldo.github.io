@@ -28,6 +28,8 @@ O pior mesmo aconteceu por volta de 1917, quando surgiu um movimento político l
 
 ![Cossaco ucraniano em trajes tradicionais](./images/historia-do-povo-ucraniano-cossaco.jpg)
 
+![Cena tradicional ucraniana](./images/ucraniano-tradicao.jpg)
+
 Pra não espichar o causo, que já está mais cumprido que "chimarrão de polaco", a partir de 1890, os ucranianos começaram a vir pro Brasil.
 
 Vieram de bota e bombacha, faca e guaiaca. E o gaúcho gostou.

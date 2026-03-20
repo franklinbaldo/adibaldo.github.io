@@ -1,26 +1,25 @@
 {
-	"name": "adibaldo.github.io",
-	"type": "module",
-	"version": "0.0.1",
-	"scripts": {
-		"dev": "astro dev",
-		"build": "astro build",
-		"preview": "astro preview",
-		"astro": "astro",
-		"generate:pdfs": "node scripts/generate-pdfs.mjs",
-		"generate-book": "node scripts/generate-book.mjs"
-	},
-	"dependencies": {
-		"@astrojs/mdx": "^4.3.13",
-		"@astrojs/rss": "^4.0.15",
-		"@astrojs/sitemap": "^3.7.0",
-		"@resvg/resvg-js": "^2.6.2",
-		"astro": "^5.17.1",
-		"satori": "^0.19.1",
-		"sharp": "^0.34.3"
-	},
-	"devDependencies": {
-		"gray-matter": "^4.0.3",
-		"md-to-pdf": "^5.2.5"
-	}
+  "name": "adibaldo.github.io",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "generate:pdfs": "node scripts/generate-pdfs.mjs"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^4.3.13",
+    "@astrojs/rss": "^4.0.15",
+    "@astrojs/sitemap": "^3.7.0",
+    "@resvg/resvg-js": "^2.6.2",
+    "astro": "^5.17.1",
+    "satori": "^0.19.1",
+    "sharp": "^0.34.3"
+  },
+  "devDependencies": {
+    "gray-matter": "^4.0.3",
+    "md-to-pdf": "^5.2.5"
+  }
 }

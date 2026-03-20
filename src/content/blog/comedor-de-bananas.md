@@ -3,6 +3,7 @@ title: "Comedor de Bananas"
 description: "Uma banana com garfo e faca, talheres de prata e porcelana fina — o direito inalienável de comer o que bem lhe prover."
 pubDate: 2026-03-17
 tags: ["crônicas"]
+heroImage: ./images/comedor-de-bananas-cover.jpg
 ---
 
 Sofisticada fruteira posta sobre a mesa e enfeitada com um belo arranjo de gerânio de matizes diversas. Com dáctilos arqueados, como se fossem garras aquilinas, firmemente retirou daquela fruteira um espécime paradisíaco que aguçava suas glândulas degustativas. Acomodou-a leitosamente no prato de fina porcelana posto à sua frente, ladeado por magníficos talheres de prata.
