@@ -18,4 +18,15 @@ memory/
 logs/
 
 # Agentes Jules (ficam no repo privado)
-jules-agents/
+.jules/
+
+# Secrets
+.env
+.env.*
+secrets/
+*.key
+*.pem
+
+# OS
+.DS_Store
+Thumbs.db
