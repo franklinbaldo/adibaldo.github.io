@@ -3,7 +3,7 @@ title: "A Saga dos Cacaieiros"
 description: "Saco nas costas, espingarda a tiracolo e foice na mão: o retrato vivo do pioneiro de Rondônia."
 pubDate: 2026-03-19
 tags: ["memórias", "rondônia", "pioneirismo"]
-heroImage: ./images/cacaieiros-cover.png
+heroImage: ./images/cacaieiros-lida.jpg
 ---
 
 Saco nas costas, espingarda a tiracolo e foice na mão. Essa é a expressão que define o cacaieiro — o verdadeiro desbravador das matas de Rondônia. Não era só uma forma de trabalhar, era o uniforme de quem ia pra mata enfrentar o desconhecido.
