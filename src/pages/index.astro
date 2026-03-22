@@ -7,15 +7,14 @@ import Header from '../components/Header.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
+const INITIAL_COUNT = 8;
+
 const posts = (await getCollection('blog'))
 	.filter((p) => !p.data.draft)
 	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const featuredPost = posts[0];
-const recentPosts = posts.slice(1, 5);
-
-const places = (await getCollection('places'))
-	.sort((a, b) => (a.data.order ?? 999) - (b.data.order ?? 999));
+const recentPosts = posts.slice(1);
 ---
 
 <!doctype html>
@@ -78,44 +77,22 @@ const places = (await getCollection('places'))
 				</section>
 			)}
 
-			{/* ── Navegação (pills) ── */}
-			<section class="section">
-				<div class="container">
-					<div class="section-title">
-						<h2 style="margin:0;">Navegação</h2>
-					</div>
-					<nav class="nav-pills" aria-label="Categorias de conteúdo">
-						<a class="nav-pill" href="/blog">
-							<svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19v20H6.5a2.5 2.5 0 0 1 0-5H19"/></svg>
-							Textos
-						</a>
-						<a class="nav-pill" href="/locais">
-							<svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-							Locais
-						</a>
-						<a class="nav-pill" href="/sobre">
-							<svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-							Sobre o Adi
-						</a>
-						<a class="nav-pill" href="/buscar">
-							<svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-							Buscar
-						</a>
-					</nav>
-				</div>
-			</section>
-
-			{/* ── Posts Recentes ── */}
+			{/* ── Posts com paginação ── */}
 			<section class="section section-textured">
 				<div class="container">
 					<div class="section-title">
 						<h2 style="margin:0;">Últimas prosas</h2>
-						<a href="/blog">Ver todas</a>
+						<a href="/blog">Ver todas ({posts.length})</a>
 					</div>
 
-					<div class="grid post-grid-home">
-						{recentPosts.map((post) => (
-							<a class="card post-card-home" href={`/blog/${post.id}/`}>
+					<div class="grid post-grid-home" id="post-grid">
+						{recentPosts.map((post, i) => (
+							<a
+								class="card post-card-home"
+								href={`/blog/${post.id}/`}
+								data-index={i}
+								style={i >= INITIAL_COUNT - 1 ? 'display:none' : ''}
+							>
 								<div class="post-thumb-home">
 									{post.data.heroImage ? (
 										<Image
@@ -144,30 +121,36 @@ const places = (await getCollection('places'))
 							</a>
 						))}
 					</div>
-				</div>
-			</section>
 
-			{/* ── Locais da vida ── */}
-			<section class="section" style="background: var(--bg-gradient-end);">
-				<div class="container">
-					<div class="section-title">
-						<h2 style="margin:0;">Locais da vida</h2>
-						<a href="/locais">Ver todos</a>
-					</div>
-					<div class="grid">
-						{places.map((p) => (
-							<a class="card" href={`/locais/${p.id}/`}>
-								<div class="tag-row"><span class="tag">Local</span></div>
-								<h3 class="card-title">{p.data.title}</h3>
-								<p class="card-desc">{p.data.summary}</p>
-							</a>
-						))}
-					</div>
+					{recentPosts.length >= INITIAL_COUNT && (
+						<div class="load-more-wrap">
+							<button class="btn-load-more" id="btn-load-more" type="button">
+								Carregar mais
+							</button>
+						</div>
+					)}
 				</div>
 			</section>
 		</main>
 
 		<Footer />
+
+		<script>
+			const BATCH = 8;
+			const btn = document.getElementById('btn-load-more');
+			const grid = document.getElementById('post-grid');
+			if (btn && grid) {
+				btn.addEventListener('click', () => {
+					const hidden = Array.from(grid.querySelectorAll('[data-index]')).filter(
+						(el) => (el as HTMLElement).style.display === 'none'
+					);
+					hidden.slice(0, BATCH).forEach((el) => {
+						(el as HTMLElement).style.display = '';
+					});
+					if (hidden.length <= BATCH) btn.style.display = 'none';
+				});
+			}
+		</script>
 
 		<style>
 			.hero-actions {
@@ -232,6 +215,27 @@ const places = (await getCollection('places'))
 				display: flex;
 				flex-direction: column;
 				gap: var(--space-sm);
+			}
+
+			.load-more-wrap {
+				display: flex;
+				justify-content: center;
+				margin-top: var(--space-xl);
+			}
+
+			.btn-load-more {
+				background: var(--accent-primary);
+				color: white;
+				border: none;
+				border-radius: var(--radius);
+				padding: var(--space-sm) var(--space-xl);
+				font-size: 1rem;
+				cursor: pointer;
+				transition: background 0.2s;
+			}
+
+			.btn-load-more:hover {
+				background: var(--accent-hover, #7a5c3a);
 			}
 
 			@media (max-width: 980px) {
