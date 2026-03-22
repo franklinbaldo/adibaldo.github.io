@@ -9,10 +9,8 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
 const posts = (await getCollection('blog'))
 	.filter((p) => !p.data.draft)
-	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
-const featuredPost = posts[0];
-const recentPosts = posts.slice(1, 5);
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+	.slice(0, 4);
 
 const places = (await getCollection('places'))
 	.sort((a, b) => (a.data.order ?? 999) - (b.data.order ?? 999));
@@ -41,72 +39,7 @@ const places = (await getCollection('places'))
 		</section>
 
 		<main>
-			{/* ── Featured Article ── */}
-			{featuredPost && (
-				<section class="section section-textured">
-					<div class="container">
-						<div class="section-title">
-							<h2 style="margin:0;">Destaque</h2>
-						</div>
-
-						<a class="featured-card" href={`/blog/${featuredPost.id}/`}>
-							{featuredPost.data.heroImage ? (
-								<Image
-									class="featured-card-bg"
-									src={featuredPost.data.heroImage}
-									alt={featuredPost.data.heroImageAlt || `Capa do post ${featuredPost.data.title}`}
-									widths={[600, 1200]}
-									sizes="(max-width: 620px) 100vw, 1120px"
-								/>
-							) : (
-								<div class="featured-card-bg" style="background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));" />
-							)}
-							<div class="featured-card-overlay">
-								<div class="tag-row">
-									{featuredPost.data.tags?.slice(0, 2).map((t) => (
-										<span class="tag">{t}</span>
-									))}
-								</div>
-								<h3>{featuredPost.data.title}</h3>
-								<p>{featuredPost.data.description}</p>
-								<p class="meta">
-									<FormattedDate date={featuredPost.data.pubDate} />
-								</p>
-							</div>
-						</a>
-					</div>
-				</section>
-			)}
-
-			{/* ── Navegação (pills) ── */}
 			<section class="section">
-				<div class="container">
-					<div class="section-title">
-						<h2 style="margin:0;">Navegação</h2>
-					</div>
-					<nav class="nav-pills" aria-label="Categorias de conteúdo">
-						<a class="nav-pill" href="/blog">
-							<svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19v20H6.5a2.5 2.5 0 0 1 0-5H19"/></svg>
-							Textos
-						</a>
-						<a class="nav-pill" href="/locais">
-							<svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-							Locais
-						</a>
-						<a class="nav-pill" href="/sobre">
-							<svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-							Sobre o Adi
-						</a>
-						<a class="nav-pill" href="/buscar">
-							<svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-							Buscar
-						</a>
-					</nav>
-				</div>
-			</section>
-
-			{/* ── Posts Recentes ── */}
-			<section class="section section-textured">
 				<div class="container">
 					<div class="section-title">
 						<h2 style="margin:0;">Últimas prosas</h2>
@@ -114,7 +47,7 @@ const places = (await getCollection('places'))
 					</div>
 
 					<div class="grid post-grid-home">
-						{recentPosts.map((post) => (
+						{posts.map((post) => (
 							<a class="card post-card-home" href={`/blog/${post.id}/`}>
 								<div class="post-thumb-home">
 									{post.data.heroImage ? (
@@ -147,7 +80,6 @@ const places = (await getCollection('places'))
 				</div>
 			</section>
 
-			{/* ── Locais da vida ── */}
 			<section class="section" style="background: var(--bg-gradient-end);">
 				<div class="container">
 					<div class="section-title">
@@ -195,15 +127,15 @@ const places = (await getCollection('places'))
 				padding: 0;
 				overflow: hidden;
 				min-height: 0;
-				transition: transform 0.25s ease, box-shadow 0.25s ease;
+				transition: transform 180ms ease, box-shadow 180ms ease;
 			}
 
 			.post-card-home:hover {
-				transform: translateY(-3px);
+				transform: translateY(-2px);
 			}
 
 			.post-thumb-home {
-				aspect-ratio: 3 / 2;
+				aspect-ratio: 16 / 9;
 				overflow: hidden;
 				background: var(--tag-bg);
 				border-bottom: 1px solid var(--border-light);
@@ -214,11 +146,11 @@ const places = (await getCollection('places'))
 				height: 100%;
 				object-fit: cover;
 				border-radius: 0;
-				transition: transform 0.35s ease;
+				transition: transform 260ms ease;
 			}
 
 			.post-card-home:hover .post-thumb-home :global(img) {
-				transform: scale(1.04);
+				transform: scale(1.03);
 			}
 
 			.post-thumb-fallback-home {
