@@ -3,6 +3,7 @@ title: "Cavalo Javali"
 description: "O causo do tordilho que comeu abóboras — 36 quilos numa noite, duzentos na outra — e do gaudério de Soledade que quase contou o resto da história, não fosse o petardo na fogueira."
 pubDate: 2026-03-12
 tags: ["memórias", "causos", "infância", "paraná"]
+heroImage: "./images/cavalo-javali-hero.png"
 ---
 
 Talvez fosse o ano de 1958. Já fazia um tempo que morávamos ali onde papai se estabelecera com a bodega. Fieiras de bois arrastando madeiras. Caminhões com reboque e homens puxando catracas. Apitos de serrarias. Para onde ia tanta madeira? — São Paulo, Brasília, uma cidade que se expandia e outra que nascia.
