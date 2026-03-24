@@ -2,6 +2,8 @@
 title: "Cavalo Javali"
 description: "O causo do tordilho que comeu abóboras — 36 quilos numa noite, duzentos na outra — e do gaudério de Soledade que quase contou o resto da história, não fosse o petardo na fogueira."
 pubDate: 2026-03-12
+heroImage: ./images/cavalo-javali-cover.png
+heroImageAlt: "O tordilho Javali e as abóboras — o causo mais insólito do galpão."
 tags: ["memórias", "causos", "infância", "paraná"]
 ---
 
