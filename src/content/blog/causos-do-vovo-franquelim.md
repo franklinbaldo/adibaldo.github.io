@@ -5,6 +5,8 @@ pubDate: "2026-03-13"
 tags: ["causos", "família", "rio-grande-do-sul", "memórias", "paraná"]
 place: "pato-branco"
 placeLabel: "Pato Branco"
+heroImage: "./images/vovo-franquelim-cover.png"
+heroImageAlt: "O gaudério Franquelim da Silva Portela — homem do pala cinza e da mula baia."
 ---
 
 *Cinco causos do gaudério Franquelim da Silva Portela — o homem do pala cinza com orla preta, da mula baia e das histórias que a coxilha guardou por décadas.*
