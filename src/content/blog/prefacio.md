@@ -4,6 +4,8 @@ description: "Prolegômenos para os meus alfarrábios — onde explico por que r
 pubDate: 2026-03-19
 tags: ["prefácio", "memórias", "eita-lasqueira"]
 placeLabel: "Estrada"
+heroImage: "./images/prefacio-hero.jpg"
+heroImageAlt: "Tapera do gaúcho, 1920 — o rancho e o fio da memória, domínio público."
 ---
 
 # PREFÁCIO — INTROITO OU PROLEGÔMENOS
