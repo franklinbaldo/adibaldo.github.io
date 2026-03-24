@@ -6,6 +6,7 @@ tags: ["memórias", "causos"]
 place: "parana"
 placeLabel: "Paraná"
 heroImage: ./images/o-cavalo-javali-e-o-misterio-das-aboboras-cover.png
+heroImageAlt: "A saga do tordilho Javali e o mistério monumental da abóbora."
 ---
 
 ### O Trigo, o Trinta e Oito e o Javali

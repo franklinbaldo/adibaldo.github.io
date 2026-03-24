@@ -6,6 +6,7 @@ tags: ["memórias", "ensaios"]
 place: "mundo"
 placeLabel: "Memórias"
 heroImage: ./images/afinal-e-natal-cover.png
+heroImageAlt: "Cachorrinho de porcelana e reflexões sobre as convenções e melancolias do Natal."
 ---
 
 Lembro-me bem, deveria ter uns oito anos. Ganhei do Papai Noel um bibelô de porcelana: um cachorrinho de não mais de quatro centímetros. Guardei-o por muito tempo, com aquela felicidade pura de quem acredita que o bom velhinho lembrou de nós. Ver o presépio na igreja era maravilhoso... até que a gente cresce e descobre que o presépio foi uma invenção de São Francisco de Assis e que o boi e o jumento entraram na cena só para atazanar os judeus da época.

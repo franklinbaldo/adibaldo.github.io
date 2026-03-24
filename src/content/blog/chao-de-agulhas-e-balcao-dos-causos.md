@@ -6,6 +6,7 @@ tags: ["memórias", "história", "paraná", "infância", "causos", "família", "
 place: "parana"
 placeLabel: "Paraná"
 heroImage: ./images/chao-de-agulhas-e-balcao-dos-causos-cover.png
+heroImageAlt: "Antigo balcão de secos e molhados no Paraná antigo em meio ao frio das araucárias."
 ---
 
 Em 1957, o tempo no Paraná parecia ser medido pela altura dos pinheiros. Para um menino, aquelas araucárias não eram apenas árvores; eram as colunas que seguravam o céu cinzento das manhãs de geada. Eu caminhava para a escola sentindo o estalar das agulhas secas sob o sapato, um som que se misturava ao bater dos meus dentes no frio de arrepiar.

@@ -4,6 +4,7 @@ description: "Do Dilúvio à Inteligência Artificial, uma viagem irreverente pe
 pubDate: 2026-03-12
 tags: ["ensaios", "história", "humor"]
 heroImage: ./images/marco-zero-capa.png
+heroImageAlt: "Os marcos que fizeram o mundo do Dilúvio à Inteligência Artificial."
 ---
 
 Aprendemos que a história é registrada a partir da descoberta da escrita e que os hieróglifos egípcios foram interpretados por Champollion em 1830. Segundo a arqueologia, tais escritos remontam a cinco mil anos. Coisa que duvido.

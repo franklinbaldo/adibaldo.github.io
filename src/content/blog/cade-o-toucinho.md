@@ -6,6 +6,7 @@ tags: ["ensaios", "política", "história", "brasil", "memórias"]
 place: "mundo"
 placeLabel: "Brasil"
 heroImage: ./images/cade-o-toucinho-cover.png
+heroImageAlt: "Brincadeira de roda e a história da política brasileira de Jânio a Lula."
 ---
 
 Falarei de uma antiga brincadeira de roda:
