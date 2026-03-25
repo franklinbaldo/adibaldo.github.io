@@ -6,8 +6,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "generate:pdfs": "node scripts/generate-pdfs.mjs"
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
@@ -17,10 +16,5 @@
     "astro": "^5.17.1",
     "satori": "^0.19.1",
     "sharp": "^0.34.3"
-  },
-  "devDependencies": {
-    "gray-matter": "^4.0.3",
-    "md-to-pdf": "^5.2.5",
-    "pdfkit": "^0.18.0"
   }
 }

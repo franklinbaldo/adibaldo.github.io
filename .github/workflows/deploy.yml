@@ -30,9 +30,6 @@ jobs:
       - name: Install
         run: npm ci
 
-      - name: Generate PDFs
-        run: npm run generate:pdfs
-
       - name: Build
         run: npm run build
 

@@ -1,0 +1,308 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import { SITE_TITLE } from '../consts';
+
+const posts = (await getCollection('blog'))
+	.filter((post) => !post.data.draft)
+	.sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+
+const renderedPosts = await Promise.all(
+	posts.map(async (post) => {
+		const { Content } = await render(post);
+		return { post, Content };
+	}),
+);
+
+const compilationDate = new Date().toLocaleDateString('pt-BR', {
+	day: '2-digit',
+	month: 'long',
+	year: 'numeric',
+});
+const pageTitle = `Livro imprimível | ${SITE_TITLE}`;
+const pageDescription =
+	'Coletânea contínua dos textos do Alfarrábios do Adi, pensada para leitura longa e impressão pelo navegador.';
+---
+
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<BaseHead title={pageTitle} description={pageDescription} />
+	</head>
+	<body>
+		<main class="book-shell">
+			<div class="screen-actions" aria-label="Ações da página">
+				<a href="/blog">← Voltar ao blog</a>
+				<button type="button" onclick="window.print()">Imprimir / Salvar em PDF</button>
+			</div>
+
+			<article class="book-page">
+				<section class="cover print-block print-block-cover">
+					<p class="eyebrow">Coletânea imprimível</p>
+					<h1>Alfarrábios do Adi</h1>
+					<p class="subtitle">Memórias, causos e reflexões reunidos numa leitura contínua, pronta para o navegador virar livro.</p>
+					<div class="cover-meta">
+						<p><strong>{posts.length}</strong> textos reunidos</p>
+						<p>Compilado em {compilationDate}</p>
+						<p>Use <strong>Ctrl+P</strong> para imprimir ou salvar em PDF.</p>
+					</div>
+				</section>
+
+				<section class="summary print-block">
+					<h2>Sumário</h2>
+					<ol>
+						{renderedPosts.map(({ post }) => (
+							<li>
+								<a href={`#${post.id}`}>{post.data.title}</a>
+								<span>{post.data.pubDate.toLocaleDateString('pt-BR')}</span>
+							</li>
+						))}
+					</ol>
+				</section>
+
+				{renderedPosts.map(({ post, Content }) => (
+					<section class="chapter print-block" id={post.id}>
+						<header class="chapter-header">
+							<p class="chapter-date">{post.data.pubDate.toLocaleDateString('pt-BR')}</p>
+							<h2>{post.data.title}</h2>
+							{post.data.description && <p class="chapter-description">{post.data.description}</p>}
+						</header>
+						<div class="chapter-body prose">
+							<Content />
+						</div>
+					</section>
+				))}
+			</article>
+		</main>
+
+		<style>
+			:root {
+				color-scheme: light;
+			}
+
+			body {
+				margin: 0;
+				background: #f4efe7;
+				color: #1f1b16;
+				font-family: 'Source Serif 4', Georgia, serif;
+			}
+
+			a {
+				color: inherit;
+			}
+
+			.book-shell {
+				padding: 2rem 1rem 4rem;
+			}
+
+			.screen-actions {
+				max-width: 920px;
+				margin: 0 auto 1rem;
+				display: flex;
+				justify-content: space-between;
+				gap: 1rem;
+				align-items: center;
+				font-family: 'Source Sans 3', system-ui, sans-serif;
+			}
+
+			.screen-actions a,
+			.screen-actions button {
+				appearance: none;
+				border: 1px solid #8a5a44;
+				background: #fffaf5;
+				color: #6d3f2d;
+				padding: 0.7rem 1rem;
+				border-radius: 999px;
+				font: inherit;
+				text-decoration: none;
+				cursor: pointer;
+			}
+
+			.book-page {
+				max-width: 920px;
+				margin: 0 auto;
+				background: #fffdf9;
+				box-shadow: 0 12px 40px rgba(70, 46, 32, 0.12);
+				padding: 3rem;
+			}
+
+			.print-block + .print-block {
+				margin-top: 4rem;
+			}
+
+			.cover {
+				min-height: 70vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				border-bottom: 1px solid #e7d6c8;
+			}
+
+			.eyebrow,
+			.chapter-date {
+				font-family: 'Source Sans 3', system-ui, sans-serif;
+				text-transform: uppercase;
+				letter-spacing: 0.12em;
+				font-size: 0.82rem;
+				color: #8f6a56;
+			}
+
+			h1,
+			h2 {
+				font-family: 'Playfair Display', 'Source Serif 4', Georgia, serif;
+				line-height: 1.1;
+				color: #45291d;
+			}
+
+			h1 {
+				font-size: clamp(2.7rem, 6vw, 4.8rem);
+				margin: 0.4rem 0 1rem;
+			}
+
+			h2 {
+				font-size: clamp(2rem, 4vw, 2.8rem);
+				margin: 0.35rem 0 1rem;
+			}
+
+			.subtitle,
+			.chapter-description,
+			.cover-meta,
+			.summary,
+			.prose {
+				font-size: 1.08rem;
+				line-height: 1.75;
+			}
+
+			.cover-meta {
+				margin-top: 1.5rem;
+				padding-top: 1.5rem;
+				border-top: 1px solid #e7d6c8;
+			}
+
+			.summary h2 {
+				margin-bottom: 1.2rem;
+			}
+
+			.summary ol {
+				list-style: decimal;
+				padding-left: 1.2rem;
+				margin: 0;
+			}
+
+			.summary li {
+				display: flex;
+				justify-content: space-between;
+				gap: 1rem;
+				padding: 0.45rem 0;
+				border-bottom: 1px dotted #dcc7b7;
+			}
+
+			.summary span {
+				white-space: nowrap;
+				color: #8f6a56;
+				font-family: 'Source Sans 3', system-ui, sans-serif;
+				font-size: 0.92rem;
+			}
+
+			.chapter {
+				padding-top: 0.5rem;
+				border-top: 1px solid #efdfd3;
+			}
+
+			.chapter-header {
+				margin-bottom: 1.75rem;
+			}
+
+			.prose :global(p),
+			.prose :global(li),
+			.prose :global(blockquote) {
+				font-size: 1.08rem;
+				line-height: 1.8;
+			}
+
+			.prose :global(h3),
+			.prose :global(h4) {
+				font-family: 'Playfair Display', 'Source Serif 4', Georgia, serif;
+				color: #563628;
+				margin-top: 2rem;
+			}
+
+			.prose :global(img) {
+				max-width: 100%;
+				height: auto;
+				border-radius: 10px;
+				margin: 1.5rem 0;
+			}
+
+			.prose :global(a) {
+				color: #7c3f23;
+				text-decoration-thickness: 0.08em;
+			}
+
+			@media (max-width: 720px) {
+				.book-page {
+					padding: 1.4rem;
+				}
+
+				.screen-actions {
+					flex-direction: column;
+					align-items: stretch;
+				}
+
+				.summary li {
+					flex-direction: column;
+				}
+			}
+
+			@media print {
+				@page {
+					size: A4;
+					margin: 18mm 16mm 20mm;
+				}
+
+				body {
+					background: white;
+					font-size: 11pt;
+				}
+
+				.screen-actions {
+					display: none;
+				}
+
+				.book-shell {
+					padding: 0;
+				}
+
+				.book-page {
+					max-width: none;
+					box-shadow: none;
+					padding: 0;
+				}
+
+				.cover {
+					min-height: auto;
+					page-break-after: always;
+					break-after: page;
+					border-bottom: none;
+				}
+
+				.summary {
+					page-break-after: always;
+					break-after: page;
+				}
+
+				.chapter {
+					page-break-before: always;
+					break-before: page;
+					border-top: none;
+					padding-top: 0;
+				}
+
+				.prose :global(a) {
+					text-decoration: none;
+					color: inherit;
+				}
+			}
+		</style>
+	</body>
+</html>
