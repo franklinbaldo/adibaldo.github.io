@@ -13,6 +13,10 @@ export async function GET(context) {
 			.map((post) => ({
 				...post.data,
 				link: `/blog/${post.id}/`,
+				categories: [
+					...(post.data.tags || []),
+					...(post.data.placeLabel ? [post.data.placeLabel] : [])
+				],
 			})),
 	});
 }
