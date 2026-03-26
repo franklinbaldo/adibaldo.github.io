@@ -6,6 +6,7 @@ pubDate: 2026-03-16
 tags: ["causos", "humor", "parana", "guarapuava", "viagem"]
 heroImage: ./images/guarapuava-onibus.jpg
 heroImageAlt: "Ônibus parado na estrada do Paraná com araucárias ao fundo, passageiro confuso na janela."
+placeLabel: "Guarapuava"
 ---
 
 Todo o paranaense sabe onde fica Guarapuava. Uma cidade localizada quase na região central do Estado. Cidade de clima agradável e muita história e tradições. Povo de estilo ímpar. Paranaenses com estilo gaúcho, mas de sotaque caipira por conta dos tropeiros que iam de São Paulo ao Rio Grande, passando pelos campos de Guarapuava.

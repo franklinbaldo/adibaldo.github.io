@@ -5,6 +5,7 @@ og:image: "/og/cacaieiros.jpg"
 pubDate: 2026-03-19
 tags: ["memórias", "rondônia", "pioneirismo"]
 heroImage: ./images/cacaieiros-lida.jpg
+placeLabel: "Rondônia"
 ---
 
 Saco nas costas, espingarda a tiracolo e foice na mão. Essa é a expressão que define o cacaieiro — o verdadeiro desbravador das matas de Rondônia. Não era só uma forma de trabalhar, era o uniforme de quem ia pra mata enfrentar o desconhecido.

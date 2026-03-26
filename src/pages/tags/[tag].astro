@@ -27,6 +27,8 @@ export async function getStaticPaths() {
 const { tag } = Astro.params;
 const { posts } = Astro.props;
 
+const imageUrl = posts[0]?.id ? `/og/${posts[0].id}.png` : undefined;
+
 const breadcrumbLD = {
 	"@context": "https://schema.org",
 	"@type": "BreadcrumbList",
@@ -55,7 +57,12 @@ const breadcrumbLD = {
 <!doctype html>
 <html lang="pt-BR">
 	<head>
-		<BaseHead title={`Textos sobre: ${tag} — ${SITE_TITLE}`} description={`Todos os textos do Adi sobre ${tag}.`} />
+		<BaseHead
+			title={`Posts sobre ${tag} | Alfarrábios do Adi`}
+			description={`Todos os causos e histórias do Adi Baldo sobre ${tag}`}
+			imageUrl={imageUrl}
+			ogType="website"
+		/>
 		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbLD)} />
 	</head>
 	<body>

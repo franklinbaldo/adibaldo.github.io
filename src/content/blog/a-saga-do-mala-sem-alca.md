@@ -6,6 +6,7 @@ pubDate: "2026-02-16"
 heroImage: "./images/cabeza-de-vaca-1.png"
 heroImageAlt: "Pintura a óleo de Núñez Cabeza de Vaca, náufrago e esfarrapado, mas com pose arrogante na Baía de Babitonga."
 tags: ["história", "paraná", "curiosidades", "cabeza-de-vaca", "cataratas"]
+placeLabel: "Paraná"
 ---
 
 No primário, além de lendas dos bandeirantes, como de Borba Gato, disseram-me que o primeiro que se atreveu atravessar território Paranaense de leste a Oeste foi o espanhol Núñez Cabeza de Vaca. O que se sabe é que em 1544 o capitão espanhol Domingo Martínez de Irala foi proclamado governador do Paraguai, após prender Núñez Cabeza de Vaca, sujeito que havia se apoderado do posto de mandatário da então espelunca que surgia à margem do Rio Paraguai a qual veio a se tornar a belíssima cidade de Asunción.

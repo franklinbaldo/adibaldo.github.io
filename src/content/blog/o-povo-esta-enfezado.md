@@ -5,6 +5,7 @@ og:image: "/og/o-povo-esta-enfezado.jpg"
 pubDate: 2026-03-17
 tags: ["crônicas", "direito"]
 heroImage: ./images/o-povo-esta-enfezado-cover.jpg
+placeLabel: "Brasil"
 ---
 
 Agora que dos pratos só sobram os cacos, já dá pra falar do que se aproxima.

@@ -6,6 +6,7 @@ pubDate: 2026-03-16
 tags: ["memórias", "versos", "interior", "causos", "rio-grande-do-sul"]
 heroImage: ./images/carreteada-gravura.jpg
 heroImageAlt: "Dois homens em uma carreta puxada por burros numa estrada de terra, gravura em preto e branco estilo jornal."
+placeLabel: "Rio Grande do Sul"
 ---
 
 Era primavera, já quase de verão.

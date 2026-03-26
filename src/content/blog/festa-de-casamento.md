@@ -6,6 +6,7 @@ pubDate: 2026-03-16
 tags: ["memórias", "interior", "causos", "familia", "rio-grande-do-sul"]
 heroImage: ./images/casamento-chegada.jpg
 heroImageAlt: "Mesa longa de banquete sob o arvoredo, após a festa."
+placeLabel: "Rio Grande do Sul"
 ---
 
 Eu não vi. Sei por ouvir dizer.

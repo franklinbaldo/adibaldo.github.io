@@ -6,6 +6,7 @@ pubDate: 2026-03-12
 tags: ["poesia", "filosofia", "reflexão"]
 heroImage: "./images/arestas-do-tempo-cover.png"
 heroImageAlt: "Relógio antigo parado na floresta."
+placeLabel: "Brasil"
 ---
 
 Nas arestas do tempo,\

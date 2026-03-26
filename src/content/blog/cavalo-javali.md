@@ -6,6 +6,7 @@ pubDate: 2026-03-12
 tags: ["memórias", "causos", "infância", "paraná"]
 heroImage: "./images/cavalo-javali-cover.png"
 heroImageAlt: "O tordilho que comeu abóboras — o cavalo Javali e o causo do gaudério de Soledade."
+placeLabel: "Paraná"
 ---
 
 Talvez fosse o ano de 1958. Já fazia um tempo que morávamos ali onde papai se estabelecera com a bodega. Fieiras de bois arrastando madeiras. Caminhões com reboque e homens puxando catracas. Apitos de serrarias. Para onde ia tanta madeira? — São Paulo, Brasília, uma cidade que se expandia e outra que nascia.

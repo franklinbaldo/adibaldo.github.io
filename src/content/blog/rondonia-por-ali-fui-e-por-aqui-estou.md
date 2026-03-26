@@ -6,6 +6,7 @@ pubDate: "2026-02-16"
 heroImage: "./images/c46-taba-real.jpg"
 heroImageAlt: "Aeronave Curtiss C-46 Commando da TABA (Transportes Aéreos da Bacia Amazônica) em pátio de aeroporto."
 tags: ["memórias", "rondônia", "cacoal", "pioneirismo", "rolim-de-moura", "história"]
+placeLabel: "Rondônia"
 ---
 
 Era o ano de 1982. Concluída a faculdade, era imperioso procurar um lugar para iniciar a vida. O Paraná já se mostrava saturado de bacharéis. Não havia como pensar em concursos. De origem humilde, devia prover o próprio sustento e era quase impossível se preparar para um concurso. No mais, a idade exigia que se buscasse a autonomia. Deveria existir um lugar para exercer a profissão livre de tanta concorrência. 

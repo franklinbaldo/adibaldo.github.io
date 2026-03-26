@@ -6,6 +6,7 @@ pubDate: "2026-02-16"
 heroImage: "./images/2026-02-16-saudosa-maloca.png"
 heroImageAlt: "Pintura a óleo de uma casa antiga de madeira sendo demolida com a sombra de um edifício moderno ao fundo."
 tags: ["memórias", "política", "família", "brasil", "história", "reflexão"]
+placeLabel: "Brasil"
 ---
 
 ## Saudosa Maloca

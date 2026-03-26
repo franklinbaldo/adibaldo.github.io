@@ -6,6 +6,7 @@ pubDate: 2026-03-12
 tags: ["memórias", "reflexão", "natal", "humor"]
 heroImage: "./images/a-final-e-natal-cover.png"
 heroImageAlt: "Natal rústico no campo."
+placeLabel: "Brasil"
 ---
 
 Lembro bem, deveria ter 8 anos. Ganhei do Papai Noel um bibelô de porcelana. Era um cachorrinho de não mais de 4 centímetros. Guardei-o por muito tempo. Fiquei muito feliz. Papai Noel lembrou de mim e também dos meus irmãos. Ir à igreja e ver o presépio era maravilhoso. Um dia descobri que não havia Papai Noel e que aquela data era para comemorar o nascimento de Jesus. O presépio fazia todo o sentido. Descobri depois que o presépio foi uma invenção de São Francisco de Assis e que a Bíblia não fala de boi e jumento — e que eles foram colocados em cena com o propósito de atazanar os judeus.
