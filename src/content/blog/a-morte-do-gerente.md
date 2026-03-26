@@ -9,7 +9,7 @@ heroImage: ./images/morte-do-gerente.jpg
 heroImageAlt: "Homem dando joinha ao lado de um caixão num velório improvisado."
 ---
 
-Era a única agência bancária da cidade. Gente chegando e abrindo negócios de todo o tipo. Por vezes apareciam depósitos em sacos de estopa. Pobres dos funcionários — trabalhavam até a meia-noite datilografando, preenchendo fichas e controles. O gerente de cabelos grisalhos tudo supervisionava, além de à noite ter que comparecer nas rodas sociais, normalmente regadas de "drinques e uísque falsificado". O stress e o cansaço eram visíveis.
+Era a única agência bancária da cidade. Gente chegando e abrindo negócios de todo o tipo. Por vezes apareciam depósitos em sacos de estopa. Pobres dos funcionários — trabalhavam até a meia-noite datilografando, preenchendo fichas e controles. O gerente de cabelos grisalhos tudo supervisionava, além de à noite ter que comparecer nas rodas sociais, normalmente regadas de "uísque falsificado". O stress e o cansaço eram visíveis.
 
 A cidade tinha um comércio efervescente, a concorrência entre os secos e molhados era grande. Com destaque para o setor de vestuário e armarinhos. Duas lojas disputavam a hegemonia. Anúncios com carros de som e desfiles pela cidade empoeirada chamavam a atenção da freguesia, carente de tudo e sem dinheiro.
 
