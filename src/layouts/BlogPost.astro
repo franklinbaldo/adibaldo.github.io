@@ -100,7 +100,7 @@ const breadcrumbLD = {
 						{(placeLabel || place) && <span>•</span>}
 						{(placeLabel || place) && <span>{placeLabel || place}</span>}
 						{tags && tags.length > 0 && <span>•</span>}
-						{tags && tags.length > 0 && <span>{tags[0]}</span>}
+						{tags && tags.length > 0 && <a href={`/tags/${tags[0]}`} style="color: inherit; text-decoration: none;">{tags[0]}</a>}
 						{readingTime && <span>•</span>}
 						{readingTime && <span>{readingTime} min de prosa</span>}
 					</p>

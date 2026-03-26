@@ -7,12 +7,25 @@ import Header from '../../components/Header.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import { SITE_TITLE } from '../../consts';
 
-const posts = (await getCollection('blog'))
-	.filter((p) => !p.data.draft)
-	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+export async function getStaticPaths() {
+	const allPosts = await getCollection('blog');
+	const posts = allPosts.filter((p) => !p.data.draft);
 
-const totalPosts = posts.length;
-const uniqueTags = [...new Set(posts.flatMap((post) => post.data.tags || []))].sort();
+	const uniqueTags = [...new Set(posts.flatMap((post) => post.data.tags || []))];
+
+	return uniqueTags.map((tag) => {
+		const filteredPosts = posts
+			.filter((post) => post.data.tags?.includes(tag))
+			.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+		return {
+			params: { tag },
+			props: { posts: filteredPosts },
+		};
+	});
+}
+
+const { tag } = Astro.params;
+const { posts } = Astro.props;
 
 const breadcrumbLD = {
 	"@context": "https://schema.org",
@@ -27,7 +40,13 @@ const breadcrumbLD = {
 		{
 			"@type": "ListItem",
 			"position": 2,
-			"name": "Textos"
+			"name": "Textos",
+			"item": new URL('/blog', Astro.site).toString()
+		},
+		{
+			"@type": "ListItem",
+			"position": 3,
+			"name": `Textos sobre: ${tag}`
 		}
 	]
 };
@@ -36,7 +55,7 @@ const breadcrumbLD = {
 <!doctype html>
 <html lang="pt-BR">
 	<head>
-		<BaseHead title={`Textos — ${SITE_TITLE}`} description="Todos os textos do Adi: memórias, causos, ensaios e prosas de diferentes lugares e tempos." />
+		<BaseHead title={`Textos sobre: ${tag} — ${SITE_TITLE}`} description={`Todos os textos do Adi sobre ${tag}.`} />
 		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbLD)} />
 	</head>
 	<body>
@@ -44,7 +63,7 @@ const breadcrumbLD = {
 
 		<section class="hero">
 			<div class="container hero-inner">
-				<h1 style="font-size: clamp(34px, 4.5vw, 56px);">Textos</h1>
+				<h1 style="font-size: clamp(34px, 4.5vw, 56px);">Textos sobre: {tag}</h1>
 				<p class="hero-kicker">
 					Memórias, causos e ensaios. Escolhe um e vai no passo.
 				</p>
@@ -53,28 +72,9 @@ const breadcrumbLD = {
 
 		<main class="section">
 			<div class="container">
-				<div class="filter-section" style="margin-bottom: var(--space-xl);">
-					<p class="meta" id="post-counter" style="margin-bottom: var(--space-md);">
-						Mostrando {totalPosts} textos
-					</p>
-					<ul class="nav-pills">
-						<li>
-							<button class="nav-pill filter-tag active" data-tag="all">
-								Todos
-							</button>
-						</li>
-						{uniqueTags.map((tag) => (
-							<li>
-								<button class="nav-pill filter-tag" data-tag={tag}>
-									{tag}
-								</button>
-							</li>
-						))}
-					</ul>
-				</div>
 				<div class="grid post-grid">
 					{posts.map((post) => (
-						<article class="card post-card" style="position: relative;" data-tags={post.data.tags?.join(',') || ''}>
+						<article class="card post-card" style="position: relative;">
 							<a href={`/blog/${post.id}/`} style="position: absolute; inset: 0; z-index: 0;" aria-label={`Ler post: ${post.data.title}`}></a>
 							<div class="post-thumb">
 								{post.data.heroImage ? (
@@ -167,55 +167,6 @@ const breadcrumbLD = {
 					grid-template-columns: 1fr;
 				}
 			}
-
-			/* Override the default inactive style for buttons */
-			.filter-tag.active {
-				border-color: var(--accent-primary);
-				box-shadow: var(--shadow-card-hover);
-				color: var(--accent-primary);
-				transform: translateY(-1px);
-			}
-			.filter-tag {
-				cursor: pointer;
-			}
 		</style>
-
-		<script>
-			document.addEventListener('DOMContentLoaded', () => {
-				const buttons = document.querySelectorAll('.filter-tag');
-				const cards = document.querySelectorAll('.post-card');
-				const counter = document.getElementById('post-counter');
-
-				buttons.forEach((btn) => {
-					btn.addEventListener('click', () => {
-						// Update active state on buttons
-						buttons.forEach((b) => b.classList.remove('active'));
-						btn.classList.add('active');
-
-						const selectedTag = btn.getAttribute('data-tag');
-						let visibleCount = 0;
-
-						// Filter cards
-						cards.forEach((card) => {
-							const htmlCard = card as HTMLElement;
-							const cardTags = htmlCard.getAttribute('data-tags') || '';
-							const tagsArray = cardTags.split(',').map((t) => t.trim());
-
-							if (selectedTag === 'all' || tagsArray.includes(selectedTag)) {
-								htmlCard.style.display = '';
-								visibleCount++;
-							} else {
-								htmlCard.style.display = 'none';
-							}
-						});
-
-						// Update counter text
-						if (counter) {
-							counter.textContent = `Mostrando ${visibleCount} texto${visibleCount !== 1 ? 's' : ''}`;
-						}
-					});
-				});
-			});
-		</script>
 	</body>
 </html>
