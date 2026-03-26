@@ -122,6 +122,8 @@ const breadcrumbLD = {
 							alt={heroImageAlt || `Imagem de capa: ${title}`}
 							widths={[400, 800, 1020]}
 							sizes="(max-width: 620px) 100vw, (max-width: 1020px) 100vw, 1020px"
+							loading="eager"
+							fetchpriority="high"
 						/>
 					</div>
 				)}

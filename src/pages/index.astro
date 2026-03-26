@@ -57,6 +57,8 @@ const recentPosts = posts.slice(1);
 									alt={featuredPost.data.heroImageAlt || `Capa do post ${featuredPost.data.title}`}
 									widths={[600, 1200]}
 									sizes="(max-width: 620px) 100vw, 1120px"
+									loading="eager"
+									fetchpriority="high"
 								/>
 							) : (
 								<div class="featured-card-bg" style="background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));" />
