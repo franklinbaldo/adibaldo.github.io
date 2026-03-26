@@ -8,8 +8,8 @@ const OG_WIDTH = 1200;
 const OG_HEIGHT = 630;
 
 async function getFonts() {
-	const regular = await readFile(new URL('../../public/fonts/atkinson-regular.woff', import.meta.url));
-	const bold = await readFile(new URL('../../public/fonts/atkinson-bold.woff', import.meta.url));
+	const regular = await readFile(new URL('../../../public/fonts/atkinson-regular.woff', import.meta.url));
+	const bold = await readFile(new URL('../../../public/fonts/atkinson-bold.woff', import.meta.url));
 	return [
 		{ name: 'Atkinson', data: regular, weight: 400, style: 'normal' },
 		{ name: 'Atkinson', data: bold, weight: 700, style: 'normal' },
@@ -18,7 +18,7 @@ async function getFonts() {
 
 export async function GET() {
 	const fonts = await getFonts();
-	const logoData = await readFile(new URL('../../public/favicon-adi.png', import.meta.url));
+	const logoData = await readFile(new URL('../../../public/favicon-adi.png', import.meta.url));
 	const logoBase64 = `data:image/png;base64,${logoData.toString('base64')}`;
 
 	const svg = await satori(
