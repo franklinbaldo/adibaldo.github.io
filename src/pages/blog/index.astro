@@ -11,6 +11,9 @@ const posts = (await getCollection('blog'))
 	.filter((p) => !p.data.draft)
 	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
+const totalPosts = posts.length;
+const uniqueTags = [...new Set(posts.flatMap((post) => post.data.tags || []))].sort();
+
 const breadcrumbLD = {
 	"@context": "https://schema.org",
 	"@type": "BreadcrumbList",
@@ -50,9 +53,28 @@ const breadcrumbLD = {
 
 		<main class="section">
 			<div class="container">
+				<div class="filter-section" style="margin-bottom: var(--space-xl);">
+					<p class="meta" id="post-counter" style="margin-bottom: var(--space-md);">
+						Mostrando {totalPosts} textos
+					</p>
+					<ul class="nav-pills">
+						<li>
+							<button class="nav-pill filter-tag active" data-tag="all">
+								Todos
+							</button>
+						</li>
+						{uniqueTags.map((tag) => (
+							<li>
+								<button class="nav-pill filter-tag" data-tag={tag}>
+									{tag}
+								</button>
+							</li>
+						))}
+					</ul>
+				</div>
 				<div class="grid post-grid">
 					{posts.map((post) => (
-						<a class="card post-card" href={`/blog/${post.id}/`}>
+						<a class="card post-card" href={`/blog/${post.id}/`} data-tags={post.data.tags?.join(',') || ''}>
 							<div class="post-thumb">
 								{post.data.heroImage ? (
 									<Image
@@ -144,6 +166,55 @@ const breadcrumbLD = {
 					grid-template-columns: 1fr;
 				}
 			}
+
+			/* Override the default inactive style for buttons */
+			.filter-tag.active {
+				border-color: var(--accent-primary);
+				box-shadow: var(--shadow-card-hover);
+				color: var(--accent-primary);
+				transform: translateY(-1px);
+			}
+			.filter-tag {
+				cursor: pointer;
+			}
 		</style>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				const buttons = document.querySelectorAll('.filter-tag');
+				const cards = document.querySelectorAll('.post-card');
+				const counter = document.getElementById('post-counter');
+
+				buttons.forEach((btn) => {
+					btn.addEventListener('click', () => {
+						// Update active state on buttons
+						buttons.forEach((b) => b.classList.remove('active'));
+						btn.classList.add('active');
+
+						const selectedTag = btn.getAttribute('data-tag');
+						let visibleCount = 0;
+
+						// Filter cards
+						cards.forEach((card) => {
+							const htmlCard = card as HTMLElement;
+							const cardTags = htmlCard.getAttribute('data-tags') || '';
+							const tagsArray = cardTags.split(',').map((t) => t.trim());
+
+							if (selectedTag === 'all' || tagsArray.includes(selectedTag)) {
+								htmlCard.style.display = '';
+								visibleCount++;
+							} else {
+								htmlCard.style.display = 'none';
+							}
+						});
+
+						// Update counter text
+						if (counter) {
+							counter.textContent = `Mostrando ${visibleCount} texto${visibleCount !== 1 ? 's' : ''}`;
+						}
+					});
+				});
+			});
+		</script>
 	</body>
 </html>
