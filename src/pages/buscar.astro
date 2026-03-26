@@ -62,15 +62,16 @@ const posts = (await getCollection('blog'))
 					.map((p) => {
 						const meta = [p.tags?.[0], p.placeLabel].filter(Boolean).join(' • ');
 						return `
-							<a class="card" href="/textos/${p.id}/" style="margin-bottom: var(--space-md);">
-								<div class="tag-row">
-									${p.tags?.[0] ? `<span class="tag">${p.tags[0]}</span>` : ''}
+							<article class="card" style="margin-bottom: var(--space-md); position: relative;">
+								<a href="/blog/${p.id}/" style="position: absolute; inset: 0; z-index: 0;" aria-label="Ler post: ${p.title}"></a>
+								<div class="tag-row" style="position: relative; z-index: 1;">
+									${p.tags?.[0] ? `<a href="/tags/${p.tags[0]}" class="tag" style="text-decoration: none; position: relative; z-index: 1;">${p.tags[0]}</a>` : ''}
 									${p.placeLabel ? `<span class="tag">${p.placeLabel}</span>` : ''}
 								</div>
-								<h3 class="card-title">${p.title}</h3>
-								<p class="card-desc">${p.description}</p>
-								${meta ? `<p class="meta" style="margin:0;">${meta}</p>` : ''}
-							</a>
+								<h3 class="card-title"><a href="/blog/${p.id}/" style="color: inherit; text-decoration: none; position: relative; z-index: 1;">${p.title}</a></h3>
+								<p class="card-desc" style="position: relative; z-index: 1;">${p.description}</p>
+								${meta ? `<p class="meta" style="margin:0; position: relative; z-index: 1;">${meta}</p>` : ''}
+							</article>
 						`;
 					})
 					.join('');

@@ -7,11 +7,25 @@ import Header from '../../components/Header.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import { SITE_TITLE } from '../../consts';
 
-const posts = (await getCollection('blog'))
-	.filter((p) => !p.data.draft)
-	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+export async function getStaticPaths() {
+	const allPosts = await getCollection('blog');
+	const posts = allPosts.filter((p) => !p.data.draft);
 
-const tags = [...new Set(posts.flatMap((post) => post.data.tags || []))].sort();
+	const uniqueTags = [...new Set(posts.flatMap((post) => post.data.tags || []))];
+
+	return uniqueTags.map((tag) => {
+		const filteredPosts = posts
+			.filter((post) => post.data.tags?.includes(tag))
+			.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+		return {
+			params: { tag },
+			props: { posts: filteredPosts },
+		};
+	});
+}
+
+const { tag } = Astro.params;
+const { posts } = Astro.props;
 
 const breadcrumbLD = {
 	"@context": "https://schema.org",
@@ -26,7 +40,13 @@ const breadcrumbLD = {
 		{
 			"@type": "ListItem",
 			"position": 2,
-			"name": "Textos"
+			"name": "Textos",
+			"item": new URL('/blog', Astro.site).toString()
+		},
+		{
+			"@type": "ListItem",
+			"position": 3,
+			"name": `Textos sobre: ${tag}`
 		}
 	]
 };
@@ -35,7 +55,7 @@ const breadcrumbLD = {
 <!doctype html>
 <html lang="pt-BR">
 	<head>
-		<BaseHead title={`Textos — ${SITE_TITLE}`} description="Todos os textos do Adi: memórias, causos, ensaios e prosas de diferentes lugares e tempos." />
+		<BaseHead title={`Textos sobre: ${tag} — ${SITE_TITLE}`} description={`Todos os textos do Adi sobre ${tag}.`} />
 		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbLD)} />
 	</head>
 	<body>
@@ -43,7 +63,7 @@ const breadcrumbLD = {
 
 		<section class="hero">
 			<div class="container hero-inner">
-				<h1 style="font-size: clamp(34px, 4.5vw, 56px);">Textos</h1>
+				<h1 style="font-size: clamp(34px, 4.5vw, 56px);">Textos sobre: {tag}</h1>
 				<p class="hero-kicker">
 					Memórias, causos e ensaios. Escolhe um e vai no passo.
 				</p>
@@ -52,17 +72,6 @@ const breadcrumbLD = {
 
 		<main class="section">
 			<div class="container">
-				<div class="tags-container" style="margin-bottom: var(--space-xl);">
-					<h2 style="font-size: 1.2rem; margin-bottom: var(--space-md);">Explorar por temas:</h2>
-					<div class="tag-row" style="flex-wrap: wrap; gap: var(--space-sm);">
-						{tags.map((tag) => (
-							<a href={`/tags/${tag}`} class="tag" style="text-decoration: none;">
-								{tag}
-							</a>
-						))}
-					</div>
-				</div>
-
 				<div class="grid post-grid">
 					{posts.map((post) => (
 						<article class="card post-card" style="position: relative;">
