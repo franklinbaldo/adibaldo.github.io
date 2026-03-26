@@ -14,6 +14,7 @@ const posts = (await getCollection('blog'))
 		description: p.data.description,
 		tags: p.data.tags ?? [],
 		placeLabel: p.data.placeLabel ?? '',
+		body: p.body,
 	}));
 ---
 
@@ -38,10 +39,13 @@ const posts = (await getCollection('blog'))
 				<input
 					id="q"
 					type="search"
-					placeholder="Procurar nos alfarrábios…"
+					placeholder="Buscar por título, tag, lugar ou trecho do texto..."
 					style="width:100%; padding: 14px 16px; border-radius: 14px; border: 1px solid var(--border-light); font-family: var(--font-ui); font-size: 16px;"
 				/>
-				<div id="results" style="margin-top: var(--space-lg);"></div>
+				<div style="margin-top: var(--space-lg);">
+					<p id="results-count" class="meta" style="margin-bottom: var(--space-md);"></p>
+					<div id="results"></div>
+				</div>
 			</div>
 		</main>
 
@@ -51,8 +55,11 @@ const posts = (await getCollection('blog'))
 			const posts = JSON.parse(document.getElementById('posts-json').textContent);
 			const q = document.getElementById('q');
 			const results = document.getElementById('results');
+			const resultsCount = document.getElementById('results-count');
 
 			function render(items) {
+				resultsCount.textContent = items.length === 1 ? '1 resultado encontrado' : `${items.length} resultados encontrados`;
+
 				if (!items.length) {
 					results.innerHTML = '<p class="meta">Não achei por esse rumo… tenta outra palavra.</p>';
 					return;
@@ -69,7 +76,7 @@ const posts = (await getCollection('blog'))
 									${p.placeLabel ? `<span class="tag">${p.placeLabel}</span>` : ''}
 								</div>
 								<h3 class="card-title"><a href="/blog/${p.id}/" style="color: inherit; text-decoration: none; position: relative; z-index: 1;">${p.title}</a></h3>
-								<p class="card-desc" style="position: relative; z-index: 1;">${p.description}</p>
+								<p class="card-desc" style="position: relative; z-index: 1;">${p.excerpt || p.description}</p>
 								${meta ? `<p class="meta" style="margin:0; position: relative; z-index: 1;">${meta}</p>` : ''}
 							</article>
 						`;
@@ -83,10 +90,28 @@ const posts = (await getCollection('blog'))
 
 			function search(term) {
 				const t = norm(term).trim();
-				if (!t) return render(posts);
+				if (!t) {
+					posts.forEach(p => p.excerpt = null);
+					return render(posts);
+				}
 				const filtered = posts.filter((p) => {
-					const hay = [p.title, p.description, p.placeLabel, ...(p.tags || [])].map(norm).join(' ');
-					return hay.includes(t);
+					const bNorm = norm(p.body);
+					const hay = [p.title, p.description, p.placeLabel, ...(p.tags || []), p.body].map(norm).join(' ');
+					const matches = hay.includes(t);
+					if (matches) {
+						if (bNorm.includes(t)) {
+							const idx = bNorm.indexOf(t);
+							const start = Math.max(0, idx - 60);
+							const end = Math.min(bNorm.length, idx + t.length + 60);
+							let snippet = p.body.substring(start, end).replace(/\n/g, ' ').replace(/[#*_`[\]()]/g, '');
+							if (start > 0) snippet = '…' + snippet;
+							if (end < bNorm.length) snippet = snippet + '…';
+							p.excerpt = snippet;
+						} else {
+							p.excerpt = null;
+						}
+					}
+					return matches;
 				});
 				render(filtered);
 			}
@@ -95,6 +120,6 @@ const posts = (await getCollection('blog'))
 			render(posts);
 		</script>
 
-		<script type="application/json" id="posts-json">{JSON.stringify(posts)}</script>
+		<script type="application/json" id="posts-json" set:html={JSON.stringify(posts).replace(/</g, '\\u003c')}></script>
 	</body>
 </html>
