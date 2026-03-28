@@ -11,6 +11,7 @@ import { SITE_TITLE } from '../consts';
 		<BaseHead title={`Página não encontrada — ${SITE_TITLE}`} description="A página que procuras não existe ou foi movida." />
 	</head>
 	<body>
+		<a href="#main-content" class="sr-only focus:not-sr-only">Pular para o conteúdo principal</a>
 		<Header />
 
 		<section class="hero">
@@ -22,7 +23,7 @@ import { SITE_TITLE } from '../consts';
 			</div>
 		</section>
 
-		<main class="section">
+		<main id="main-content" class="section">
 			<div class="reading-width" style="text-align: center;">
 				<p>Pode ser que o endereço mudou ou que a página foi removida.</p>
 				<div style="display: flex; gap: var(--space-md); justify-content: center; margin-top: var(--space-lg);">

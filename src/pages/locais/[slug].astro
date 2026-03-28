@@ -58,6 +58,7 @@ const breadcrumbLD = {
 		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbLD)} />
 	</head>
 	<body>
+		<a href="#main-content" class="sr-only focus:not-sr-only">Pular para o conteúdo principal</a>
 		<Header />
 
 		<section class="hero">
@@ -85,18 +86,19 @@ const breadcrumbLD = {
 				) : (
 					<div class="grid">
 						{posts.map((post) => (
-							<a class="card" href={`/blog/${post.id}/`}>
-								<div class="tag-row">
+							<article class="card" style="position: relative;">
+								<a href={`/blog/${post.id}/`} style="position: absolute; inset: 0; z-index: 0;" aria-label={`Ler post: ${post.data.title}`}></a>
+								<div class="tag-row" style="position: relative; z-index: 1;">
 									{post.data.tags?.slice(0, 1).map((t) => (
 										<span class="tag">{t}</span>
 									))}
 								</div>
-								<h3 class="card-title">{post.data.title}</h3>
-								<p class="card-desc">{post.data.description}</p>
-								<p class="meta" style="margin:0;">
+								<h3 class="card-title" style="position: relative; z-index: 1;">{post.data.title}</h3>
+								<p class="card-desc" style="position: relative; z-index: 1;">{post.data.description}</p>
+								<p class="meta" style="margin:0; position: relative; z-index: 1;">
 									<FormattedDate date={post.data.pubDate} />
 								</p>
-							</a>
+							</article>
 						))}
 					</div>
 				)}

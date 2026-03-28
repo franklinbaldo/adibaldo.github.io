@@ -34,6 +34,7 @@ const breadcrumbLD = {
 		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbLD)} />
 	</head>
 	<body>
+		<a href="#main-content" class="sr-only focus:not-sr-only">Pular para o conteúdo principal</a>
 		<Header />
 
 		<section class="hero">
@@ -45,17 +46,18 @@ const breadcrumbLD = {
 			</div>
 		</section>
 
-		<main class="section">
+		<main id="main-content" class="section">
 			<div class="container">
 				<div class="grid">
 					{places.map((p) => (
-						<a class="card" href={`/locais/${p.id}/`}>
-							<div class="tag-row">
+						<article class="card" style="position: relative;">
+							<a href={`/locais/${p.id}/`} style="position: absolute; inset: 0; z-index: 0;" aria-label={`Ver local: ${p.data.title}`}></a>
+							<div class="tag-row" style="position: relative; z-index: 1;">
 								<span class="tag">Local</span>
 							</div>
-							<h3 class="card-title">{p.data.title}</h3>
-							<p class="card-desc">{p.data.summary}</p>
-						</a>
+							<h3 class="card-title" style="position: relative; z-index: 1;">{p.data.title}</h3>
+							<p class="card-desc" style="position: relative; z-index: 1;">{p.data.summary}</p>
+						</article>
 					))}
 				</div>
 			</div>

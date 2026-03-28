@@ -1,29 +1,19 @@
 ---
-import { getCollection } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { SITE_TITLE } from '../consts';
-
-const posts = (await getCollection('blog'))
-	.filter((p) => !p.data.draft)
-	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-	.map((p) => ({
-		id: p.id,
-		title: p.data.title,
-		description: p.data.description,
-		tags: p.data.tags ?? [],
-		placeLabel: p.data.placeLabel ?? '',
-		body: p.body,
-	}));
 ---
 
 <!doctype html>
 <html lang="pt-BR">
 	<head>
 		<BaseHead title={`Buscar — ${SITE_TITLE}`} description="Procurar nos alfarrábios." />
+		<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+		<script src="/pagefind/pagefind-ui.js" is:inline></script>
 	</head>
 	<body>
+		<a href="#main-content" class="sr-only focus:not-sr-only">Pular para o conteúdo principal</a>
 		<Header />
 
 		<section class="hero">
@@ -33,93 +23,18 @@ const posts = (await getCollection('blog'))
 			</div>
 		</section>
 
-		<main class="section">
+		<main id="main-content" class="section">
 			<div class="reading-width">
-				<label class="sr-only" for="q">Procurar</label>
-				<input
-					id="q"
-					type="search"
-					placeholder="Buscar por título, tag, lugar ou trecho do texto..."
-					style="width:100%; padding: 14px 16px; border-radius: 14px; border: 1px solid var(--border-light); font-family: var(--font-ui); font-size: 16px;"
-				/>
-				<div style="margin-top: var(--space-lg);">
-					<p id="results-count" class="meta" style="margin-bottom: var(--space-md);"></p>
-					<div id="results"></div>
-				</div>
+				<div id="search" data-pagefind-ui></div>
 			</div>
 		</main>
 
 		<Footer />
 
-		<script>
-			const posts = JSON.parse(document.getElementById('posts-json').textContent);
-			const q = document.getElementById('q');
-			const results = document.getElementById('results');
-			const resultsCount = document.getElementById('results-count');
-
-			function render(items) {
-				resultsCount.textContent = items.length === 1 ? '1 resultado encontrado' : `${items.length} resultados encontrados`;
-
-				if (!items.length) {
-					results.innerHTML = '<p class="meta">Não achei por esse rumo… tenta outra palavra.</p>';
-					return;
-				}
-				results.innerHTML = items
-					.slice(0, 20)
-					.map((p) => {
-						const meta = [p.tags?.[0], p.placeLabel].filter(Boolean).join(' • ');
-						return `
-							<article class="card" style="margin-bottom: var(--space-md); position: relative;">
-								<a href="/blog/${p.id}/" style="position: absolute; inset: 0; z-index: 0;" aria-label="Ler post: ${p.title}"></a>
-								<div class="tag-row" style="position: relative; z-index: 1;">
-									${p.tags?.[0] ? `<a href="/tags/${p.tags[0]}" class="tag" style="text-decoration: none; position: relative; z-index: 1;">${p.tags[0]}</a>` : ''}
-									${p.placeLabel ? `<span class="tag">${p.placeLabel}</span>` : ''}
-								</div>
-								<h3 class="card-title"><a href="/blog/${p.id}/" style="color: inherit; text-decoration: none; position: relative; z-index: 1;">${p.title}</a></h3>
-								<p class="card-desc" style="position: relative; z-index: 1;">${p.excerpt || p.description}</p>
-								${meta ? `<p class="meta" style="margin:0; position: relative; z-index: 1;">${meta}</p>` : ''}
-							</article>
-						`;
-					})
-					.join('');
-			}
-
-			function norm(s) {
-				return (s || '').toLowerCase();
-			}
-
-			function search(term) {
-				const t = norm(term).trim();
-				if (!t) {
-					posts.forEach(p => p.excerpt = null);
-					return render(posts);
-				}
-				const filtered = posts.filter((p) => {
-					const bNorm = norm(p.body);
-					const hay = [p.title, p.description, p.placeLabel, ...(p.tags || []), p.body].map(norm).join(' ');
-					const matches = hay.includes(t);
-					if (matches) {
-						if (bNorm.includes(t)) {
-							const idx = bNorm.indexOf(t);
-							const start = Math.max(0, idx - 60);
-							const end = Math.min(bNorm.length, idx + t.length + 60);
-							let snippet = p.body.substring(start, end).replace(/\n/g, ' ').replace(/[#*_`[\]()]/g, '');
-							if (start > 0) snippet = '…' + snippet;
-							if (end < bNorm.length) snippet = snippet + '…';
-							p.excerpt = snippet;
-						} else {
-							p.excerpt = null;
-						}
-					}
-					return matches;
-				});
-				render(filtered);
-			}
-
-			q.addEventListener('input', (e) => search(e.target.value));
-			render(posts);
+		<script is:inline>
+			window.addEventListener('DOMContentLoaded', (event) => {
+				new PagefindUI({ element: "#search", showSubResults: true, baseUrl: "/" });
+			});
 		</script>
-
-		<script type="application/json" id="posts-json" set:html={JSON.stringify(posts).replace(/</g, '\\u003c')}></script>
 	</body>
 </html>

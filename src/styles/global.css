@@ -841,3 +841,21 @@ html {
 		radial-gradient(ellipse at 20% 50%, rgba(196, 162, 101, 0.04) 0%, transparent 70%),
 		radial-gradient(ellipse at 80% 50%, rgba(184, 121, 66, 0.03) 0%, transparent 70%);
 }
+
+.sr-only:focus, .focus\:not-sr-only:focus {
+	position: static !important;
+	width: auto;
+	height: auto;
+	clip: auto;
+	clip-path: none;
+	overflow: visible;
+	padding: var(--space-sm) var(--space-md);
+	background: var(--bg-card);
+	color: var(--accent-primary);
+	z-index: 100;
+	border: 2px solid var(--accent-primary);
+	border-radius: var(--radius-button);
+	margin: var(--space-sm);
+	font-family: var(--font-ui);
+	text-decoration: none;
+}

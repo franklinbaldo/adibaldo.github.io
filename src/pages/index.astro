@@ -23,6 +23,7 @@ const recentPosts = posts.slice(1);
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
+		<a href="#main-content" class="sr-only focus:not-sr-only">Pular para o conteúdo principal</a>
 		<Header />
 
 		<section class="hero">
@@ -39,7 +40,7 @@ const recentPosts = posts.slice(1);
 			</div>
 		</section>
 
-		<main>
+		<main id="main-content">
 			{/* ── Featured Article ── */}
 			{featuredPost && (
 				<section class="section section-textured">
