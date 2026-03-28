@@ -136,11 +136,11 @@ const breadcrumbLD = {
 				<section class="share-section" style="margin-top: var(--space-2xl);">
 					<p class="meta" style="margin-bottom: var(--space-sm);">Compartilhe essa prosa:</p>
 					<div style="display: flex; gap: var(--space-md);">
-						<a class="icon-btn" href={waUrl} target="_blank" rel="noreferrer" style="background: #25D366; color: white; border:none; text-decoration:none;">
+						<a class="icon-btn btn-whatsapp" href={waUrl} target="_blank" rel="noreferrer">
 							<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-11.7 8.38 8.38 0 0 1 3.8.9L21 3z"></path></svg>
 							WhatsApp
 						</a>
-						<a class="icon-btn" href={tgUrl} target="_blank" rel="noreferrer" style="background: #0088cc; color: white; border:none; text-decoration:none;">
+						<a class="icon-btn btn-telegram" href={tgUrl} target="_blank" rel="noreferrer">
 							<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
 							Telegram
 						</a>
@@ -235,18 +235,18 @@ const breadcrumbLD = {
 		.markdown-livro {
 			font-family: 'Merriweather', 'Georgia', 'Times New Roman', serif;
 			line-height: 1.7;
-			color: #2c2c2c;
+			color: var(--text-primary);
 			max-width: 68ch;
 			margin: 0 auto;
 			padding: 2rem 1rem;
-			background-color: #fcfcfc;
+			background-color: var(--bg-primary);
 		}
 
 		.markdown-livro h1,
 		.markdown-livro h2,
 		.markdown-livro h3 {
 			text-align: center;
-			color: #111;
+			color: var(--text-primary);
 			font-weight: normal;
 		}
 
@@ -258,7 +258,7 @@ const breadcrumbLD = {
 			text-align: center;
 			font-style: italic;
 			font-size: 0.95rem;
-			color: #666;
+			color: var(--text-secondary);
 			margin-top: 0;
 			margin-bottom: 2.5rem;
 			text-indent: 0;
@@ -284,16 +284,16 @@ const breadcrumbLD = {
 			content: '* * *';
 			font-size: 1.5rem;
 			letter-spacing: 0.3rem;
-			color: #888;
+			color: var(--text-muted);
 		}
 
 		/* Citações e poesias */
 		.markdown-livro blockquote {
 			margin: 2.5rem 3rem;
 			padding-left: 1.5rem;
-			border-left: 3px solid #ccc;
+			border-left: 3px solid var(--border-light);
 			font-style: italic;
-			color: #444;
+			color: var(--text-secondary);
 		}
 		.markdown-livro blockquote p {
 			text-align: left;
@@ -322,7 +322,7 @@ const breadcrumbLD = {
 			display: block;
 			text-align: center;
 			font-size: 0.85rem;
-			color: #777;
+			color: var(--text-muted);
 			margin-bottom: 3rem;
 		}
 
