@@ -40,11 +40,18 @@ const blogPostingLD = {
 	"author": {
 		"@type": "Person",
 		"name": "Adi Baldo",
-		"url": new URL('/sobre', Astro.site).toString()
+		"url": new URL('/sobre', Astro.site).toString(),
+		"sameAs": [
+			"https://github.com/adibaldo"
+		]
 	},
 	"publisher": {
-		"@type": "Person",
-		"name": "Adi Baldo"
+		"@type": "Organization",
+		"name": "Alfarrábios do Adi",
+		"logo": {
+			"@type": "ImageObject",
+			"url": new URL('/favicon-adi.png', Astro.site).toString()
+		}
 	},
 	"mainEntityOfPage": {
 		"@type": "WebPage",
@@ -83,8 +90,8 @@ const breadcrumbLD = {
 <html lang="pt-BR">
 	<head>
 		<BaseHead title={pageTitle} description={description} imageUrl={imageUrl} ogType="article" pubDate={pubDate} updatedDate={updatedDate} />
-		<script type="application/ld+json" set:html={JSON.stringify(blogPostingLD)} />
-		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbLD)} />
+		<script type="application/ld+json" set:html={JSON.stringify(blogPostingLD).replace(/</g, '\\u003c')} />
+		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbLD).replace(/</g, '\\u003c')} />
 	</head>
 	<body>
 		<a href="#main-content" class="sr-only focus:not-sr-only">Pular para o conteúdo principal</a>

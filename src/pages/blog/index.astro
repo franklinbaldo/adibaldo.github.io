@@ -30,13 +30,26 @@ const breadcrumbLD = {
 		}
 	]
 };
+
+const listItems = posts.map((post, index) => ({
+	"@type": "ListItem",
+	"position": index + 1,
+	"url": new URL(`/blog/${post.id}/`, Astro.site).toString()
+}));
+
+const itemListLD = {
+	"@context": "https://schema.org",
+	"@type": "ItemList",
+	"itemListElement": listItems
+};
 ---
 
 <!doctype html>
 <html lang="pt-BR">
 	<head>
 		<BaseHead title={`Textos — ${SITE_TITLE}`} description="Todos os textos do Adi: memórias, causos, ensaios e prosas de diferentes lugares e tempos." />
-		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbLD)} />
+		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbLD).replace(/</g, '\\u003c')} />
+		<script type="application/ld+json" set:html={JSON.stringify(itemListLD).replace(/</g, '\\u003c')} />
 	</head>
 	<body>
 		<a href="#main-content" class="sr-only focus:not-sr-only">Pular para o conteúdo principal</a>

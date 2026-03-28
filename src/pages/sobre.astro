@@ -23,13 +23,27 @@ const breadcrumbLD = {
 		}
 	]
 };
+
+const personLD = {
+	"@context": "https://schema.org",
+	"@type": "Person",
+	"name": "Adi Baldo",
+	"url": Astro.site?.toString(),
+	"image": new URL('/assets/adi-profile.png', Astro.site).toString(),
+	"jobTitle": "Advogado Aposentado e Escritor",
+	"description": "Aos 76 anos, sou advogado aposentado, tive a honra de ser o primeiro advogado de Rolim de Moura/RO, escritor de memórias...",
+	"sameAs": [
+		"https://github.com/adibaldo"
+	]
+};
 ---
 
 <!doctype html>
 <html lang="pt-BR">
 	<head>
 		<BaseHead title={`Sobre — ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
-		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbLD)} />
+		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbLD).replace(/</g, '\\u003c')} />
+		<script type="application/ld+json" set:html={JSON.stringify(personLD).replace(/</g, '\\u003c')} />
 	</head>
 	<body>
 		<a href="#main-content" class="sr-only focus:not-sr-only">Pular para o conteúdo principal</a>
