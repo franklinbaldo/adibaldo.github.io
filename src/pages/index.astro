@@ -87,6 +87,8 @@ const itemListLD = {
 								<p>{featuredPost.data.description}</p>
 								<p class="meta" style="position: relative; z-index: 1;">
 									<FormattedDate date={featuredPost.data.pubDate} />
+									<span>&bull;</span>
+									<span class="reading-time">{Math.max(1, Math.round((featuredPost.body?.split(/\s+/).length || 0) / 200))} min de leitura</span>
 								</p>
 							</div>
 						</article>
@@ -133,6 +135,8 @@ const itemListLD = {
 									<p class="card-desc">{post.data.description}</p>
 									<p class="meta" style="margin:0;">
 										<FormattedDate date={post.data.pubDate} />
+										<span>&bull;</span>
+										<span class="reading-time">{Math.max(1, Math.round((post.body?.split(/\s+/).length || 0) / 200))} min de leitura</span>
 									</p>
 								</div>
 							</article>
