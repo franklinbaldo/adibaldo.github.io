@@ -1,0 +1,209 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import { SITE_TITLE } from '../../consts';
+
+export async function getStaticPaths({ paginate }) {
+	const posts = (await getCollection('blog'))
+		.filter((p) => !p.data.draft)
+		.sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()); // oldest first
+
+	return paginate(posts, { pageSize: 10 });
+}
+
+const { page } = Astro.props;
+// reverse so newest posts of the current page show first
+const posts = [...page.data].reverse();
+
+const allPosts = await getCollection('blog');
+const tags = [...new Set(allPosts.filter(p => !p.data.draft).flatMap((post) => post.data.tags || []))].sort();
+
+const breadcrumbLD = {
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Início",
+			"item": Astro.site?.toString()
+		},
+		{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "Textos"
+		}
+	]
+};
+
+const listItems = posts.map((post, index) => ({
+	"@type": "ListItem",
+	"position": index + 1,
+	"url": new URL(`/blog/${post.id}/`, Astro.site).toString()
+}));
+
+const itemListLD = {
+	"@context": "https://schema.org",
+	"@type": "ItemList",
+	"itemListElement": listItems
+};
+---
+
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<BaseHead title={`Textos (Página ${page.currentPage}) — ${SITE_TITLE}`} description="Todos os textos do Adi: memórias, causos, ensaios e prosas de diferentes lugares e tempos." />
+		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbLD).replace(/</g, '\\u003c')} />
+		<script type="application/ld+json" set:html={JSON.stringify(itemListLD).replace(/</g, '\\u003c')} />
+	</head>
+	<body>
+		<a href="#main-content" class="sr-only focus:not-sr-only">Pular para o conteúdo principal</a>
+		<Header />
+
+		<section class="hero">
+			<div class="container hero-inner">
+				<h1 style="font-size: clamp(34px, 4.5vw, 56px);">Textos</h1>
+				<p class="hero-kicker">
+					Memórias, causos e ensaios. Escolhe um e vai no passo.
+				</p>
+			</div>
+		</section>
+
+		<main id="main-content" class="section">
+			<div class="container">
+				<div class="tags-container" style="margin-bottom: var(--space-xl);">
+					<h2 style="font-size: 1.2rem; margin-bottom: var(--space-md);">Explorar por temas:</h2>
+					<div class="tag-row" style="flex-wrap: wrap; gap: var(--space-sm);">
+						{tags.map((tag) => (
+							<a href={`/tags/${tag}`} class="tag" style="text-decoration: none;">
+								{tag}
+							</a>
+						))}
+					</div>
+				</div>
+
+				<div class="grid post-grid">
+					{posts.map((post) => (
+						<article class="card post-card" style="position: relative;">
+							<a href={`/blog/${post.id}/`} style="position: absolute; inset: 0; z-index: 0;" aria-label={`Ler post: ${post.data.title}`}></a>
+							<div class="post-thumb">
+								{post.data.heroImage ? (
+									<Image
+										src={post.data.heroImage}
+										alt={post.data.heroImageAlt || `Capa do post ${post.data.title}`}
+										widths={[400, 800, 1200]}
+										sizes="(max-width: 620px) 100vw, (max-width: 980px) 50vw, 33vw"
+									/>
+								) : (
+									<div class="post-thumb-fallback" aria-hidden="true" />
+								)}
+							</div>
+							<div class="post-card-body" style="position: relative; z-index: 1;">
+								<div class="tag-row" style="position: relative; z-index: 1;">
+									{post.data.tags?.slice(0, 1).map((t) => (
+										<a href={`/tags/${t}`} class="tag" style="text-decoration: none; position: relative; z-index: 1;">{t}</a>
+									))}
+									{post.data.placeLabel && <span class="tag">{post.data.placeLabel}</span>}
+								</div>
+								<h3 class="card-title"><a href={`/blog/${post.id}/`} style="color: inherit; text-decoration: none; position: relative; z-index: 1;">{post.data.title}</a></h3>
+								<p class="card-desc">{post.data.description}</p>
+								<p class="meta" style="margin:0;">
+									<FormattedDate date={post.data.pubDate} />
+									<span>&bull;</span>
+									<span class="reading-time">{Math.max(1, Math.round((post.body?.split(/\s+/).length || 0) / 200))} min de leitura</span>
+								</p>
+							</div>
+						</article>
+					))}
+				</div>
+
+				{/* Paginação */}
+				<nav class="pagination-nav" style="margin-top: var(--space-2xl); border-top: 1px solid var(--border-light); padding-top: var(--space-xl);">
+					<div style="display: flex; justify-content: space-between; align-items: center;">
+						{page.url.prev ? (
+							<a href={page.url.prev} class="nav-pill">
+								← Textos mais antigos
+							</a>
+						) : (
+							<span style="visibility: hidden;">Anterior</span>
+						)}
+						<span class="meta">Página {page.currentPage} de {page.lastPage}</span>
+						{page.url.next ? (
+							<a href={page.url.next} class="nav-pill">
+								Textos mais recentes →
+							</a>
+						) : (
+							<span style="visibility: hidden;">Próximo</span>
+						)}
+					</div>
+				</nav>
+			</div>
+		</main>
+
+		<Footer />
+
+		<style>
+			.post-grid {
+				grid-template-columns: repeat(3, 1fr);
+			}
+
+			.post-card {
+				padding: 0;
+				overflow: hidden;
+				transition: transform 180ms ease, box-shadow 180ms ease;
+			}
+
+			.post-card:hover {
+				transform: translateY(-2px);
+			}
+
+			.post-thumb {
+				aspect-ratio: 16 / 9;
+				overflow: hidden;
+				background: var(--tag-bg);
+				border-bottom: 1px solid var(--border-light);
+			}
+
+			.post-thumb :global(img) {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: 0;
+				transition: transform 260ms ease;
+			}
+
+			.post-card:hover .post-thumb :global(img) {
+				transform: scale(1.03);
+			}
+
+			.post-thumb-fallback {
+				width: 100%;
+				height: 100%;
+				background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+			}
+
+			.post-card-body {
+				padding: var(--space-md);
+				display: flex;
+				flex-direction: column;
+				gap: var(--space-sm);
+			}
+
+			@media (max-width: 980px) {
+				.post-grid {
+					grid-template-columns: repeat(2, 1fr);
+				}
+			}
+
+			@media (max-width: 620px) {
+				.post-grid {
+					grid-template-columns: 1fr;
+				}
+			}
+		</style>
+	</body>
+</html>

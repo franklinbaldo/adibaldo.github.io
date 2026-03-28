@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-import type { CollectionEntry } from 'astro:content';
+import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
@@ -15,8 +15,19 @@ type Props = CollectionEntry<'blog'>['data'] & {
 	wordCount?: number;
 };
 
+
+
+
 const { title, description, pubDate, updatedDate, heroImage, heroImageAlt, tags, place, placeLabel, slug, prev, next, wordCount } = Astro.props;
 const pageTitle = `${title} — ${SITE_TITLE}`;
+
+const allPosts = await getCollection('blog');
+const relatedPosts = allPosts
+	.filter(p => !p.data.draft && p.id !== slug) // exclude current post and drafts
+	.filter(p => p.data.tags?.some(tag => tags?.includes(tag))) // at least one common tag
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()) // newest first
+	.slice(0, 3); // limit to 3
+
 const imageUrl = slug ? `/og/${slug}.png` : undefined;
 
 const readingTime = wordCount ? Math.max(1, Math.round(wordCount / 200)) : undefined;
@@ -144,7 +155,7 @@ const breadcrumbLD = {
 					</div>
 				)}
 
-				<article class="markdown-livro">
+				<article class="markdown-livro" data-url={canonicalURL.toString()}>
 					<slot />
 				</article>
 
@@ -178,6 +189,42 @@ const breadcrumbLD = {
 						) : <div />}
 					</div>
 				</nav>
+
+
+				{relatedPosts.length > 0 && (
+					<section class="related-posts" style="margin-top: var(--space-3xl); padding-top: var(--space-xl); border-top: 1px solid var(--border-light);">
+						<h3 style="margin-bottom: var(--space-md);">Posts relacionados</h3>
+						<div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: var(--space-lg);">
+							{relatedPosts.map(post => (
+								<article class="card post-card" style="position: relative;">
+									<a href={`/blog/${post.id}/`} style="position: absolute; inset: 0; z-index: 0;" aria-label={`Ler post: ${post.data.title}`}></a>
+									<div class="post-thumb" style="aspect-ratio: 16 / 9; overflow: hidden; background: var(--tag-bg); border-bottom: 1px solid var(--border-light);">
+										{post.data.heroImage ? (
+											<Image
+												src={post.data.heroImage}
+												alt={post.data.heroImageAlt || `Capa do post ${post.data.title}`}
+												widths={[400, 800]}
+												sizes="(max-width: 620px) 100vw, 33vw"
+												style="width: 100%; height: 100%; object-fit: cover;"
+											/>
+										) : (
+											<div style="width: 100%; height: 100%; background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));" aria-hidden="true" />
+										)}
+									</div>
+									<div class="post-card-body" style="padding: var(--space-md); position: relative; z-index: 1;">
+										<h4 class="card-title" style="font-size: 1.1rem; margin-bottom: var(--space-xs);">
+											<a href={`/blog/${post.id}/`} style="color: inherit; text-decoration: none;">{post.data.title}</a>
+										</h4>
+										<p class="meta" style="margin: 0; font-size: 0.85rem;">
+											<FormattedDate date={post.data.pubDate} />
+										</p>
+									</div>
+								</article>
+							))}
+						</div>
+					</section>
+				)}
+
 
 				<hr style="margin: var(--space-3xl) 0;" />
 
@@ -357,3 +404,85 @@ const breadcrumbLD = {
 	</style>
 	</body>
 </html>
+
+	<style is:global>
+		/* ─────────────────────────────────────────────────────────
+		   MODO IMPRESSÃO (@media print)
+		   Configurações adequadas para imprimir os textos
+		───────────────────────────────────────────────────────── */
+		@media print {
+			@page {
+				margin: 2cm 2.5cm;
+				@bottom-right {
+					content: counter(page);
+				}
+			}
+
+			/* Ocultar elementos UI e de navegação */
+			header,
+			footer,
+			.share-section,
+			.pagination-nav,
+			.breadcrumb,
+			#progress-container,
+			.related-posts,
+			#giscus,
+			hr {
+				display: none !important;
+			}
+
+			/* Reset de background e cores */
+			body, .markdown-livro {
+				background-color: transparent !important;
+				color: black !important;
+				max-width: none !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			/* Tipografia de livro no print */
+			.markdown-livro {
+				font-family: Georgia, 'Times New Roman', serif !important;
+				line-height: 1.5;
+			}
+
+			/* Imagens devem aparecer e evitar quebrar ao meio */
+			.markdown-livro img {
+				print-color-adjust: exact;
+				-webkit-print-color-adjust: exact;
+				break-inside: avoid;
+				page-break-inside: avoid;
+				max-width: 100% !important;
+			}
+
+			/* Recuos de livro no parágrafo com espaçamento reduzido */
+			.markdown-livro p {
+				text-indent: 1.5em !important;
+				margin-bottom: 0.3em !important;
+			}
+
+			/* Exceto o primeiro parágrafo depois do H2, ou parágrafo com imagem */
+			.markdown-livro h2 + p,
+			.markdown-livro p:has(img) {
+				text-indent: 0 !important;
+			}
+
+			/* Quebra de página antes de H2 se houver muito conteúdo */
+			.markdown-livro h2 {
+				break-before: page;
+				page-break-before: always;
+				margin-top: 0 !important;
+			}
+
+			/* Mostrar URL atual no fim do texto */
+			.markdown-livro::after {
+				content: "Fonte: " attr(data-url);
+				display: block;
+				margin-top: 3cm;
+				font-size: 0.85em;
+				text-align: center;
+				color: #555;
+				font-style: italic;
+			}
+		}
+	</style>
