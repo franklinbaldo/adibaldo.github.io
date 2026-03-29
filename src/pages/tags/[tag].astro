@@ -42,13 +42,13 @@ const breadcrumbLD = {
 		{
 			"@type": "ListItem",
 			"position": 2,
-			"name": "Textos",
-			"item": new URL('/blog', Astro.site).toString()
+			"name": "Tags",
+			"item": new URL('/tags', Astro.site).toString()
 		},
 		{
 			"@type": "ListItem",
 			"position": 3,
-			"name": `Textos sobre: ${tag}`
+			"name": `${tag}`
 		}
 	]
 };
