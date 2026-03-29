@@ -1,9 +1,3 @@
 ---
-import { getCollection } from 'astro:content';
-
-const posts = (await getCollection('blog')).filter((p) => !p.data.draft);
-const totalPosts = posts.length;
-const lastPage = Math.ceil(totalPosts / 10) || 1;
-
-return Astro.redirect(`/blog/${lastPage}/`, 301);
+return Astro.redirect(`/blog/1/`, 301);
 ---
