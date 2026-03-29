@@ -41,7 +41,12 @@ const personLD = {
 <!doctype html>
 <html lang="pt-BR">
 	<head>
-		<BaseHead title={`Sobre — ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+		<BaseHead
+			title={`Sobre — ${SITE_TITLE}`}
+			description={SITE_DESCRIPTION}
+			imageUrl={ProfileImage.src}
+			ogType="profile"
+		/>
 		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbLD).replace(/</g, '\\u003c')} />
 		<script type="application/ld+json" set:html={JSON.stringify(personLD).replace(/</g, '\\u003c')} />
 	</head>
