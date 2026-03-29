@@ -915,3 +915,22 @@ html {
 	font-family: var(--font-ui);
 	text-decoration: none;
 }
+
+/* Skip Link */
+.skip-link {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+	z-index: 100;
+	background-color: var(--bg-primary);
+	color: var(--text-primary);
+	padding: var(--space-sm) var(--space-md);
+	text-decoration: none;
+	border-radius: 4px;
+	font-weight: bold;
+}
+
+.skip-link:focus {
+	top: 10px;
+	left: 10px;
+}

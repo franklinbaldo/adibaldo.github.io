@@ -51,7 +51,7 @@ const personLD = {
 		<script type="application/ld+json" set:html={JSON.stringify(personLD).replace(/</g, '\\u003c')} />
 	</head>
 	<body>
-		<a href="#main-content" class="sr-only focus:not-sr-only">Pular para o conteúdo principal</a>
+		<a href="#main-content" class="skip-link">Ir ao conteúdo principal</a>
 		<Header />
 
 		<section class="hero">
@@ -63,7 +63,7 @@ const personLD = {
 			</div>
 		</section>
 
-		<main class="section section-textured">
+		<main id="main-content" class="section section-textured">
 			<div class="reading-width">
 				<div class="about-profile-section">
 					<div class="about-profile-photo">
