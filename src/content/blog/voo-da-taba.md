@@ -1,7 +1,6 @@
 ---
 title: "O Voo da TABA: quando eu troquei o Sul pela Amazônia"
-description: "O dia em que deixei Curitiba num C-46 rumo a Rondônia no inverno amazônico."
-pubDate: 2026-03-29
+date: 2026-03-29
 tags: ["memórias", "rondônia", "pioneirismo"]
 place: "curitiba"
 ---
