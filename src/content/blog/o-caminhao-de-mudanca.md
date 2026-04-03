@@ -8,6 +8,18 @@ heroImageAlt: "Caminhão antigo carregado de móveis e utensílios, estrada de t
 placeLabel: "Pato Branco"
 ---
 
+Na vida nem tudo são flores ou folguedos. Como dizia, éramos felizes na colina. Brincávamos e sonhávamos. Porém, coisas há que nos marcam e guardamos recordações.
+
+É o caso das rosetas. Planta rasteira, que se desenvolve no inverno, entremeio a gramíneas e até isoladamente. Quando tenras e em crescimento, são macias e inofensivas; porém, quando maduras e secas, na primavera, tornam-se agressivas.
+
+As flores minúsculas transformam-se em espinhos que agridem a sola dos pés. Normalmente no dia a dia as crianças andavam e brincavam descalças. Era necessário evitar as rosetas; porém, eram tantas que o chão ficava forrado — um verdadeiro chão de agulhas. Impossível evitá-las. Quando se brincava, suportava-se; porém, quando necessário percorrer um caminho, era triste e dolorido.
+
+Um certo dia, mamãe tinha que visitar uma comadre por razão incerta e não sabida. Eu e o maninho mais novo teimamos de ir junto. O caminho era roseta pura. Entramos no desespero e no choro. Tentando aliviar nosso sofrimento, ela desfez-se dos chinelos dizendo: vão andando com eles.
+
+— O que faz uma mãe para proteger seus filhos! Esticando o passo, distanciou-se de nós. Eram quantos pés para dois chinelos. Alguém deveria andar sobre as rosetas. A princípio, cada um ficou com um pé; depois, tentamos revezar — um pouco para cada um. Foi solução ou solução alguma. No mais, os chinelos eram grandes como as botas do papai e nossos pés, pequenos.
+
+Pela primeira vez nos valemos da sabedoria salomônica. Chinelos nas mãos e enfrentamos as rosetas, com choros e lágrimas.
+
 Minhas recordações levam-me ao tempo de infância. Dos então sete, eu era o quarto. Brincávamos entre arvoredos e pedregulhos. De pega-pega e esconde-esconde: *"Guiri, guiri gaio... escampa sotto il gaio."* Há capito? — *"Alora fatte furbo."* — *"Sete tu in cielo, ora piu belo, secondo marino, para andare in pescaria, tre narance e tre limone, pinfete, pinfete, mandolo via."*
 
 Não sabíamos o significado, mas brincávamos de esconde. *(Você no céu será o mais bonito. Segundo o marinheiro para ir na pescaria, três laranjas e três limões, pimfe, pafe te mando embora.)*
