@@ -106,9 +106,6 @@ const breadcrumbLD = {
 	</head>
 	<body>
 		<a href="#main-content" class="skip-link">Ir ao conteúdo principal</a>
-		<div id="progress-container">
-			<div id="progress-bar"></div>
-		</div>
 		<Header />
 
 		<main id="main-content" class="post" data-pagefind-body>
@@ -159,19 +156,7 @@ const breadcrumbLD = {
 					<slot />
 				</article>
 
-				<section class="share-section" style="margin-top: var(--space-2xl);">
-					<p class="meta" style="margin-bottom: var(--space-sm);">Compartilhe essa prosa:</p>
-					<div style="display: flex; gap: var(--space-md);">
-						<a class="icon-btn btn-whatsapp" href={waUrl} target="_blank" rel="noreferrer">
-							<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-11.7 8.38 8.38 0 0 1 3.8.9L21 3z"></path></svg>
-							WhatsApp
-						</a>
-						<a class="icon-btn btn-telegram" href={tgUrl} target="_blank" rel="noreferrer">
-							<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-							Telegram
-						</a>
-					</div>
-				</section>
+
 
 				<nav class="pagination-nav" style="margin-top: var(--space-3xl); border-top: 1px solid var(--border-light); padding-top: var(--space-xl);">
 					<div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-lg);">
@@ -194,34 +179,11 @@ const breadcrumbLD = {
 				{relatedPosts.length > 0 && (
 					<section class="related-posts" style="margin-top: var(--space-3xl); padding-top: var(--space-xl); border-top: 1px solid var(--border-light);">
 						<h3 style="margin-bottom: var(--space-md);">Posts relacionados</h3>
-						<div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: var(--space-lg);">
+						<ul class="post-text-list">
 							{relatedPosts.map(post => (
-								<article class="card post-card" style="position: relative;">
-									<a href={`/blog/${post.id}/`} style="position: absolute; inset: 0; z-index: 0;" aria-label={`Ler post: ${post.data.title}`}></a>
-									<div class="post-thumb" style="aspect-ratio: 16 / 9; overflow: hidden; background: var(--tag-bg); border-bottom: 1px solid var(--border-light);">
-										{post.data.heroImage ? (
-											<Image
-												src={post.data.heroImage}
-												alt={post.data.heroImageAlt || `Capa do post ${post.data.title}`}
-												widths={[400, 800]}
-												sizes="(max-width: 620px) 100vw, 33vw"
-												style="width: 100%; height: 100%; object-fit: cover;"
-											/>
-										) : (
-											<div style="width: 100%; height: 100%; background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));" aria-hidden="true" />
-										)}
-									</div>
-									<div class="post-card-body" style="padding: var(--space-md); position: relative; z-index: 1;">
-										<h4 class="card-title" style="font-size: 1.1rem; margin-bottom: var(--space-xs);">
-											<a href={`/blog/${post.id}/`} style="color: inherit; text-decoration: none;">{post.data.title}</a>
-										</h4>
-										<p class="meta" style="margin: 0; font-size: 0.85rem;">
-											<FormattedDate date={post.data.pubDate} />
-										</p>
-									</div>
-								</article>
+								<li class="post-text-list-item"><a href={'/blog/' + post.id + '/'} class="post-text-link">{post.data.title}</a> - <FormattedDate date={post.data.pubDate} /></li>
 							))}
-						</div>
+						</ul>
 					</section>
 				)}
 

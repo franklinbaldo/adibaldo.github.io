@@ -1,6 +1,7 @@
 ---
 title: "O Voo da TABA: quando eu troquei o Sul pela Amazônia"
-date: 2026-03-29
+pubDate: 2026-03-29
+description: A lembrança do meu voo rumo a Rondônia.
 tags: ["memórias", "rondônia", "pioneirismo"]
 place: "curitiba"
 ---
