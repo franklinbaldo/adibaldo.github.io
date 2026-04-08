@@ -18,3 +18,4 @@ E o matear, meus amigos, não é só sorver a água quente e amarga. É o tempo 
 Nesses anos todos longe da terra natal, o chimarrão foi o fio que manteve a memória atada. Cada gole é uma volta ao passado, aos domingos de família, às manhãs de geada. E, ao mesmo tempo, é a certeza de que a gente botou raiz num chão novo. A tradição, afinal, não é uma âncora que prende, mas uma bússola que orienta.
 
 O velho Adi, com seu olhar de quem desbravou muita mata, sempre teve no mate o seu companheiro mais fiel. E nós, aqui, seguimos o costume. Que o amargo do chimarrão nos lembre sempre das doçuras da vida e que a roda nunca se quebre. Um bom mate a todos, e que a prosa não tenha fim.
+> "Como diz o ditado no pago: 'O chimarrão amargo adoça a alma e encurta a distância da saudade.'"
