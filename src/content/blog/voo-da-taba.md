@@ -1,8 +1,13 @@
 ---
 title: "O Voo da TABA: quando eu troquei o Sul pela Amazônia"
 date: 2026-03-29
-tags: ["memórias", "rondônia", "pioneirismo"]
-place: "curitiba"
+tags:
+  - memórias
+  - rondônia
+  - pioneirismo
+place: curitiba
+description: "Aquele dia nove de março de 1981 ficou gravado na minha memória com o som de dois motores radiais roncando feito bicho brabo. Eu estava ali, ajeitado na poltrona do bimotorzão C-46 da TABA, sentindo o trepidar da lataria entrar pelos ossos e avisar que não tinha mais volta."
+pubDate: 2026-03-29
 ---
 
 Aquele dia nove de março de 1981 ficou gravado na minha memória com o som de dois motores radiais roncando feito bicho brabo. Eu estava ali, ajeitado na poltrona do bimotorzão C-46 da TABA, sentindo o trepidar da lataria entrar pelos ossos e avisar que não tinha mais volta. Quando aquela máquina valente descolou as rodas do chão e o nariz apontou pras nuvens, espiei pela janelinha e vi Curitiba ficando pequenininha lá embaixo. Era o fim de um capítulo de 14 anos na capital paranaense e o começo de uma empreitada que ia definir o resto da minha vida.
