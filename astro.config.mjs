@@ -6,12 +6,10 @@ import { defineConfig } from 'astro/config';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
-import svelte from '@astrojs/svelte';
-
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://adibaldo.github.io',
-	integrations: [mdx(), sitemap({ filter: (page) => !page.includes('/workspace/') && !page.includes('/_/') }), svelte()],
+	integrations: [mdx(), sitemap({ filter: (page) => !page.includes('/workspace/') && !page.includes('/_/') })],
 	prefetch: {
 		prefetchAll: true,
 	},
