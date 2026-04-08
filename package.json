@@ -22,8 +22,12 @@
     "sharp": "^0.34.3"
   },
   "devDependencies": {
+    "@astrojs/svelte": "^8.0.4",
     "@types/markdown-it": "^14.1.2",
+    "@types/node": "^25.5.2",
     "@types/sanitize-html": "^2.16.1",
-    "pagefind": "^1.4.0"
+    "pagefind": "^1.4.0",
+    "svelte": "^5.55.2",
+    "typescript": "^5.9.3"
   }
 }

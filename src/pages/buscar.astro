@@ -1,7 +1,7 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
+import Header from '../components/Header.svelte';
 import { SITE_TITLE } from '../consts';
 ---
 
@@ -14,7 +14,7 @@ import { SITE_TITLE } from '../consts';
 	</head>
 	<body>
 		<a href="#main-content" class="skip-link">Ir ao conteúdo principal</a>
-		<Header />
+		<Header siteTitle={SITE_TITLE} currentPath={new URL(Astro.request.url).pathname} client:idle />
 
 		<header class="hero">
 			<div class="container hero-inner">
