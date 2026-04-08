@@ -33,8 +33,29 @@ import { SITE_TITLE } from '../consts';
 
 		<script is:inline>
 			window.addEventListener('DOMContentLoaded', (event) => {
-				new PagefindUI({ element: "#search", showSubResults: true, baseUrl: "/" });
+				new PagefindUI({
+					element: "#search",
+					showSubResults: true,
+					baseUrl: "/",
+					translations: {
+						placeholder: "Buscar nos alfarrábios...",
+						clear_search: "Limpar",
+						zero_results: "Nenhuma prosa encontrada para [SEARCH_TERM]",
+						search_label: "Pesquisar",
+						load_more: "Carregar mais",
+						searching: "Buscando nos alfarrábios..."
+					}
+				});
 			});
 		</script>
+		<style is:global>
+			:root {
+				--pagefind-ui-primary: var(--accent-primary);
+				--pagefind-ui-text: var(--text-primary);
+				--pagefind-ui-background: var(--bg-primary);
+				--pagefind-ui-border: var(--border-light);
+				--pagefind-ui-tag: var(--tag-bg);
+			}
+		</style>
 	</body>
 </html>
