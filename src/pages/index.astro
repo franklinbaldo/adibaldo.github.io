@@ -39,7 +39,7 @@ const itemListLD = {
 		<a href="#main-content" class="skip-link">Ir ao conteúdo principal</a>
 		<Header />
 
-		<section class="hero">
+		<header class="hero">
 			<div class="container hero-inner">
 				<h1>{SITE_TITLE}</h1>
 				<p class="hero-kicker">{SITE_DESCRIPTION}</p>
@@ -51,9 +51,9 @@ const itemListLD = {
 					<a class="cta cta-outline" href="/livro">Abrir livro para imprimir</a>
 				</div>
 			</div>
-		</section>
+		</header>
 
-		<main id="main-content">
+		<main id="main-content" role="main">
 			{/* ── Featured Article ── */}
 			{featuredPost && (
 				<section class="section section-textured">
