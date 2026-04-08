@@ -1,21 +1,41 @@
 ---
-title: "Os Fios de Rondon e a Voz da Fronteira"
-description: "Aparício reflete sobre o rastro do Marechal Rondon pelas brenhas de Mato Grosso e Rondônia, e como essas antigas linhas telegráficas se entrelaçam com as vivências do seu Adi."
-pubDate: "2026-03-24"
-tags: ["história", "rondônia", "marechal-rondon", "ecos-do-pampa"]
-draft: true
+title: "Marechal Cândido Mariano da Silva Rondon: O Herói Pouco Conhecido"
+description: "Um resumo da vida do Marechal Rondon: suas expedições, a expedição com Theodore Roosevelt, o Marechal que ligou o Brasil de ponta a ponta."
+pubDate: "2026-03-13"
+heroImage: "/images/hero/marechal-rondon.png"
+heroImageAlt: "Linha telegráfica na floresta amazônica — a obra do Marechal Rondon."
+tags: ["história", "rondônia", "marechal-rondon", "expedições"]
+place: "cuiaba"
+placeLabel: "Cuiabá"
 ---
 
-Buenas, minha gente! Aqui quem lhes fala é o Aparício, arranchado nestes rascunhos da memória, mateando devagar enquanto a poeira das lembranças assenta.
+Cândido Mariano da Silva Rondon — baixinho, "tarracudo", inteligente e destemido. Cruza de índio com francês. Não dominava o inglês, mas foi guia do presidente Theodore Roosevelt pela Floresta Amazônica.
 
-Hoje me peguei pensando naquelas picadas antigas que cortam as brenhas de Mato Grosso até o coração de Rondônia. O seu Adi, nas suas prosas e andanças de advogado desbravador por Rolim de Moura e outros rincões, sempre teve um respeito muito grande por quem abriu esses caminhos primeiro. E quem foi o ponteiro dessa tropa senão o Marechal Cândido Rondon?
+![Marechal Cândido Rondon jovem, explorador da Amazônia.](./images/rondon-jovem.jpg)
+*Cândido Rondon jovem em expedição pela selva.*
 
-Imaginem só a peleia! Cândido da Silva Rondon, baixinho, "tarracudo", mestiço de índio e nascido lá nas bandas de Santo Antônio de Leverger. O homem embrenhou-se mata a dentro para esticar a Linha Telegráfica Estratégica. Era o telégrafo levando a voz do progresso para a fronteira, um código morse de cada vez, rasgando o silêncio da floresta amazônica para conectar Cuiabá a Porto Velho.
+Nascido em Santo Antônio de Leverger, ao costado de Cuiabá, em 1865. Apreciador de peixe com piqui. Foi militar, tendo chegado ao posto de Marechal. Faleceu em 1958. Em sua homenagem, o Território Federal do Guaporé passou a se chamar Território Federal de Rondônia, hoje Estado de Rondônia.
 
-O seu Adi, quando contava uns causos, lembrava que essas picadas do telégrafo foram as veias por onde o Brasil começou a pulsar naquelas terras. Rondon não levou só o fio de cobre pendurado nos postes; levou o respeito, com aquele seu lema bonito no trato com a indiada. Conhecia aquele chão e respeitava quem era filho dele primeiro.
+Construiu a linha telegráfica estabelecendo a comunicação entre a capital da República, Rio de Janeiro, e a cidade de Rio Branco, no Acre, com o marcante trecho entre Cuiabá e Porto Velho.
 
-E vejam que voltas o mundo dá! Décadas mais tarde, as trilhas abertas pela Comissão Rondon ajudaram a guiar as levas de pioneiros — agricultores de mãos calejadas, migrantes corajosos, e também jovens advogados sonhadores como o seu Adi — para ajudar a formar a "Rondônia de Verdade". Onde antes ressoava apenas o estalo do telégrafo, passou a ecoar a voz da justiça e a lida do povo nos grandes assentamentos.
+> "Durante o governo do presidente Washington Luís foi criado o Serviço de Inspeção de Fronteiras para vigiar e nacionalizar as fronteiras. Para chefiá-lo foi nomeado o general Cândido Mariano da Silva Rondon. Foram visitadas as fronteiras do Oiapoque, girando para oeste e para o sul através das fronteiras da Guiana Francesa, Guiana, Suriname, Venezuela, Colômbia, Peru, Bolívia, Paraguai, Argentina e Uruguai." ([Fonte: Brasiliana Fotográfica](https://brasilianafotografica.bn.gov.br/?p=17506))
 
-Lá nas trincheiras do direito, nos fóruns pioneiros e nas varandas poeirentas do interior, o seu Adi foi, de seu jeito, um tipo de telegrafista do direito. Ele tentava fazer a comunicação fluir entre a lei fria e a vida quente daquele povo guerreiro. Um abriu picadas na mata para passar a mensagem da capital; o outro abriu picadas na lei para garantir o direito daqueles que chegaram para fazer a vida na fronteira.
+Como dito, Cândido Rondon foi guia de Roosevelt na Expedição de 1913 e 1914, quando seguiram o curso do Rio da Dúvida, antes denominado Rio da Confusão, hoje Rio Roosevelt. Na verdade, é um rio cheio de curvas que nasce em Rondônia, passa por Mato Grosso e termina no Amazonas. Foi denominado Rio Roosevelt em homenagem ao americano Theodore Roosevelt, que se mostrou tão interessado em descobrir sua nascente.
 
-Fica aqui este chasque do Aparício em homenagem ao velho Marechal, e ao seu Adi, que soube pisar com tanto respeito na terra que Rondon ajudou a descortinar. Vamos seguindo, esticando as linhas da memória para que não se percam nos ventos do tempo!
+A expedição teve início em Cáceres com 15 pessoas. Certo é que não é um rio navegável a ponto de não ter despertado o interesse da marinha americana. Podemos admitir que Roosevelt era um aventureiro e queria ter uma experiência de selva. Para isso, nada melhor que convidar Cândido Rondon como companheiro de aventura.
+
+Buscaram a nascente na Chapada dos Parecis, atual município de Vilhena. Descobriram que ele é afluente do Rio Aripuanã. Tudo bem. Devem ter matado algumas onças e caçado algumas borboletas para serem colocadas em algum museu de Nova York. O curioso é que, anos antes, Rondon ao construir a Linha Telegráfica, fez um ângulo de 70 graus seguindo rumo ao Rio da Confusão, para depois retomar seu trajeto rumo a Porto Velho. Diga-se, no entanto, que Rondon era "macaco velho" e conhecia cada pau daquele caminho. Não teria ele cometido um engano. Foi uma confusão, ou uma fusão de coisas. Para justificar denominou o córrego de Rio da Dúvida. Os trabalhos de Rondon já corriam o mundo, foi então que recebeu o convite de Roosevelt para juntos solucionarem o problema hidrogeográfico.
+
+É aqui que a porca torce o rabo. Rondon, quando da construção da linha telegráfica, alardeou, para não dizer que relatou, espalhou uma "FAKE NEWS" sobre a existência de uma tribo de índios com flechas com ponta de ouro e enfeitadas com pedras de diamantes. Afinal de contas, ele também tinha direito de contar bravatas ou lendas.
+
+Fawcett, explorador e aventureiro inglês, já tinha enfiado seu nariz pela Bolívia à procura de uma cidade perdida. Depois se enfiou pelo Brasil e acabou se perdendo na Serra do Roncador, MT. Sumiu e nunca mais se teve notícia. Verdade é que estava bem longe do Rio da Dúvida. A confusão deve ter sido outra.
+
+Verdade é que não longe das nascentes do Rio da Dúvida existe uma das maiores minas de diamantes do mundo, justamente na reserva Roosevelt. A pergunta que não quer calar: não seria isso que Roosevelt estava procurando? Talvez Rondon não quisesse ensinar o caminho das pedras.
+
+Não podemos falar de Rondon sem dizer do seu bom relacionamento com os povos nativos. Com certeza houve alguns atritos, porém ele era descendente dos nativos mato-grossenses e bem sabia como tratá-los. Defendeu o direito ou o princípio de que os povos indígenas têm o direito de se integrar aos costumes da nossa civilização e foi o propositor da criação de áreas indígenas onde fossem assegurados os seus direitos e as suas culturas.
+
+Além de militar, foi um humanista. Teve indicação para o Prêmio Nobel da Paz. A indicação foi feita simplesmente por Albert Einstein.
+
+> "...uma carta do físico Albert Einstein, escrita em 1925, recomendando ao comitê do prêmio o nome do marechal brasileiro Cândido Rondon (1865-1958). Einstein redigiu a carta ao comitê do Nobel, sediado em Oslo (Noruega), a bordo do navio Capitão Polônio, depois de uma viagem de 51 dias pelo Brasil, Argentina e Uruguai, a maior parte dela passada no Rio de Janeiro." ([Fonte: Folha de S.Paulo](https://www1.folha.uol.com.br/fsp/cotidian/ff0707200236.htm))
+
+Lembremos que em 1925, Einstein estava na flor da idade, e o Rio de Janeiro, com certeza, já oferecia alguns atrativos turísticos. Dizem até que deu pitaco sobre a construção da Estátua do Cristo Redentor.
