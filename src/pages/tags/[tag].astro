@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
-import Header from '../../components/Header.astro';
+import Header from '../../components/Header.svelte';
 import FormattedDate from '../../components/FormattedDate.astro';
 import { SITE_TITLE } from '../../consts';
 
@@ -67,7 +67,7 @@ const breadcrumbLD = {
 	</head>
 	<body>
 		<a href="#main-content" class="skip-link">Ir ao conteúdo principal</a>
-		<Header />
+		<Header client:load currentPath={Astro.url.pathname} />
 
 		<header class="hero">
 			<div class="container hero-inner">
