@@ -2,7 +2,7 @@
 import { Image } from 'astro:assets';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
+import Header from '../components/Header.svelte';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import ProfileImage from '../assets/adi-profile.png';
 
@@ -52,18 +52,18 @@ const personLD = {
 	</head>
 	<body>
 		<a href="#main-content" class="skip-link">Ir ao conteúdo principal</a>
-		<Header />
+		<Header client:load currentPath={Astro.url.pathname} />
 
-		<section class="hero">
+		<header class="hero">
 			<div class="container hero-inner">
 				<h1 style="font-size: clamp(34px, 4.5vw, 56px);">Sobre</h1>
 				<p class="hero-kicker">
 					Este espaco e um canto de lembrancas e reflexao — escrito no passo do tempo.
 				</p>
 			</div>
-		</section>
+		</header>
 
-		<main id="main-content" class="section section-textured">
+		<main id="main-content" role="main" class="section section-textured">
 			<div class="reading-width">
 				<div class="about-profile-section">
 					<div class="about-profile-photo">
@@ -86,18 +86,29 @@ const personLD = {
 				<div class="ornament-divider" aria-hidden="true">&#9830; &#9830; &#9830;</div>
 
 				<article class="prose">
+					<h2>As Raízes Gaúchas</h2>
+					<p>
+						Minha história começou no Sul, num tempo em que a vida era mais simples, mas a lida era dura. As recordações me levam para as rodas de chimarrão, o som de uma boa gaita e as modas de viola que preenchiam o silêncio do campo. A cultura gaúcha moldou não só meus costumes, mas também os valores que carrego até hoje: a palavra dada, o respeito ao próximo e a coragem para enfrentar o desconhecido. Entre um causo e outro, a paixão pelo Corinthians também encontrou seu espaço, provando que o coração pode ter sotaque, mas não fronteiras.
+					</p>
+
+					<h2>O Desafio Rondoniense</h2>
+					<p>
+						A vida, contudo, é feita de ventos que nos levam a novos pagos. O destino me chamou para o Norte, para as terras promissoras de Rondônia, ainda na época do Território Federal. Em 1981, embarquei num valente C-46 da TABA rumo a Cacoal, e pouco depois finquei raízes em Rolim de Moura, onde tive a honra de ser o primeiro advogado da cidade. Ali, a justiça era feita no meio da poeira da seca e do atoleiro das águas, no peito e na coragem. Advogar naquelas bandas não era tarefa para gabinete, mas uma lida de mediação constante para garantir o direito e o sossego dos pioneiros que desbravavam a floresta com as próprias mãos.
+					</p>
+
+					<h2>O Legado nos Alfarrábios</h2>
+					<p>
+						Hoje, aos 76 anos, com o paletó pendurado e a advocacia deixada para os mais moços, minha ferramenta principal não é mais a petição, mas a pena — e agora, o teclado. Este espaço é minha estante de memórias, um repositório onde organizo as histórias daqueles que, junto comigo, ajudaram a construir esse pedaço de Brasil. Seja relembrando a primeira audiência do júri ou um simples mutirão no interior do Paraná, escrevo para que o tempo não apague o que vivemos. Como costumo dizer: "o que não se escreve, o vento leva".
+					</p>
+
+					<div class="ornament-divider" aria-hidden="true">&#9830; &#9830; &#9830;</div>
+
 					<h2>O que tu vai achar por aqui</h2>
 					<ul>
 						<li>Memorias e causos (curtos e longos)</li>
 						<li>Ensaios e reflexoes do cotidiano</li>
 						<li>Textos organizados pelos <strong>locais da vida</strong></li>
 					</ul>
-
-					<h2>Como publicar</h2>
-					<p>
-						Os textos sao publicados em formato simples (Markdown). Cada texto e um arquivo novo no GitHub.
-						Quando a gente salva, o site atualiza sozinho.
-					</p>
 				</article>
 
 				{/* Quill illustration as subtle signature */}

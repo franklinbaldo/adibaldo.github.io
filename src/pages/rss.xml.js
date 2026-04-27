@@ -15,14 +15,18 @@ export async function GET(context) {
 		items: posts
 			.filter((p) => !p.data.draft)
 			.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-			.map((post) => ({
-				...post.data,
-				link: `/blog/${post.id}/`,
-				content: sanitizeHtml(parser.render(post.body)),
-				categories: [
+			.map((post) => {
+				const categories = [
+					...(post.data.categories || []),
 					...(post.data.tags || []),
 					...(post.data.placeLabel ? [post.data.placeLabel] : [])
-				],
-			})),
+				];
+				return {
+					...post.data,
+					link: `/blog/${post.id}/`,
+					content: sanitizeHtml(parser.render(post.body)),
+					customData: categories.map(c => `<category>${c}</category>`).join(''),
+				};
+			}),
 	});
 }

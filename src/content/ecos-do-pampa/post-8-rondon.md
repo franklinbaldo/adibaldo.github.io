@@ -1,15 +1,15 @@
 ---
-title: "Marechal Cândido da Silva Rondon: O Herói Pouco Conhecido"
+title: "Marechal Cândido Mariano da Silva Rondon: O Herói Pouco Conhecido"
 description: "Um resumo da vida do Marechal Rondon: suas expedições, a expedição com Theodore Roosevelt, o Marechal que ligou o Brasil de ponta a ponta."
 pubDate: "2026-03-13"
-heroImage: "./images/rondon-cover.png"
+heroImage: "/images/hero/marechal-rondon.png"
 heroImageAlt: "Linha telegráfica na floresta amazônica — a obra do Marechal Rondon."
 tags: ["história", "rondônia", "marechal-rondon", "expedições"]
 place: "cuiaba"
 placeLabel: "Cuiabá"
 ---
 
-Cândido da Silva Rondon — baixinho, "tarracudo", inteligente e destemido. Cruza de índio com francês. Não dominava o inglês, mas foi guia do presidente Theodore Roosevelt pela Floresta Amazônica.
+Cândido Mariano da Silva Rondon — baixinho, "tarracudo", inteligente e destemido. Cruza de índio com francês. Não dominava o inglês, mas foi guia do presidente Theodore Roosevelt pela Floresta Amazônica.
 
 ![Marechal Cândido Rondon jovem, explorador da Amazônia.](./images/rondon-jovem.jpg)
 *Cândido Rondon jovem em expedição pela selva.*

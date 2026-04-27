@@ -1,0 +1,62 @@
+---
+// RondonMap.astro
+---
+<div id="rondon-map" style="height: 400px; width: 100%; z-index: 1; border-radius: 8px; margin: 2rem 0;"></div>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script is:inline src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+<style is:global>
+	.leaflet-layer {
+		filter: grayscale(100%) sepia(20%);
+	}
+	/* Ensure map doesn't overlap sticky header */
+	#rondon-map {
+		isolation: isolate;
+	}
+</style>
+
+<script is:inline>
+	document.addEventListener('DOMContentLoaded', () => {
+		// Only initialize if the map container exists
+		const mapContainer = document.getElementById('rondon-map');
+		if (!mapContainer) return;
+
+		// Approximate coordinates for the trail points
+		const points = [
+			{ name: "Cuiabá", coords: [-15.6014, -56.0979], desc: "Ponto de partida da Linha Telegráfica." },
+			{ name: "Chapada dos Parecis (Vilhena)", coords: [-12.740, -60.145], desc: "Busca pelas nascentes do Rio da Dúvida." },
+			{ name: "Rio Roosevelt (Rio da Dúvida)", coords: [-10.5, -60.5], desc: "Expedição Rondon-Roosevelt (1913-1914)." },
+			{ name: "Porto Velho", coords: [-8.7612, -63.9039], desc: "Destino da Linha Telegráfica." }
+		];
+
+		// Initialize map centered roughly in the middle of the trail
+		const map = L.map('rondon-map').setView([-12.0, -60.0], 5);
+
+		// Add OpenStreetMap tiles
+		L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			maxZoom: 19,
+			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+		}).addTo(map);
+
+		// Create an array of coordinates for the polyline
+		const latlngs = points.map(p => p.coords);
+
+		// Add markers and popups
+		points.forEach((point, index) => {
+			L.marker(point.coords).addTo(map)
+				.bindPopup(`<b>${point.name}</b><br>${point.desc}`);
+		});
+
+		// Draw the trail
+		const polyline = L.polyline(latlngs, {
+			color: '#8b4513', // saddlebrown
+			weight: 3,
+			opacity: 0.8,
+			dashArray: '10, 10'
+		}).addTo(map);
+
+		// Fit bounds to show the whole trail
+		map.fitBounds(polyline.getBounds(), { padding: [30, 30] });
+	});
+</script>

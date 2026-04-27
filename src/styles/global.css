@@ -163,10 +163,10 @@
 	--bg-card: #fffdf9;
 	--bg-dark: #1a1a1a;
 	--text-primary: #2c2420;
-	--text-secondary: #6b5b4f;
+	--text-secondary: #5a4b40;
 	--text-muted: #9b8b7f;
 	--text-dark-mode: #e8ddd0;
-	--accent-primary: #b87942;
+	--accent-primary: #8b5a2b; /* darkened for contrast */
 	--accent-hover: #a06834;
 	--accent-gold: #c4a265;
 	--tag-bg: #f3ece3;
