@@ -1,3 +1,0 @@
-Title: feat: otimiza busca do Pagefind e interface pt
-
-Body: Melhora a interface de busca utilizando variáveis CSS nativas para integração no tema pergaminho e adiciona traduções completas para português brasileiro através do PagefindUI, garantindo boa indexação de termos regionais em conteúdos históricos.

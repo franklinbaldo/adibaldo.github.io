@@ -9,6 +9,7 @@
 	$effect(() => {
 		const saved = localStorage.getItem('alfarrabios_mode');
 		isDark = saved === 'dark';
+		document.documentElement.dataset.theme = isDark ? 'dark' : 'light';
 
 		function onScroll() {
 			isScrolled = window.scrollY > 8;
