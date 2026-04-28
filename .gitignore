@@ -30,3 +30,10 @@ secrets/
 # OS
 .DS_Store
 Thumbs.db
+
+# Artefatos de processo e auditorias
+workspace/
+audit-*-report.md
+relatorio-auditoria-*.md
+*.png-screenshot
+*_screenshot.png
