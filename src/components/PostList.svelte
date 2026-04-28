@@ -25,17 +25,26 @@
 	}
 </script>
 
-<ul class="post-text-list">
+<div class="grid post-grid-home">
 	{#each visiblePosts as post (post.id)}
-		<li class="post-text-list-item">
-			<p class="post-text-meta">
-				<time datetime={toISODate(post.data.pubDate)}>{formatDate(post.data.pubDate)}</time> -
-				<a href={'/blog/' + post.id + '/'} class="post-text-link">{post.data.title}</a>
-			</p>
-			<p class="post-text-desc">{post.data.description}</p>
-		</li>
+		<a href={'/blog/' + post.id + '/'} class="card post-card-home">
+			<div class="post-thumb-home">
+				{#if post.data.heroImage}
+					<img src={post.data.heroImage.src} alt={post.data.heroImageAlt || post.data.title} loading="lazy" />
+				{:else}
+					<div class="post-thumb-fallback-home"></div>
+				{/if}
+			</div>
+			<div class="post-card-body-home">
+				<p class="meta">
+					<time datetime={toISODate(post.data.pubDate)}>{formatDate(post.data.pubDate)}</time>
+				</p>
+				<h3 class="card-title">{post.data.title}</h3>
+				<p class="card-desc">{post.data.description}</p>
+			</div>
+		</a>
 	{/each}
-</ul>
+</div>
 
 {#if hasMore}
 	<div class="load-more-wrap">
@@ -46,34 +55,63 @@
 {/if}
 
 <style>
-	.post-text-list {
-		list-style-type: none;
-		padding-left: 0;
+	.post-grid-home {
+		grid-template-columns: repeat(4, 1fr);
 	}
 
-	.post-text-list-item {
-		margin-bottom: var(--space-lg);
+	.post-card-home {
+		padding: 0;
+		overflow: hidden;
+		min-height: 0;
+		transition: transform 0.25s ease, box-shadow 0.25s ease;
 	}
 
-	.post-text-meta {
-		margin-bottom: 0.5rem;
-		color: var(--text-secondary);
-		font-size: 0.9em;
+	.post-card-home:hover {
+		transform: translateY(-3px);
 	}
 
-	.post-text-link {
-		font-weight: 600;
-		text-decoration: underline;
-		color: var(--text-primary);
+	.post-thumb-home {
+		aspect-ratio: 3 / 2;
+		overflow: hidden;
+		background: var(--tag-bg);
+		border-bottom: 1px solid var(--border-light);
 	}
 
-	.post-text-link:hover {
-		color: var(--accent-primary);
+	.post-thumb-home img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 0;
+		transition: transform 0.35s ease;
 	}
 
-	.post-text-desc {
-		margin-bottom: 1.5rem;
-		color: var(--text-secondary);
+	.post-card-home:hover .post-thumb-home img {
+		transform: scale(1.04);
+	}
+
+	.post-thumb-fallback-home {
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+	}
+
+	.post-card-body-home {
+		padding: var(--space-md);
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-sm);
+	}
+
+	@media (max-width: 980px) {
+		.post-grid-home {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media (max-width: 620px) {
+		.post-grid-home {
+			grid-template-columns: 1fr;
+		}
 	}
 
 	.load-more-wrap {
