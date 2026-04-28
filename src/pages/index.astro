@@ -62,7 +62,34 @@ const itemListLD = {
 							<h2 style="margin:0;">Destaque</h2>
 						</div>
 
-						<div class="featured-text-item"><h3 class="featured-text-title"><a href={'/blog/' + featuredPost.id + '/'} style="color: inherit; text-decoration: none;">{featuredPost.data.title}</a></h3><p>{featuredPost.data.description}</p></div>
+						<a href={`/blog/${featuredPost.id}/`} class="featured-card">
+							{featuredPost.data.heroImage ? (
+								<Image
+									src={featuredPost.data.heroImage}
+									alt={featuredPost.data.heroImageAlt || featuredPost.data.title}
+									class="featured-card-bg"
+									width={1120}
+									height={560}
+									widths={[400, 800, 1120]}
+									sizes="(max-width: 620px) 100vw, (max-width: 1120px) 100vw, 1120px"
+								/>
+							) : (
+								<div class="featured-card-bg" style="background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));"></div>
+							)}
+							<div class="featured-card-overlay">
+								{featuredPost.data.tags && featuredPost.data.tags.length > 0 && (
+									<div class="tag-row">
+										<span class="tag">{featuredPost.data.tags[0]}</span>
+									</div>
+								)}
+								<h3>{featuredPost.data.title}</h3>
+								<p>{featuredPost.data.description}</p>
+								<div class="meta">
+									{featuredPost.data.pubDate.toLocaleDateString('pt-BR', { year: 'numeric', month: 'long', day: 'numeric' })}
+									{featuredPost.data.place && ` • ${featuredPost.data.placeLabel || featuredPost.data.place}`}
+								</div>
+							</div>
+						</a>
 					</div>
 				</section>
 			)}
@@ -98,86 +125,6 @@ const itemListLD = {
 			.cta-outline:hover {
 				background: var(--accent-primary);
 				color: white;
-			}
-
-			.post-grid-home {
-				grid-template-columns: repeat(4, 1fr);
-			}
-
-			.post-card-home {
-				padding: 0;
-				overflow: hidden;
-				min-height: 0;
-				transition: transform 0.25s ease, box-shadow 0.25s ease;
-			}
-
-			.post-card-home:hover {
-				transform: translateY(-3px);
-			}
-
-			.post-thumb-home {
-				aspect-ratio: 3 / 2;
-				overflow: hidden;
-				background: var(--tag-bg);
-				border-bottom: 1px solid var(--border-light);
-			}
-
-			.post-thumb-home :global(img) {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-				border-radius: 0;
-				transition: transform 0.35s ease;
-			}
-
-			.post-card-home:hover .post-thumb-home :global(img) {
-				transform: scale(1.04);
-			}
-
-			.post-thumb-fallback-home {
-				width: 100%;
-				height: 100%;
-				background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
-			}
-
-			.post-card-body-home {
-				padding: var(--space-md);
-				display: flex;
-				flex-direction: column;
-				gap: var(--space-sm);
-			}
-
-			.load-more-wrap {
-				display: flex;
-				justify-content: center;
-				margin-top: var(--space-xl);
-			}
-
-			.btn-load-more {
-				background: var(--accent-primary);
-				color: white;
-				border: none;
-				border-radius: var(--radius);
-				padding: var(--space-sm) var(--space-xl);
-				font-size: 1rem;
-				cursor: pointer;
-				transition: background 0.2s;
-			}
-
-			.btn-load-more:hover {
-				background: var(--accent-hover, #7a5c3a);
-			}
-
-			@media (max-width: 980px) {
-				.post-grid-home {
-					grid-template-columns: repeat(2, 1fr);
-				}
-			}
-
-			@media (max-width: 620px) {
-				.post-grid-home {
-					grid-template-columns: 1fr;
-				}
 			}
 		</style>
 	</body>
