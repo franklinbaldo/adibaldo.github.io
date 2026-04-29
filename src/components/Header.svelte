@@ -33,7 +33,7 @@
 	}
 </script>
 
-<header class="site-header {isScrolled ? 'scrolled' : ''}" id="site-header">
+<header class="site-header {isScrolled ? 'scrolled' : ''}" id="site-header" role="banner" aria-label="Cabeçalho principal">
 	<div class="container">
 		<nav class="nav" aria-label="Navegação principal">
 			<div class="nav-left">

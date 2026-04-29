@@ -69,14 +69,14 @@ const breadcrumbLD = {
 		<a href="#main-content" class="skip-link">Ir ao conteúdo principal</a>
 		<Header client:load currentPath={Astro.url.pathname} />
 
-		<header class="hero">
+		<div class="hero" role="region" aria-label="Destaque da página">
 			<div class="container hero-inner">
 				<h1 style="font-size: clamp(34px, 4.5vw, 56px);">Textos sobre: {tag}</h1>
 				<p class="hero-kicker">
 					Memórias, causos e ensaios. Escolhe um e vai no passo.
 				</p>
 			</div>
-		</header>
+		</div>
 
 		<main id="main-content" role="main" class="section">
 			<div class="container">
