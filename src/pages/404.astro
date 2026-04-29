@@ -14,14 +14,14 @@ import { SITE_TITLE } from '../consts';
 		<a href="#main-content" class="skip-link">Ir ao conteúdo principal</a>
 		<Header client:load currentPath={Astro.url.pathname} />
 
-		<header class="hero">
+		<div class="hero" role="region" aria-label="Destaque da página">
 			<div class="container hero-inner" style="text-align: center;">
 				<h1 style="font-size: clamp(48px, 6vw, 72px); font-family: var(--font-title); font-weight: 700;">404</h1>
 				<p class="hero-kicker" style="max-width: 100%; margin: 0 auto;">
 					Eita, tchê! Essa prosa se perdeu no tempo ou o vento levou.
 				</p>
 			</div>
-		</header>
+		</div>
 
 		<main id="main-content" role="main" class="section section-textured">
 			<div class="reading-width" style="text-align: center;">

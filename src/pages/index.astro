@@ -39,7 +39,7 @@ const itemListLD = {
 		<a href="#main-content" class="skip-link">Ir ao conteúdo principal</a>
 		<Header client:load currentPath={Astro.url.pathname} />
 
-		<header class="hero">
+		<div class="hero" role="region" aria-label="Destaque da página">
 			<div class="container hero-inner">
 				<h1>{SITE_TITLE}</h1>
 				<p class="hero-kicker">{SITE_DESCRIPTION}</p>
@@ -51,7 +51,7 @@ const itemListLD = {
 					<a class="cta cta-outline" href="/livro">Abrir livro para imprimir</a>
 				</div>
 			</div>
-		</header>
+		</div>
 
 		<main id="main-content" role="main">
 			{/* ── Featured Article ── */}
