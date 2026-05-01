@@ -5,6 +5,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Giscus from '../components/Giscus.astro';
+import FontSizeControl from '../components/FontSizeControl.svelte';
 import Header from '../components/Header.svelte';
 import ProgressBar from '../components/ProgressBar.svelte';
 import { SITE_TITLE } from '../consts';
@@ -104,6 +105,14 @@ const breadcrumbLD = {
 		<BaseHead title={pageTitle} description={description} imageUrl={imageUrl} ogType="article" pubDate={pubDate} updatedDate={updatedDate} />
 		<script type="application/ld+json" set:html={JSON.stringify(blogPostingLD).replace(/</g, '\\u003c')} />
 		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbLD).replace(/</g, '\\u003c')} />
+
+		<!-- Previne FOUC do font-size lendo diretamente do localStorage e aplicando ao document.documentElement (root) -->
+		<script is:inline>
+			const savedSize = localStorage.getItem('alfarrabios_fontsize');
+			if (savedSize) {
+				document.documentElement.setAttribute('data-fontsize', savedSize);
+			}
+		</script>
 	</head>
 	<body>
 		<a href="#main-content" class="skip-link">Ir ao conteúdo principal</a>
@@ -135,6 +144,9 @@ const breadcrumbLD = {
 							Atualizado em <FormattedDate date={updatedDate} />
 						</p>
 					)}
+					<div style="margin-top: var(--space-md); text-align: center;">
+						<FontSizeControl client:load />
+					</div>
 				</header>
 
 				{heroImage && (
@@ -232,7 +244,13 @@ const breadcrumbLD = {
 			max-width: 68ch;
 			margin: 0 auto;
 			padding: 2rem 1rem;
+			font-size: 1.125rem; /* tamanho base normal */
+			transition: font-size 0.3s ease;
 		}
+
+		/* Controles de tamanho de fonte */
+		:root[data-fontsize="large"] .markdown-livro { font-size: 1.3rem; }
+		:root[data-fontsize="xlarge"] .markdown-livro { font-size: 1.5rem; }
 
 		.markdown-livro h1,
 		.markdown-livro h2,
@@ -240,8 +258,8 @@ const breadcrumbLD = {
 			text-align: center;
 		}
 
-		.markdown-livro h1 { font-size: 2.5rem; margin-bottom: 2rem; }
-		.markdown-livro h2 { font-size: 1.8rem; margin-top: 3.5rem; margin-bottom: 0.2rem; }
+		.markdown-livro h1 { font-size: 2.2em; margin-bottom: 2rem; }
+		.markdown-livro h2 { font-size: 1.6em; margin-top: 3.5rem; margin-bottom: 0.2rem; }
 
 		/* Metadado (data/local) logo após H2 */
 		.markdown-livro h2 + p {
