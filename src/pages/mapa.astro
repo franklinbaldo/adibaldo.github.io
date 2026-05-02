@@ -1,0 +1,152 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.svelte';
+import { SITE_TITLE } from '../consts';
+
+const places = await getCollection('places');
+
+// Map of places to static coordinates
+// Fallback logic could be used if place not here
+const placeCoordinates: Record<string, [number, number]> = {
+	'rolim-de-moura': [-11.7275, -61.7770],
+	'curitiba': [-25.4284, -49.2733],
+	'cuiaba': [-15.6014, -56.0979],
+	'francisco-beltrao': [-26.0772, -53.0533],
+	'costa-marques': [-12.4385, -64.2285],
+	'guarapuava': [-25.3953, -51.4593],
+	'itapejara': [-25.9557, -52.8123],
+	'jabora': [-27.1725, -51.7350],
+	'pato-branco': [-26.2294, -52.6716],
+	'barao-de-cotegipe': [-27.6200, -52.3783],
+	'parana': [-24.89, -51.55],
+	'rondonia': [-10.83, -63.34],
+	'rio-grande-do-sul': [-30.03, -51.23],
+	'brasil': [-14.235, -51.925],
+	'amazonia': [-3.465, -62.215]
+};
+
+// Filter places to those that have known coordinates, or supply default roughly center-brasil coordinates.
+const markersData = places.map((place) => {
+	const coords = placeCoordinates[place.id];
+	return {
+		id: place.id,
+		title: place.data.title,
+		desc: place.data.summary,
+		coords: coords || null // Null coords will be ignored
+	};
+}).filter(m => m.coords !== null);
+
+const breadcrumbLD = {
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Início",
+			"item": Astro.site?.toString()
+		},
+		{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "Mapa de Memórias"
+		}
+	]
+};
+---
+
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<BaseHead title={`Mapa de Memórias — ${SITE_TITLE}`} description="Mapa interativo dos locais que marcaram a vida e a prosa do Adi." />
+		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbLD)} />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+	</head>
+	<body>
+		<a href="#main-content" class="skip-link">Ir ao conteúdo principal</a>
+		<Header client:load currentPath={Astro.url.pathname} />
+
+		<div class="hero" role="region" aria-label="Destaque da página">
+			<div class="container hero-inner">
+				<h1 style="font-size: clamp(34px, 4.5vw, 56px);">Mapa de Memórias</h1>
+				<p class="hero-kicker">
+					Um giro pelo país através das andanças de uma vida inteira. Cada ponto guarda uma prosa.
+				</p>
+			</div>
+		</div>
+
+		<main id="main-content" role="main" class="section">
+			<div class="container">
+
+				<div id="memories-map" style="height: 600px; width: 100%; z-index: 1; border-radius: var(--radius-card); margin: 2rem 0; border: 1px solid var(--border-light); box-shadow: var(--shadow-card);"></div>
+
+				<p style="text-align: center; color: var(--text-secondary); font-style: italic; font-size: 0.9em;">
+					* Alguns pontos podem ser apenas referências das andanças e histórias antigas.
+				</p>
+
+			</div>
+		</main>
+
+		<Footer />
+
+		<script is:inline src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+		<style is:global>
+			.leaflet-layer {
+				filter: grayscale(100%) sepia(20%);
+			}
+			#memories-map {
+				isolation: isolate;
+			}
+			/* Improve popup readability in dark mode */
+			:root[data-theme='dark'] .leaflet-popup-content-wrapper {
+				background: var(--bg-card);
+				color: var(--text-primary);
+			}
+			:root[data-theme='dark'] .leaflet-popup-tip {
+				background: var(--bg-card);
+			}
+		</style>
+
+		<script is:inline define:vars={{ markersData }}>
+			document.addEventListener('DOMContentLoaded', () => {
+				const mapContainer = document.getElementById('memories-map');
+				if (!mapContainer) return;
+
+				// Center map on South/Center-West of Brazil roughly
+				const map = L.map('memories-map').setView([-18.0, -53.0], 5);
+
+				L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+					maxZoom: 18,
+					attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+				}).addTo(map);
+
+				// Bounds array to fit all markers
+				const bounds = [];
+
+				markersData.forEach((marker) => {
+					if(marker.coords && marker.coords.length === 2) {
+						bounds.push(marker.coords);
+
+						const popupContent = `
+							<div style="font-family: inherit;">
+								<strong style="font-size: 1.1em; display: block; margin-bottom: 4px;">${marker.title}</strong>
+								<p style="margin: 0 0 8px 0; font-size: 0.9em; line-height: 1.4;">${marker.desc}</p>
+								<a href="/locais/${marker.id}" style="color: #b87942; text-decoration: underline; font-weight: 500;">Ler mais &rsaquo;</a>
+							</div>
+						`;
+
+						L.marker(marker.coords).addTo(map).bindPopup(popupContent);
+					}
+				});
+
+				if(bounds.length > 0) {
+					// Add some padding to bounds so markers aren't right on the edge
+					map.fitBounds(bounds, { padding: [40, 40] });
+				}
+			});
+		</script>
+	</body>
+</html>

@@ -44,6 +44,7 @@
 				<div class="nav-links">
 					<a href="/blog" class:active={isActive('/blog')}>Textos</a>
 					<a href="/locais" class:active={isActive('/locais')}>Locais</a>
+					<a href="/mapa" class:active={isActive('/mapa')}>Mapa</a>
 					<a href="/sobre" class:active={isActive('/sobre')}>Sobre</a>
 				</div>
 			</div>
